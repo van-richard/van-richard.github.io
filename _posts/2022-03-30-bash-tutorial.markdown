@@ -1,4 +1,3 @@
-QQ
 ---
 layout: post
 title: "Command Line Tutorial!"
