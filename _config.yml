@@ -11,7 +11,13 @@ site-twitter: #if your site has a twitter account, enter it here
 # Author Settings
 author: Richard Van # add your name
 author-img: test.jpg  # add your photo
-about-author: "I hate html already.\n- UNDER CONSTRUCTION -\nBuilding as I learn :)"# add description
+about-author: |-
+	I hate html already.
+	
+	- UNDER CONSTRUCTION -
+	
+	Building as I learn :) 
+	 # add description
 isocial-twitter: omgitsvannyvan # add your Twitter handle
 social-github: van-richard # add your Github handle
 social-linkedin: van-richard # add your Linkedin handle
