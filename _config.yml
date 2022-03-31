@@ -14,7 +14,7 @@ author-img: test.jpg  # add your photo
 about-author: I hate html already. # add description
 social-twitter: omgitsvannyvan # add your Twitter handle
 social-github: van-richard # add your Github handle
-social-linkedin: # add your Linkedin handle
+social-linkedin: https://www.linkedin.com/in/van-richard # add your Linkedin handle
 social-email: van@ou.edu # add your Email address
 
 # Disqus
