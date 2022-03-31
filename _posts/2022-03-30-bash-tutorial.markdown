@@ -5,13 +5,23 @@ date: 2022-03-30 22:00:00 +0000
 description: You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. # Add post description (optional)
 img:  # Add image post (optional)
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+Are you ready? Because, I'm about to change your world!!!! 
 
-[Section 1](#section-1)
+This post is dedicated to developing your skills in usage of the command line interface. While it can be overwhelming at first, like any programming language, it takes a little practice and getting use to.
 
-[Section 2]
+This tutorial will breakdown as followed: 
+1) Basic Usage - Covers how to nagivate between directories (folders), copy/paste, move, and rename files.
+2) Other Uses - Other commmand line functions that I found useful in Molecular Dynamics and Bio/Chem-informatics.
 
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+# Table of Contents #
+[Basic Usage](#basic-usage) 
+[Other Usage](#other-usage)
+
+
+
+## Basic Usage ##
+
+## Other Usage ##
 
 Jekyll also offers powerful support for code snippets:
 
@@ -22,87 +32,5 @@ end
 print_hi('Tom')
 #=> prints 'Hi, Tom' to STDOUT.
 {% endhighlight %}
-
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
-
-## Section 1 ##
-
-Look at this 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-## Section 2 ##
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
