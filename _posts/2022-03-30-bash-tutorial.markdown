@@ -100,11 +100,23 @@ $ cd ..
 $ pwd
 {% end highlight %}
 
-Going back into the "test_1" folder, we are now going make a file. 
+Going back into the "test_1" folder, we are now going make a file. While there are a few ways to make files, I want to start with the harder method first (Not neccessarily difficult, but takes a lot of getting use to). I will only cover the basics of Vim, while leaving the more fun stuff in [Other Uses].
+
+We will use a text editor called Vim, which you could say is similar with Notepad, etc. The command to run Vim is `vi` following with the file name and file data type. We will make a text file called "test."
+
+## vim ## - text editor (makes, edits files).
 
 {% highlight ruby%}  
-$
+$ vi test.txt
 {% end highlight %}
+
+This should take you to an empty page. To start editing the file, we will press the `i` key. Notice that the lower left hand corner of your screen shows that you are now in editing mode. 
+
+Type "Hello World!" into the editor.
+
+Once written, save the file by pressing the `esc` key, and typing `:wq`. The `esc` key will allow you to exit editing mode, which should change the lower left hand corner of the screen again. `:wq` tells vim to save (`w` - write) and quit (`q`). More functions of Vim will be shown in [Other Uses].
+
+Now you have a new file called "text.txt" in your folder test_1.
 
 {% highlight ruby%}  
 $
