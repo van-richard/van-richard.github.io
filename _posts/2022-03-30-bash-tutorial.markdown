@@ -37,7 +37,7 @@ Personally, I use bash, and the following tutorial will be tailored towards that
 
 {% highlight ruby %}
 $ chsh -s /bin/bash
-% endhighlight %}
+{% endhighlight %}
 
 # Basic Usage #
 Once again open your terminal (if you closed it), and you should see that you're logged into the command line environment with your account name and a dollar sign. The first command is `pwd`. `pwd` stands for Print Working Directory, which will tell you were you are currently located in your system. Two examples are shown, one is on my local macbook, and the other is on my supercomputing account.
@@ -57,6 +57,7 @@ $ pwd
 {% highlight ruby %}  
 /home/van/ 
 {% endhighlight %}
+
 
 Question: What do you do if you need to find your homework file on your computer? Usually, I would have the file saved to some course folder, and I would have to navigate the Finder app to get to Documents, and then course folder. To do the same thing in terminal, you'll need to run a command called `ls`. This command will list all files and folders in your current directory (You will use this command all the time!). Because this command will vary depending on the user, I will not have an example output, but you should see folders represented by blue text, and files represented by white text. 
  
