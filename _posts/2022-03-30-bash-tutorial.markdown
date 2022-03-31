@@ -19,6 +19,8 @@ Feel free to refer back to this page as you go on.
 [Other Usage](#other-usage)
 
 # Background #
+NOTE: Example code will be shown in cells, where the "$" (dollar sign) represents the input command. Cells without the "$" (dollar sign) will represent output of said command. This is because the command shell will tell you what type of user you are when you're logged into the command line environment. The dollar sign represents normal user.
+
 Briefly, the command shell is just a program that takes in text commands, passes this information to your computer, and runs them. There are a few different flavors of command shells, such as bash, csh, ksh, DOS (Windows), etc. Although there are some overlap between the languages, each may contain their own special syntax for specific functions. If you're ever in doubt, you can find which flavor you're using by running the following command on your Terminal. Then Google your shell name + "cheat sheet" (Ex: "bash cheat sheet"), and looking at images. 
 
 {% highlight ruby %}
@@ -31,24 +33,18 @@ This should return something like:
 /bin/bash
 {% end highlight %}
 
-
 Personally, I use bash, and the following tutorial will be tailored towards that. If you would like to change your shell, run the following command in your Terminal.  
 
+{% highlight ruby %}
+$ chsh -s /bin/bash
+{% end highlight %}
 
 # Basic Usage #
+## pwd ## 
+Once again open your terminal (if you closed it), and you should see that you're logged into the command line environment with your account name and a dollar sign. The first command is 'pwd'  
 
 # Advanced Usage #
 
-## Other Usage ##
-
-Jekyll also offers powerful support for code snippets:
-
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
+# Other Usage #
 
 
