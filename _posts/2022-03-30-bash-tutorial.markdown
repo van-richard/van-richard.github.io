@@ -44,7 +44,8 @@ Once again open your terminal (if you closed it), and you should see that you're
 
 NOTE: Typically, your shell will always start at your default home location (if this is a new window that is opened for your terminal). Your home is usually set when you first made an account, and should have access to folders such as, Desktop, Documents, Pictures, etc.
 
-## pwd ## (print working directory) - outputs (prints) the location of your current working directory.
+## pwd ## 
+pwd (print working directory) - outputs (prints) the location of your current working directory.
 
 {% highlight ruby %}  
 $ pwd 
@@ -61,7 +62,8 @@ $ pwd
 
 Question: What do you do if you need to find your homework file on your computer? Usually, I would have the file saved to some course folder, and I would have to navigate the Finder app to get to Documents, and then course folder. To do the same thing in terminal, you'll need to run a command called `ls`. This command will list all files and folders in your current directory (You will use this command all the time!). Because this command will vary depending on the user, I will not have an example output, but you should see folders represented by blue text, and files represented by white text. 
  
-## ls ## (list) - lists file/folders in current directory.
+## ls ## 
+ls (list) - lists file/folders in current directory.
 
 {% highlight ruby %}  
 $ ls 
@@ -71,7 +73,8 @@ Let's make a new folder called "test_1" for us to work in. The command will be `
 
 If you run the `ls` command, you'll see your new folder "test_1."
 
-## mkdir ## (make directory) - makes a new folder. 
+## mkdir ## 
+mkdir (make directory) - makes a new folder. 
 
 {% highlight ruby %}  
 $ mkdir test_1
@@ -81,7 +84,8 @@ To go into a folder, we will run the command `cd`. `cd` stands for change direct
 
 To check whether or not we are in the folder, run `pwd`. The new output should look like mine with the exception of the username.
 
-## cd ## (change directory) - allows you to enter a directory (folder).
+## cd ## 
+cd (change directory) - allows you to enter a directory (folder).
 
 {% highlight ruby %}  
 $ cd test_1
@@ -105,7 +109,8 @@ Going back into the "test_1" folder, we are now going make a file. While there a
 
 We will use a text editor called Vim, which you could say is similar with Notepad, etc. The command to run Vim is `vi` following with the file name and file data type. We will make a text file called "test."
 
-## vim ## - text editor (makes, edits files).
+## vim ## 
+vim - text editor (makes, edits files).
 
 {% highlight ruby %}  
 $ vi test.txt
