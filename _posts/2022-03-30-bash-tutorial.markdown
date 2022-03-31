@@ -37,11 +37,115 @@ Personally, I use bash, and the following tutorial will be tailored towards that
 
 {% highlight ruby %}
 $ chsh -s /bin/bash
-{% end highlight %}
+% end highlight %}
 
 # Basic Usage #
-## pwd ## 
-Once again open your terminal (if you closed it), and you should see that you're logged into the command line environment with your account name and a dollar sign. The first command is 'pwd'  
+Once again open your terminal (if you closed it), and you should see that you're logged into the command line environment with your account name and a dollar sign. The first command is `pwd`. `pwd` stands for Print Working Directory, which will tell you were you are currently located in your system. Two examples are shown, one is on my local macbook, and the other is on my supercomputing account.
+
+NOTE: Typically, your shell will always start at your default home location (if this is a new window that is opened for your terminal). Your home is usually set when you first made an account, and should have access to folders such as, Desktop, Documents, Pictures, etc.
+
+## pwd ## (print working directory) - outputs (prints) the location of your current working directory.
+
+{% highlight ruby%}  
+$ pwd 
+{% end highlight %}
+
+{% highlight ruby%}  
+/Users/van 
+{% end highlight %}
+
+{% highlight ruby%}  
+/home/van/ 
+{% end highlight %}
+
+Question: What do you do if you need to find your homework file on your computer? Usually, I would have the file saved to some course folder, and I would have to navigate the Finder app to get to Documents, and then course folder. To do the same thing in terminal, you'll need to run a command called `ls`. This command will list all files and folders in your current directory (You will use this command all the time!). Because this command will vary depending on the user, I will not have an example output, but you should see folders represented by blue text, and files represented by white text. 
+ 
+## ls ## (list) - lists file/folders in current directory.
+
+{% highlight ruby%}  
+$ ls 
+{% end highlight %}
+
+Let's make a new folder called "test_1" for us to work in. The command will be `mkdir` which stands for make directory. What follows the command will the folder's name. This command is the same as right-clicking on your Desktop, and creating a new folder. Please be aware that folder names cannot have spaces. For example, if we wanted to name our folder, "test 1", the `mkdir` command will recognize this as making two folders, one "test", and the second "1." Because of this, you often see most files/folders with a "-" (hyphen) or "_" (underscore). 
+
+If you run the `ls` command, you'll see your new folder "test_1."
+
+## mkdir ## (make directory) - makes a new folder. 
+
+{% highlight ruby%}  
+$ mkdir test_1
+{% end highlight %}
+
+To go into a folder, we will run the command `cd`. `cd` stands for change directory. This is the same as double clicking a folder on your Desktop, or file to open. Once you hit enter, you should see that the dollar sign reset, and you're able to run your next command.
+
+To check whether or not we are in the folder, run `pwd`. The new output should look like mine with the exception of the username.
+
+## cd ## (change directory) - allows you to enter a directory (folder).
+
+{% highlight ruby%}  
+$ cd test_1
+$ pwd
+{% end highlight %}
+
+{% highlight ruby%}  
+/Users/van/test_1
+{% end highlight %}
+
+To go out a folder, we will still use `cd`, but rather than typing a folder name, we will use two periods. 
+
+Again, type `pwd` to check whether or not you left the "test_1" folder. Your output from `pwd` should again be like our first example of the command.
+
+{% highlight ruby%}  
+$ cd ..
+$ pwd
+{% end highlight %}
+
+Going back into the "test_1" folder, we are now going make a file. 
+
+{% highlight ruby%}  
+$
+{% end highlight %}
+
+{% highlight ruby%}  
+$
+{% end highlight %}
+
+{% highlight ruby%}  
+$
+{% end highlight %}
+
+{% highlight ruby%}  
+$
+{% end highlight %}
+
+{% highlight ruby%}  
+$
+{% end highlight %}
+
+{% highlight ruby%}  
+$
+{% end highlight %}
+
+{% highlight ruby%}  
+$
+{% end highlight %}
+
+{% highlight ruby%}  
+$
+{% end highlight %}
+
+{% highlight ruby%}  
+$
+{% end highlight %}
+
+{% highlight ruby%}  
+$
+{% end highlight %}
+
+{% highlight ruby%}  
+$
+{% end highlight %}
+
 
 # Advanced Usage #
 
