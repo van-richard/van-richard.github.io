@@ -114,10 +114,7 @@ This should take you to an empty page. To start editing the file, we will press 
 
 Type "Hello World!" into the editor.
 
-Once written, save the file by pressing the `esc` key, and typing `:wq`. The `esc` key will allow you to exit editing mode, which should change the lower left hand corner of the screen again. `:wq` tells vim to save (`w` - write) and quit (`q`). More functions of Vim will be shown in [Other Uses]. Now you have a new file called "text.txt" in your folder "test_1".
 
 # Advanced Usage #
 
 # Other Usage #
-
-
