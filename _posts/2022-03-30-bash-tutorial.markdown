@@ -12,13 +12,13 @@ This post is dedicated to developing your skills in usage of the command line in
 Feel free to refer back to this page as you go on. 
 
 # Table of Contents #
-_1A._ [Basic Usage](#basic-usage) (Navigating, Make Files, Misc.) 
+*1A.* [Basic Usage](#basic-usage) (Navigating, Make Files, Misc.) 
 
 Quicklinks: [pwd](#pwd), [ls](#ls), [mkdir](#mkdir), [cd](#cd), [vim](#vim)
 
-_2._ [Advanced Usage](#advanced-usage)
+*2.* [Advanced Usage](#advanced-usage)
 
-_3._ [Other Usage](#other-usage)
+*3.* [Other Usage](#other-usage)
 
 # Background #
 NOTE: Example code will be shown in cells, where the "$" (dollar sign) represents the input command. Cells without the "$" (dollar sign) will represent output of said command. This is because the command shell will tell you what type of user you are when you're logged into the command line environment. The dollar sign represents normal user.
