@@ -13,7 +13,11 @@ Feel free to refer back to this page as you go on.
 
 # Table of Contents #
 [Basic Usage](#basic-usage) 
-
+ [pwd](#pwd)
+ [ls](#ls)
+ [mkdir](#mkdir)
+ [cd](#cd)
+ [vim](#vim)
 [Advanced Usage](#advanced-usage)
 
 [Other Usage](#other-usage)
@@ -105,7 +109,7 @@ $ cd ..
 $ pwd
 {% endhighlight %}
 
-Going back into the "test_1" folder, we are now going make a file. While there are a few ways to make files, I want to start with the harder method first (Not neccessarily difficult, but takes a lot of getting use to). I will only cover the basics of Vim, while leaving the more fun stuff in [Other Uses].
+Going back into the "test_1" folder, we are now going make a file. While there are a few ways to make files, I want to start with the harder method first (Not neccessarily difficult, but takes a lot of getting use to). I will only cover the basics of Vim, while leaving the more fun stuff in [Other Uses](#other-uses).
 
 We will use a text editor called Vim, which you could say is similar with Notepad, etc. The command to run Vim is `vi` following with the file name and file data type. We will make a text file called "test."
 
@@ -120,6 +124,7 @@ This should take you to an empty page. To start editing the file, we will press 
 
 Type "Hello World!" into the editor.
 
+Once written, save the file by pressing the `esc` key, and typing `:wq`. The `esc` key will allow you to exit editing mode, which should change the lower left hand corner of the screen again. `:wq` tells vim to save (`w` - write) and quit (`q`). More functions of Vim will be shown in [Other Uses](#other-uses). Now you have a new file called "text.txt" in your folder "test_1".
 
 # Advanced Usage #
 
