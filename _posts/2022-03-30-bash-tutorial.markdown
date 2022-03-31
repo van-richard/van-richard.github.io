@@ -14,15 +14,7 @@ Feel free to refer back to this page as you go on.
 # Table of Contents #
 [Basic Usage](#basic-usage) 
 
- [pwd](#pwd)
-
- [ls](#ls)
-
- [mkdir](#mkdir)
-
- [cd](#cd)
-
- [vim](#vim)
+ [pwd](#pwd), [ls](#ls), [mkdir](#mkdir), [cd](#cd), [vim](#vim)
 
 [Advanced Usage](#advanced-usage)
 
