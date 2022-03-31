@@ -46,15 +46,15 @@ NOTE: Typically, your shell will always start at your default home location (if 
 
 ## pwd ## (print working directory) - outputs (prints) the location of your current working directory.
 
-{% highlight ruby%}  
+{% highlight ruby %}  
 $ pwd 
 {% endhighlight %}
 
-{% highlight ruby%}  
+{% highlight ruby %}  
 /Users/van 
 {% endhighlight %}
 
-{% highlight ruby%}  
+{% highlight ruby %}  
 /home/van/ 
 {% endhighlight %}
 
@@ -62,7 +62,7 @@ Question: What do you do if you need to find your homework file on your computer
  
 ## ls ## (list) - lists file/folders in current directory.
 
-{% highlight ruby%}  
+{% highlight ruby %}  
 $ ls 
 {% endhighlight %}
 
@@ -72,7 +72,7 @@ If you run the `ls` command, you'll see your new folder "test_1."
 
 ## mkdir ## (make directory) - makes a new folder. 
 
-{% highlight ruby%}  
+{% highlight ruby %}  
 $ mkdir test_1
 {% endhighlight %}
 
@@ -82,12 +82,12 @@ To check whether or not we are in the folder, run `pwd`. The new output should l
 
 ## cd ## (change directory) - allows you to enter a directory (folder).
 
-{% highlight ruby%}  
+{% highlight ruby %}  
 $ cd test_1
 $ pwd
 {% endhighlight %}
 
-{% highlight ruby%}  
+{% highlight ruby %}  
 /Users/van/test_1
 {% endhighlight %}
 
@@ -95,7 +95,7 @@ To go out a folder, we will still use `cd`, but rather than typing a folder name
 
 Again, type `pwd` to check whether or not you left the "test_1" folder. Your output from `pwd` should again be like our first example of the command.
 
-{% highlight ruby%}  
+{% highlight ruby %}  
 $ cd ..
 $ pwd
 {% endhighlight %}
@@ -106,7 +106,7 @@ We will use a text editor called Vim, which you could say is similar with Notepa
 
 ## vim ## - text editor (makes, edits files).
 
-{% highlight ruby%}  
+{% highlight ruby %}  
 $ vi test.txt
 {% endhighlight %}
 
@@ -117,47 +117,6 @@ Type "Hello World!" into the editor.
 Once written, save the file by pressing the `esc` key, and typing `:wq`. The `esc` key will allow you to exit editing mode, which should change the lower left hand corner of the screen again. `:wq` tells vim to save (`w` - write) and quit (`q`). More functions of Vim will be shown in [Other Uses].
 
 Now you have a new file called "text.txt" in your folder test_1.
-
-{% highlight ruby%}  
-$
-{% endhighlight %}
-
-{% highlight ruby%}  
-$
-{% endhighlight %}
-
-{% highlight ruby%}  
-$
-{% endhighlight %}
-
-{% highlight ruby%}  
-$
-{% endhighlight %}
-
-{% highlight ruby%}  
-$
-{% endhighlight %}
-
-{% highlight ruby%}  
-$
-{% endhighlight %}
-
-{% highlight ruby%}  
-$
-{% endhighlight %}
-
-{% highlight ruby%}  
-$
-{% endhighlight %}
-
-{% highlight ruby%}  
-$
-{% endhighlight %}
-
-{% highlight ruby%}  
-$
-{% endhighlight %}
-
 
 # Advanced Usage #
 
