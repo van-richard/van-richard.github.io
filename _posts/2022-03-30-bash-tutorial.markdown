@@ -25,19 +25,19 @@ Briefly, the command shell is just a program that takes in text commands, passes
 
 {% highlight ruby %}
 $ echo $SHELL
-{% end highlight %}
+{% endhighlight %}
 
 This should return something like:
 
 {% highlight ruby %}
 /bin/bash
-{% end highlight %}
+{% endhighlight %}
 
 Personally, I use bash, and the following tutorial will be tailored towards that. If you would like to change your shell, run the following command in your Terminal.  
 
 {% highlight ruby %}
 $ chsh -s /bin/bash
-% end highlight %}
+% endhighlight %}
 
 # Basic Usage #
 Once again open your terminal (if you closed it), and you should see that you're logged into the command line environment with your account name and a dollar sign. The first command is `pwd`. `pwd` stands for Print Working Directory, which will tell you were you are currently located in your system. Two examples are shown, one is on my local macbook, and the other is on my supercomputing account.
@@ -48,15 +48,15 @@ NOTE: Typically, your shell will always start at your default home location (if 
 
 {% highlight ruby%}  
 $ pwd 
-{% end highlight %}
+{% endhighlight %}
 
 {% highlight ruby%}  
 /Users/van 
-{% end highlight %}
+{% endhighlight %}
 
 {% highlight ruby%}  
 /home/van/ 
-{% end highlight %}
+{% endhighlight %}
 
 Question: What do you do if you need to find your homework file on your computer? Usually, I would have the file saved to some course folder, and I would have to navigate the Finder app to get to Documents, and then course folder. To do the same thing in terminal, you'll need to run a command called `ls`. This command will list all files and folders in your current directory (You will use this command all the time!). Because this command will vary depending on the user, I will not have an example output, but you should see folders represented by blue text, and files represented by white text. 
  
@@ -64,7 +64,7 @@ Question: What do you do if you need to find your homework file on your computer
 
 {% highlight ruby%}  
 $ ls 
-{% end highlight %}
+{% endhighlight %}
 
 Let's make a new folder called "test_1" for us to work in. The command will be `mkdir` which stands for make directory. What follows the command will the folder's name. This command is the same as right-clicking on your Desktop, and creating a new folder. Please be aware that folder names cannot have spaces. For example, if we wanted to name our folder, "test 1", the `mkdir` command will recognize this as making two folders, one "test", and the second "1." Because of this, you often see most files/folders with a "-" (hyphen) or "_" (underscore). 
 
@@ -74,7 +74,7 @@ If you run the `ls` command, you'll see your new folder "test_1."
 
 {% highlight ruby%}  
 $ mkdir test_1
-{% end highlight %}
+{% endhighlight %}
 
 To go into a folder, we will run the command `cd`. `cd` stands for change directory. This is the same as double clicking a folder on your Desktop, or file to open. Once you hit enter, you should see that the dollar sign reset, and you're able to run your next command.
 
@@ -85,11 +85,11 @@ To check whether or not we are in the folder, run `pwd`. The new output should l
 {% highlight ruby%}  
 $ cd test_1
 $ pwd
-{% end highlight %}
+{% endhighlight %}
 
 {% highlight ruby%}  
 /Users/van/test_1
-{% end highlight %}
+{% endhighlight %}
 
 To go out a folder, we will still use `cd`, but rather than typing a folder name, we will use two periods. 
 
@@ -98,7 +98,7 @@ Again, type `pwd` to check whether or not you left the "test_1" folder. Your out
 {% highlight ruby%}  
 $ cd ..
 $ pwd
-{% end highlight %}
+{% endhighlight %}
 
 Going back into the "test_1" folder, we are now going make a file. While there are a few ways to make files, I want to start with the harder method first (Not neccessarily difficult, but takes a lot of getting use to). I will only cover the basics of Vim, while leaving the more fun stuff in [Other Uses].
 
@@ -108,7 +108,7 @@ We will use a text editor called Vim, which you could say is similar with Notepa
 
 {% highlight ruby%}  
 $ vi test.txt
-{% end highlight %}
+{% endhighlight %}
 
 This should take you to an empty page. To start editing the file, we will press the `i` key. Notice that the lower left hand corner of your screen shows that you are now in editing mode. 
 
@@ -120,43 +120,43 @@ Now you have a new file called "text.txt" in your folder test_1.
 
 {% highlight ruby%}  
 $
-{% end highlight %}
+{% endhighlight %}
 
 {% highlight ruby%}  
 $
-{% end highlight %}
+{% endhighlight %}
 
 {% highlight ruby%}  
 $
-{% end highlight %}
+{% endhighlight %}
 
 {% highlight ruby%}  
 $
-{% end highlight %}
+{% endhighlight %}
 
 {% highlight ruby%}  
 $
-{% end highlight %}
+{% endhighlight %}
 
 {% highlight ruby%}  
 $
-{% end highlight %}
+{% endhighlight %}
 
 {% highlight ruby%}  
 $
-{% end highlight %}
+{% endhighlight %}
 
 {% highlight ruby%}  
 $
-{% end highlight %}
+{% endhighlight %}
 
 {% highlight ruby%}  
 $
-{% end highlight %}
+{% endhighlight %}
 
 {% highlight ruby%}  
 $
-{% end highlight %}
+{% endhighlight %}
 
 
 # Advanced Usage #
