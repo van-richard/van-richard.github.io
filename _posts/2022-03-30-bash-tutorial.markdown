@@ -23,7 +23,7 @@ Quicklinks: [pwd](#pwd), [ls](#ls), [mkdir](#mkdir), [cd](#cd), [vim](#vim)
 # Background #
 NOTE: Example code will be shown in cells, where the "$" (dollar sign) represents the input command. Cells without the "$" (dollar sign) will represent output of said command. This is because the command shell will tell you what type of user you are when you're logged into the command line environment. The dollar sign represents normal user.
 
-Briefly, the command shell is just a program that takes in text commands, passes this information to your computer, and runs them. There are a few different flavors of command shells, such as bash, csh, ksh, DOS (Windows), etc. Although there are some overlap between the languages, each may contain their own special syntax for specific functions. If you're ever in doubt, you can find which flavor you're using by running the following command on your Terminal. Then Google your shell name + "cheat sheet" (Ex: "bash cheat sheet"), and looking at images. 
+Briefly, the command shell is just a program that takes in text commands, passes this information to your computer, and runs them. There are a few different flavors of command shells, such as bash, csh, ksh, DOS (Windows), etc. Although there are some overlap between the languages, each may contain their own special syntax for specific functions. If you're ever in doubt, you can find which flavor you're using by running the following command on your Terminal. Then Google your shell name + "cheat sheet" (Ex: "bash cheat sheet"), and look at images. 
 
 {% highlight ruby %}
 $ echo $SHELL
@@ -107,7 +107,7 @@ $ cd ..
 $ pwd
 {% endhighlight %}
 
-Going back into the "test_1" folder, we are now going make a file. While there are a few ways to make files, I want to start with the harder method first (Not neccessarily difficult, but takes a lot of getting use to). I will only cover the basics of Vim, while leaving the more fun stuff in [Other Uses](#other-uses).
+Going back into the "test_1" folder, we are now going make a file. While there are a few ways to make files, I want to start with the harder method first (Not necessarily difficult, but takes a lot of getting use to). I will only cover the basics of Vim, while leaving the more fun stuff in [Other Uses](#other-uses).
 
 We will use a text editor called Vim, which you could say is similar with Notepad, etc. The command to run Vim is `vi` following with the file name and file data type. We will make a text file called "test."
 
@@ -122,7 +122,13 @@ This should take you to an empty page. To start editing the file, we will press 
 
 Type "Hello World!" into the editor.
 
-Once written, save the file by pressing the `esc` key, and typing `:wq`. The `esc` key will allow you to exit editing mode, which should change the lower left hand corner of the screen again. `:wq` tells vim to save (`w` - write) and quit (`q`). More functions of Vim will be shown in [Other Uses](#other-uses). Now you have a new file called "text.txt" in your folder "test_1".
+Once written, save the file by pressing the `esc` key, and typing `:wq`. The `esc` key will allow you to exit editing mode, which should change the lower left hand corner of the screen again. `:wq` tells vim to save (`w` - write) and quit (`q`). More functions of Vim will be shown in [Other Uses](#other-uses). 
+
+Now you have a new file called "text.txt" in your folder "test_1".
+
+At this point, we can start learning how to copy, rename, and move files/folders!
+
+To copy files, we will use the `cp` command. To copy a folder we need to add a flag with to the copy command, like `cp -r`. Flags allow you to modify the operation of the command, in the case of `cp -r`, we want to "*c*o*p*y folde*r*"
 
 # Advanced Usage #
 
