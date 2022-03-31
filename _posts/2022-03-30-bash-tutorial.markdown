@@ -18,10 +18,26 @@ Feel free to refer back to this page as you go on.
 
 [Other Usage](#other-usage)
 
-## Basic Usage ##
+# Background #
+Briefly, the command shell is just a program that takes in text commands, passes this information to your computer, and runs them. There are a few different flavors of command shells, such as bash, csh, ksh, DOS (Windows), etc. Although there are some overlap between the languages, each may contain their own special syntax for specific functions. If you're ever in doubt, you can find which flavor you're using by running the following command on your Terminal. Then Google your shell name + "cheat sheet" (Ex: "bash cheat sheet"), and looking at images. 
+
+{% highlight ruby %}
+$ echo $SHELL
+{% end highlight %}
+
+This should return something like:
+
+{% highlight ruby %}
+/bin/bash
+{% end highlight %}
 
 
-## Advanced Usage ##
+Personally, I use bash, and the following tutorial will be tailored towards that. If you would like to change your shell, run the following command in your Terminal.  
+
+
+# Basic Usage #
+
+# Advanced Usage #
 
 ## Other Usage ##
 
