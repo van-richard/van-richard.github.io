@@ -12,13 +12,16 @@ This post is dedicated to developing your skills in usage of the command line in
 Feel free to refer back to this page as you go on. 
 
 # Table of Contents #
-*1A.* [Basic Usage](#basic-usage) (Navigating, Make Files, Misc.) 
+
+**1A.** [Basic Usage](#basic-usage) (Navigating, Make Files) 
 
 Quicklinks: [pwd](#pwd), [ls](#ls), [mkdir](#mkdir), [cd](#cd), [vim](#vim)
 
-*2.* [Advanced Usage](#advanced-usage)
+**1B.** [Basic Usage Part 2)(#basic-usage-part-2) (Copy/Paste, Moving Files, Renaming, Misc.
 
-*3.* [Other Usage](#other-usage)
+**2.** [Advanced Usage](#advanced-usage)
+
+**3.** [Other Usage](#other-usage)
 
 # Background #
 NOTE: Example code will be shown in cells, where the "$" (dollar sign) represents the input command. Cells without the "$" (dollar sign) will represent output of said command. This is because the command shell will tell you what type of user you are when you're logged into the command line environment. The dollar sign represents normal user.
@@ -41,7 +44,7 @@ Personally, I use bash, and the following tutorial will be tailored towards that
 $ chsh -s /bin/bash
 {% endhighlight %}
 
-# Basic Usage #
+# Basic Usage Part 1 #
 Once again open your terminal (if you closed it), and you should see that you're logged into the command line environment with your account name and a dollar sign. The first command is `pwd`. `pwd` stands for Print Working Directory, which will tell you were you are currently located in your system. Two examples are shown, one is on my local macbook, and the other is on my supercomputing account.
 
 NOTE: Typically, your shell will always start at your default home location (if this is a new window that is opened for your terminal). Your home is usually set when you first made an account, and should have access to folders such as, Desktop, Documents, Pictures, etc.
@@ -126,9 +129,12 @@ Once written, save the file by pressing the `esc` key, and typing `:wq`. The `es
 
 Now you have a new file called "text.txt" in your folder "test_1".
 
-At this point, we can start learning how to copy, rename, and move files/folders!
+# Basic Usage Part 2 #
 
-To copy files, we will use the `cp` command. To copy a folder we need to add a flag with to the copy command, like `cp -r`. Flags allow you to modify the operation of the command, in the case of `cp -r`, we want to "*c*o*p*y folde*r*"
+At this point, we can start learning how to copy/paste, move, and  rename files/folders!
+
+To copy files, we will use the `cp` command. To copy a folder we need to add a flag with to the copy command, like `cp -r`. Flags allow you to modify the operation of the command, in the case of `cp -r`, we want to "**c**o**p**y folde**r**"
+
 
 # Advanced Usage #
 
