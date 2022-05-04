@@ -13,6 +13,8 @@ Feel free to refer back to this page as you go on.
 
 # Table of Contents #
 
+## PART 1 ##
+
 **1A.** [Basic Usage](#basic-usage) (Navigating, Make Files) 
 
 Quicklinks: [pwd](#pwd), [ls](#ls), [mkdir](#mkdir), [cd](#cd), [vim](#vim)
@@ -21,9 +23,11 @@ Quicklinks: [pwd](#pwd), [ls](#ls), [mkdir](#mkdir), [cd](#cd), [vim](#vim)
 
 Quicklinks: [cp](#cp), [mv](#mv)
 
-**2.** [Advanced Usage](#advanced-usage)
+## PART 2 ##
 
-**3.** [Other Usage](#other-usage)
+**2.** [Advanced Usage](#advanced-usage) (Scripting, loops, etc.)
+
+**3.** [Other Usage](#other-usage) (Other quality of life improvemeents.)
 
 # Background #
 NOTE 1: Example code will be shown in cells, where the "$" (dollar sign) represents the input command. Cells without the "$" (dollar sign) will represent output of said command. This is because the command shell will tell you what type of user you are when you're logged into the command line environment. The dollar sign represents normal user.
