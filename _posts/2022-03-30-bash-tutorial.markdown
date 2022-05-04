@@ -15,7 +15,7 @@ Feel free to refer back to this page as you go on.
 
 ## PART 1 ##
 
-**1A.** [Basic Usage](#basic-usage) (Navigating, Make Files) 
+**1A.** [Basic Usage Part 1](#basic-usage-part-1) (Navigating, Make Files) 
 
 Quicklinks: [pwd](#pwd), [ls](#ls), [mkdir](#mkdir), [cd](#cd), [vim](#vim)
 
