@@ -19,7 +19,7 @@ Feel free to refer back to this page as you go on.
 
 Quicklinks: [pwd](#pwd), [ls](#ls), [mkdir](#mkdir), [cd](#cd), [vim](#vim)
 
-**1B.** [Basic Usage Part 2)(#basic-usage-part-2) (Copy/Paste, Moving Files, Renaming, Misc.
+**1B.** [Basic Usage Part 2](#basic-usage-part-2) (Copy/Paste, Moving Files, Renaming, Misc.
 
 Quicklinks: [cp](#cp), [mv](#mv)
 
