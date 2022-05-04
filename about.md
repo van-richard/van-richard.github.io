@@ -3,12 +3,9 @@ layout: main
 title: About Me
 ---
 
-## About
+## About ME ##
 
-The king of fucking around and finding out
-.
-.
-.
+The king of fucking around and finding out!
 
 **Disclaimer:** This website is under constant modification.
 If you find something isn't right then,
