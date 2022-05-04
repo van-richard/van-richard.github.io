@@ -18,7 +18,7 @@ social-linkedin: van-richard # add your Linkedin handle
 social-email: van@ou.edu # add your Email address
 
 # Links
-[about](/_about/about.md)
+[about](/about.md)
 
 # Disqus
 discus-identifier: VV # add your discus identifier
