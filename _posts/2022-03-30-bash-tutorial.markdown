@@ -19,12 +19,16 @@ Quicklinks: [pwd](#pwd), [ls](#ls), [mkdir](#mkdir), [cd](#cd), [vim](#vim)
 
 **1B.** [Basic Usage Part 2)(#basic-usage-part-2) (Copy/Paste, Moving Files, Renaming, Misc.
 
+Quicklinks: [cp](#cp), [mv](#mv)
+
 **2.** [Advanced Usage](#advanced-usage)
 
 **3.** [Other Usage](#other-usage)
 
 # Background #
-NOTE: Example code will be shown in cells, where the "$" (dollar sign) represents the input command. Cells without the "$" (dollar sign) will represent output of said command. This is because the command shell will tell you what type of user you are when you're logged into the command line environment. The dollar sign represents normal user.
+NOTE 1: Example code will be shown in cells, where the "$" (dollar sign) represents the input command. Cells without the "$" (dollar sign) will represent output of said command. This is because the command shell will tell you what type of user you are when you're logged into the command line environment. The dollar sign represents normal user.
+
+NOTE 2: When coding, naming files/folders should be descriptive. This often requires us to use multiple words separated by a space such as: blue sky, red ball, etc. While naming files/folders can include spaces, we often separate them by dashes (-) or underscores (_). This is because names containing spaces require quotes when calling them through commmand line. In this tutorial, I will use underscores (_).
 
 Briefly, the command shell is just a program that takes in text commands, passes this information to your computer, and runs them. There are a few different flavors of command shells, such as bash, csh, ksh, DOS (Windows), etc. Although there are some overlap between the languages, each may contain their own special syntax for specific functions. If you're ever in doubt, you can find which flavor you're using by running the following command on your Terminal. Then Google your shell name + "cheat sheet" (Ex: "bash cheat sheet"), and look at images. 
 
@@ -133,9 +137,50 @@ Now you have a new file called "text.txt" in your folder "test_1".
 
 At this point, we can start learning how to copy/paste, move, and  rename files/folders!
 
-To copy files, we will use the `cp` command. To copy a folder we need to add a flag with to the copy command, like `cp -r`. Flags allow you to modify the operation of the command, in the case of `cp -r`, we want to "**c**o**p**y folde**r**"
+To copy files, we will use the `cp` command. The format of the operation follows:
+
+{% highlight ruby %}
+$ cp FILE1 FILE2 
+{% endhighlight %}
+
+It's also important to know that you don't have to be in your working directory. FILE1 and FILE2 can point to the location you want to copy. Say that you want to copy the file back one folder it would look like:
+
+{% highlight ruby %}
+$ cp FILE1 ../FILE2 
+{% endhighlight %}
+
+## cp ##
+
+{% highlight ruby %}
+$ cp test.txt test2.txt
+{% endhighlight %}
+
+You should see that you have two text file copies. If you use `cat` on both files, they should contain the same information.
+
+To copy a folder we need to add a flag with to the copy command, like `cp -r`. Flags allow you to modify the operation of the command, in the case of `cp -r`, we want to "**c**o**p**y folde**r**". In this example, we will copy the folder test_1. To do so, we'll need to change directories out one folder.
+
+{% highlight ruby %}
+$ cd ..
+$ cp -r test_1 test_2
+{% endhighlight %}
+
+The next command is `mv`, which can both move folders and rename! To move a folder, you will specify the folder you want to move, and then the location you want to move the file/folder too. Unlike `cp` which requires the `-r` flag to specify folder, `mv` will work on both files/folders. As an example, we'll make a new folder called "new_directory", and move test_2 to it.
+
+{% highlight ruby %}
+$ mv FOLDER1 FOLDER2
+{% endhighlight %}
+
+## mv ##
+
+{% highlight ruby %}
+$ mkdir new_directory
+$ mv test_2 new_directory
+{% endhighlight %}
+
+If you `ls` your current directory, you should see that test_2 is no longer there, and that a new folder is made. If you `cd` into "new_directory", you should see that test_2 is there, along with the contents of the folder (test2.txt).
+
+This conclude the introduction and basic usage of command line! There are tons of other commands that can be learned to help you achieve whatever goal you need, but everything I've shown you today should get you started with command line. Thank you for following!
+
+If you're interested in more advanced usage, you can move on to Part 2 of the tutorial! 
 
 
-# Advanced Usage #
-
-# Other Usage #
