@@ -12,6 +12,7 @@ site-twitter: #if your site has a twitter account, enter it here
 author: Richard Van # add your name
 author-img: test.jpg  # add your photo
 about-author: I hate html already. # add description
+social-google: citations?user=d0ffBOYAAAAJ&hl=en&oi=sra
 social-twitter: omgitsvannyvan # add your Twitter handle
 social-github: van-richard # add your Github handle
 social-linkedin: van-richard # add your Linkedin handle
