@@ -52,7 +52,7 @@ Personally, I use bash, and the following tutorial will be tailored towards that
 $ chsh -s /bin/bash
 {% endhighlight %}
 
-# Basic Usage Part 1 #
+# Basic Usage Part 1A #
 Once again open your terminal (if you closed it), and you should see that you're logged into the command line environment with your account name and a dollar sign. The first command is `pwd`. `pwd` stands for Print Working Directory, which will tell you were you are currently located in your system. Two examples are shown, one is on my local macbook, and the other is on my supercomputing account.
 
 NOTE: Typically, your shell will always start at your default home location (if this is a new window that is opened for your terminal). Your home is usually set when you first made an account, and should have access to folders such as, Desktop, Documents, Pictures, etc.
@@ -137,7 +137,7 @@ Once written, save the file by pressing the `esc` key, and typing `:wq`. The `es
 
 Now you have a new file called "text.txt" in your folder "test_1".
 
-# Basic Usage Part 2 #
+# Basic Usage Part 1B #
 
 At this point, we can start learning how to copy/paste, move, and  rename files/folders!
 
