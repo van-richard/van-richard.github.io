@@ -5,7 +5,6 @@ date: 2022-05-12 22:00:00 +0000
 description: You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. # Add post description (optional)
 img:  # Add image post (optional)
 ---
-
 Welcome to part 2 of the Command Line Basic Usage!
 
 In this tutorial, we'll go over the basics of loops, and making scripts. Loops in bash (or any coding language in general) are those quality of life improvements you'll find when it comes to daunting and repetitive task. A bash loop statement allows code to be repeatedly executed. This allow us to take a series of commands and keep re-running them until a particular situation is reached. 
