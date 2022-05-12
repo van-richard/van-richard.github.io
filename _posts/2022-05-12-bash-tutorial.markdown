@@ -1,15 +1,16 @@
 ---
 layout: post
-title: "Command Line Tutorial! (Part 1)"
-date: 2022-03-30 22:00:00 +0000
+title: "Command Line Tutorial! (Part 2)"
+date: 2022-05-12 22:00:00 +0000
 description: You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. # Add post description (optional)
 img:  # Add image post (optional)
 ---
-Are you ready? Because, I'm about to change your world!!!! 
 
-This post is dedicated to developing your skills in usage of the command line interface. Like any programming language, it will be overwhelming at first and will take a little practice and getting use to. My goal for this tutorial is for you to be comfortable with basic syntax, and eventually develop your own scripts to start automating your tasks (no one likes repetitive tasks, right?). To do that, I will break the tutorial into 3 sections. In the first section, Basic Usage, you will learn how to navigate around the Terminal/Linux command line with Bash (more info on this later~). The second section, Advanced Usage, will cover scripting, loops, and other "advanced" features (Quotes on advanced because I don't like differentiating between basic and advanced uses, but for the tutorial's sake *sigh*). The last section, Other Uses, will cover other command line functions that I found useful from scripting for Molecular Dynamics simulations and Bio/Chem-informatics.    
+Welcome to part 2 of the Command Line Basic Usage!
 
-Feel free to refer back to this page as you go on. 
+In this tutorial, we'll go over the basics of loops, and making scripts. Loops in bash (or any coding language in general) are those quality of life improvements you'll find when it comes to daunting and repetitive task. A bash loop statement allows code to be repeatedly executed. This allow us to take a series of commands and keep re-running them until a particular situation is reached. 
+
+There are 3 basic loop structures in Bash scripting which we'll look at below. 
 
 # Table of Contents #
 
@@ -25,16 +26,11 @@ Quicklinks: [cp](#cp), [mv](#mv), [rm](#rm)
 
 ## PART 2 ##
 
-**2.** [Advanced Usage](/2022-05-12-bash-tutorial.markdown) (Scripting, loops, etc.)
+**2.** [Advanced Usage](#advanced-usage) (Scripting, loops, etc.)
 
 **3.** [Other Usage](#other-usage) (Other quality of life improvemeents.)
 
 # Background #
-NOTE 1: Example code will be shown in cells, where the "$" (dollar sign) represents the input command. Cells without the "$" (dollar sign) will represent output of said command. This is because the command shell will tell you what type of user you are when you're logged into the command line environment. The dollar sign represents normal user.
-
-NOTE 2: When coding, naming files/folders should be descriptive. This often requires us to use multiple words separated by a space such as: blue sky, red ball, etc. While naming files/folders can include spaces, we often separate them by dashes (-) or underscores (__). This is because names containing spaces require quotes when calling them through commmand line. In this tutorial, I will use underscores (__).
-
-Briefly, the command shell is just a program that takes in text commands, passes this information to your computer, and runs them. There are a few different flavors of command shells, such as bash, csh, ksh, DOS (Windows), etc. Although there are some overlap between the languages, each may contain their own special syntax for specific functions. If you're ever in doubt, you can find which flavor you're using by running the following command on your Terminal. Then Google your shell name + "cheat sheet" (Ex: "bash cheat sheet"), and look at images. 
 
 {% highlight ruby %}
 $ echo $SHELL
