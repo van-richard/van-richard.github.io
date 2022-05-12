@@ -21,7 +21,7 @@ Quicklinks: [pwd](#pwd), [ls](#ls), [mkdir](#mkdir), [cd](#cd), [vim](#vim)
 
 **1B.** [Basic Usage Part 2](#basic-usage-part-2) (Copy/Paste, Moving Files, Renaming, Misc.
 
-Quicklinks: [cp](#cp), [mv](#mv)
+Quicklinks: [cp](#cp), [mv](#mv), [rm](#rm)
 
 ## PART 2 ##
 
@@ -182,6 +182,28 @@ $ mv test_2 new_directory
 {% endhighlight %}
 
 If you `ls` your current directory, you should see that test_2 is no longer there, and that a new folder is made. If you `cd` into "new_directory", you should see that test_2 is there, along with the contents of the folder (test2.txt).
+
+Now as a recep, we've learned to navigate our computer via the command line with `cd`, look at and make files `vi`, copy `cp`, and move/rename files/folders `mv`. The last commmand for this short introduction is deleting files/folders. Similar to copying, if we want to remove a folder, we'll need to add a "-r" flag. First, we will delete a file in the "new_directory folder." Then we'll delete the "test_1" folder.
+
+{% highlight ruby %}
+$ rm FILENAME
+{% endhighlight %}
+
+or 
+
+{% highlight ruby %}
+$ rm -r FOLDERNAME
+{% endhighlight %}
+
+## rm ##
+
+{% highlight ruby %}
+$ cd new_directory
+$ rm test2.txt
+$ ls
+$ cd ..
+$ rm -r test_1
+{% endhighlight %}
 
 This conclude the introduction and basic usage of command line! There are tons of other commands that can be learned to help you achieve whatever goal you need, but everything I've shown you today should get you started with command line. Thank you for following!
 
