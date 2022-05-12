@@ -19,13 +19,13 @@ Feel free to refer back to this page as you go on.
 
 Quicklinks: [pwd](#pwd), [ls](#ls), [mkdir](#mkdir), [cd](#cd), [vim](#vim)
 
-**1B.** [Basic Usage Part 2](#basic-usage-part-2) (Copy/Paste, Moving Files, Renaming, Misc.
+**1B.** [Basic Usage Part 2](#basic-usage-part-2) (Copy/Paste, Moving Files, Renaming, Deleting, Misc.
 
 Quicklinks: [cp](#cp), [mv](#mv), [rm](#rm)
 
 ## PART 2 ##
 
-**2.** [Advanced Usage](/bash-tutorial2) (Scripting, loops, etc.)
+**2.** [Advanced Usage](/bash-tutorial2) (Loops, Scripting, etc.)
 
 **3.** [Other Usage](#other-usage) (Other quality of life improvemeents.)
 
