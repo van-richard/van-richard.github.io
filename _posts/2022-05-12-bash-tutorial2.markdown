@@ -36,10 +36,10 @@ An example of using `while` loops can be if we want a sequence of numbers from 1
 {% highlight ruby %}
 $ value=1
 $ while [ $value -le 10 ]
->do
->echo $value
->((value++))
->done
+> do
+> echo $value
+> ((value++))
+> done
 {% endhighlight %}
  
 The next loop structure I like to use is a `for` loop. This is a little different than `while`, namely, what it does is say for each item in a given list, perform the given set of commands. The `for` loop will take each item in the list (in that order), assign that item to the variable, and excute the commands between "do" and "done." The format looks like this:
@@ -58,9 +58,9 @@ To illustrate this, here is an example of looping through a list of names:
 {% highlight ruby %}
 $ names='Richard Scott Van'
 $ for name in $names
->do
->echo $name
->done
+> do
+> echo $name
+> done
 {% endhighlight %}
 
 
