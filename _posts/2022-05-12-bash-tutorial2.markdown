@@ -84,3 +84,6 @@ If you `ls`, you should see the script. To run it, you'll type "bash" before the
 $ bash for_loop_example.sh
 {% endhighlight %}
 
+Once you get better, you can also use `vi` (or any text editor) to make a new file, and then write out the script manually.
+
+
