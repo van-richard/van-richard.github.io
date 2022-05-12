@@ -11,7 +11,7 @@ Welcome to part 2 of the Command Line basic Usage tutorials!!
 # Table of Contents #
 **2.** Advanced Usage (loops, scripting, etc.)
 
-Quicklinks: 
+Quicklinks: [while](#while) 
 
 # Background #
 
@@ -42,3 +42,5 @@ $ while [ $value -le 10 ]
 >done
 {% endhighlight %}
  
+## for ##
+
