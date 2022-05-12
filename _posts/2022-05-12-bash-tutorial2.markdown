@@ -25,7 +25,7 @@ One of the easiest and most useful loops to work with is `while`. When the while
 ## while ##
 
 {% highlight ruby %}
-while [arugment]
+while [ arugment ]
 do
 [commands]
 done
@@ -36,9 +36,9 @@ An example of using `while` loops can be if we want a sequence of numbers from 1
 {% highlight ruby %}
 $ value=1
 $ while [ $value -le 10 ]
-do
-echo $value
-((value++))
-done
+>do
+>echo $value
+>((value++))
+>done
 {% endhighlight %}
  
