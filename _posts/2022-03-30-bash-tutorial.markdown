@@ -25,7 +25,7 @@ Quicklinks: [cp](#cp), [mv](#mv), [rm](#rm)
 
 ## PART 2 ##
 
-**2.** [Advanced Usage](/_posts/2022-05-12-bash-tutorial.markdown) (Scripting, loops, etc.)
+**2.** [Advanced Usage](/_posts/2022-05-12-bash-tutorial2.markdown) (Scripting, loops, etc.)
 
 **3.** [Other Usage](#other-usage) (Other quality of life improvemeents.)
 
