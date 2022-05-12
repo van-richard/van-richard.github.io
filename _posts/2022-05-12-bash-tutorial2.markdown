@@ -63,5 +63,24 @@ $ for name in $names
 > done
 {% endhighlight %}
 
+# Scripting #
 
+I'm sure at this point, you're asking yourself when are you going to need this?? Say you wanted to use Alphafold to predict structures of your protein, but you have a lot of homologues. To keep things orderly, you might create separate folders for each homologue, and have the same inputs for each folder, where the only difference is the sequence. This will be a lot of copying, making files, and work. So we can use a loop, but what if you plan on doing this multiple times for other projects? We can save our commands to a bash script. Bash scripts are ordinary text files which contain commands or mixture of commands. An example could be what we did for the previous `for` loop. To turn it into a script, we'll add the ">" mark and give the file the name, "for loop example."
+
+Now, how does bash differentiate between normal text files and scripts? We'll need to add a line to "for_loop_example.sh," specifically we'll add one line at the top. This line is called a Shebang which tells bash to read it as script. Additionally, I prefer to name my scripts with the ".sh" extension to differentiate this with other files. So the first thing I'll do is use `echo` to first make the Shebang, and then append (>>; two greater than symbols) the for loop to the file. 
+
+{% highlight ruby %}
+$ echo "$!/bin/bash" > for_loop_example.sh
+$ names='richard scott van'
+$ for name in $names
+> do
+> echo $name
+> done >> for_loop_example.sh
+{% endhighlight %}
+
+If you `ls`, you should see the script. To run it, you'll type "bash" before the script:
+
+{% highlight ruby %}
+$ bash for_loop_example.sh
+{% endhighlight %}
 
