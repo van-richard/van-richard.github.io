@@ -1362,6 +1362,18 @@ a.newer-posts:hover {
   opacity: .8;
 }
 
+/* - - - - - - - - - - jumbotron  - - - - - - - - - - */
+
+.jumbotron-image {
+  background-position: center center;
+  background-repeat: no-repeat;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover; 
+  background-size: cover;
+}
+
+
 /* - - - - - - - - - - Media Styles - - - - - - - - - - */
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
