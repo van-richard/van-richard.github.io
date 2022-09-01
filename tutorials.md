@@ -81,7 +81,6 @@ title: Tutorials
     </div>
   </div>
 </div>
-</body>
 
 {% for post in paginator.posts %}
 <article class="post">
@@ -99,3 +98,5 @@ title: Tutorials
 {% endfor %}
 
 {% include pagination.html %}
+
+</body>
