@@ -45,7 +45,7 @@ title: Tutorials
   <div class="row">
     <div class="col-sm-4">
       <span class="glyphicon glyphicon-off"></span>
-      <a href="https://van-richard.github.io/commandline/">COMMAND LINE</a>
+      <p> test </p>
     </div>
     <div class="col-sm-4">
       <span class="glyphicon glyphicon-heart"></span>
