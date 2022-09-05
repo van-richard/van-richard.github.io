@@ -1,5 +1,6 @@
 ---
 layout: main
+title: Command Line
 ---
 {% for post in paginator.posts %}
 <article class="post">
