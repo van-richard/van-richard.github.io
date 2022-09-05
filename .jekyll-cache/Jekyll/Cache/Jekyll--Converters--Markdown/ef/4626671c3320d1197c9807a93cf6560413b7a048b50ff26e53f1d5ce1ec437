@@ -1,4 +1,4 @@
-I"	<head>
+I"©	<head>
   <!-- Theme Made By www.w3schools.com - No Copyright -->
   <title>Bootstrap Theme Company Page</title>
   <meta charset="utf-8" />
@@ -76,5 +76,21 @@
     </div>
   </div>
 </div>
+
+
+
+<div class="container">
+  <nav class="pagination" role="pagination">
+    <ul>
+      
+
+      
+      
+      
+    </ul>
+  </nav>
+</div>
+
+
 </body>
 :ET

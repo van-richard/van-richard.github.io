@@ -48,7 +48,7 @@ title: Tutorials
   <div class="row">
     <div class="col-sm-4">
       <span class="glyphicon glyphicon-off"></span>
-      <h4>POWER</h4>
+      <h4>COMMAND LINE</h4>
       <p>Lorem ipsum dolor sit amet..</p>
     </div>
     <div class="col-sm-4">

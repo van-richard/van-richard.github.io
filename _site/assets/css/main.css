@@ -973,7 +973,7 @@ table tfoot td {
   margin: 0 0 10px;
   position: relative;
   padding-bottom: 15px;
-  font-size: 18px;
+  font-size: 16px;
   text-transform: uppercase;
   color: #333030;
   font-weight: 700;
@@ -996,7 +996,7 @@ table tfoot td {
 }
 
 .about p {
-  font-size: 18px;
+  font-size: 16px;
   margin: 0 0 10px;
 }
 
@@ -1361,13 +1361,6 @@ a.newer-posts:hover {
   text-decoration: underline;
   opacity: .8;
 }
-
-/* - - - - - - - - - - jumbotron  - - - - - - - - - - */
-
-.jumbotron-image {
-  font-family: 'PT Serif', serif;
-}
-
 
 /* - - - - - - - - - - Media Styles - - - - - - - - - - */
 /* Medium Devices, Desktops */
