@@ -12,9 +12,6 @@ title: Tutorials
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <style>
-  body {
-  background: url('assets/img/Fuji-1.png') no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;>
-  }
   .jumbotron {
     background-color: rgba(119, 136, 153, 0.9);
     padding: 100px 25px;
@@ -48,8 +45,8 @@ title: Tutorials
   <div class="row">
     <div class="col-sm-4">
       <span class="glyphicon glyphicon-off"></span>
+      <a href="https://van-richard.github.io/commandline">COMMAND LINE</a>
       <h4>COMMAND LINE</h4>
-      <p>Lorem ipsum dolor sit amet..</p>
     </div>
     <div class="col-sm-4">
       <span class="glyphicon glyphicon-heart"></span>
@@ -81,22 +78,5 @@ title: Tutorials
     </div>
   </div>
 </div>
-
-{% for post in paginator.posts %}
-<article class="post">
-  {% if post.img %}
-    <a class="post-thumbnail" style="background-image: url({{"/assets/img/" | prepend: site.baseurl | append : post.img}})" href="{{post.url | prepend: site.baseurl}}"></a>
-  {% else %}
-  {% endif %}
-  <div class="post-content">
-    <h2 class="post-title"><a href="{{post.url | prepend: site.baseurl}}">{{post.title}}</a></h2>
-    <p>{{ post.content | strip_html | truncatewords: 15 }}</p>
-    <span class="post-date">{{post.date | date: '%Y, %b %d'}}&nbsp;&nbsp;&nbsp;—&nbsp;</span>
-    <span class="post-words">{% capture words %}{{ post.content | number_of_words }}{% endcapture %}{% unless words contains "-" %}{{ words | plus: 250 | divided_by: 250 | append: " minute read" }}{% endunless %}</span>
-  </div>
-</article>
-{% endfor %}
-
-{% include pagination.html %}
 
 </body>
