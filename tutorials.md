@@ -1,81 +1,19 @@
 ---
 layout: main
-title: Tutorials
 ---
-
-<head>
-  <!-- Theme Made By www.w3schools.com - No Copyright -->
-  <title>Bootstrap Theme Company Page</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <style>
-  .jumbotron {
-    background-color: rgba(119, 136, 153, 0.9);
-    padding: 100px 25px;
-  }
-  .container-fluid {
-    padding: 60px 50px;
-  }
-  .bg-white {
-    background-color: rgba(255, 255, 255, 0.9);
-  }
-  .bg-grey {
-    background-color: rgba(119, 136, 153, 0.9);
-  }
-  .logo {
-    font-size: 200px;
-  }
-  @media screen and (max-width: 768px) {
-    .col-sm-4 {
-      text-align: center;
-      margin: 25px 0;
-    }
-  }
-  </style>
-</head>
-<body>
-
-<!-- Container (Services Section) -->
-<div class="container-fluid text-center bg-grey">
-  <h2>QUICK LINKS</h2>
-  <br>
-  <div class="row">
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-off"></span>
-      <p> test </p>
-    </div>
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-heart"></span>
-      <h4>LOVE</h4>
-      <p>Lorem ipsum dolor sit amet..</p>
-    </div>
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-lock"></span>
-      <h4>JOB DONE</h4>
-      <p>Lorem ipsum dolor sit amet..</p>
-    </div>
+{% for post in paginator.posts %}
+<article class="post">
+  {% if post.img %}
+    <a class="post-thumbnail" style="background-image: url({{"/assets/img/" | prepend: site.baseurl | append : post.img}})" href="{{post.url | prepend: site.baseurl}}"></a>
+  {% else %}
+  {% endif %}
+  <div class="post-content">
+    <h2 class="post-title"><a href="{{post.url | prepend: site.baseurl}}">{{post.title}}</a></h2>
+    <p>{{ post.content | strip_html | truncatewords: 15 }}</p>
+    <span class="post-date">{{post.date | date: '%Y, %b %d'}}&nbsp;&nbsp;&nbsp;—&nbsp;</span>
+    <span class="post-words">{% capture words %}{{ post.content | number_of_words }}{% endcapture %}{% unless words contains "-" %}{{ words | plus: 250 | divided_by: 250 | append: " minute read" }}{% endunless %}</span>
   </div>
-  <br><br>
-  <div class="row">
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-leaf"></span>
-      <h4>GREEN</h4>
-      <p>Lorem ipsum dolor sit amet..</p>
-    </div>
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-certificate"></span>
-      <h4>CERTIFIED</h4>
-      <p>Lorem ipsum dolor sit amet..</p>
-    </div>
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-wrench"></span>
-      <h4 style="color:#303030;">HARD WORK</h4>
-      <p>Lorem ipsum dolor sit amet..</p>
-    </div>
-  </div>
-</div>
+</article>
+{% endfor %}
 
-</body>
+{% include pagination.html %}
