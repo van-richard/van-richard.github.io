@@ -4,6 +4,7 @@ title: "Command Line Tutorial! (Part 2)"
 date: 2022-05-12
 description: 
 img:
+categories: linux
 ---
 
 Welcome to part 2 of the Command Line basic Usage tutorials!!
