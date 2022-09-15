@@ -54,12 +54,12 @@ permalink: /tutorials/
       <a href="van-richard.github.io/tutorials/linux/>Intro. to Command Line</a>
     </div>
     <div class="col-sm-4">
-      <span class="fa-solid fa-laptop-code logo-small"></span>
+      <span class="fa fa-print logo-small"></span>
       <h4>PYTHON</h4>
       <p>Lorem ipsum dolor sit amet..</p>
     </div>
     <div class="col-sm-4">
-      <span class="fa-solid fa-display-code logo-small"></span>
+      <span class="fa- fa-desktop logo-small"></span>
       <h4>AMBER</h4>
       <p>Lorem ipsum dolor sit amet..</p>
     </div>
