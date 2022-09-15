@@ -51,7 +51,7 @@ permalink: /tutorials/
     <div class="col-sm-4">
       <span class="fa fa-linux logo-small"></span>
       <h4>LINUX</h4>
-      <a href="van-richard.github.io/tutorials/linux/>Intro. to Command Line</a>
+      <a style = " white-space:nowrap; " href="van-richard.github.io/tutorials/linux/>Intro. to Command Line</a>
     </div>
     <div class="col-sm-4">
       <span class="fa fa-print logo-small"></span>
@@ -59,7 +59,7 @@ permalink: /tutorials/
       <p>Lorem ipsum dolor sit amet..</p>
     </div>
     <div class="col-sm-4">
-      <span class="fa- fa-desktop logo-small"></span>
+      <span class="fa fa-video-camera logo-small"></span>
       <h4>AMBER</h4>
       <p>Lorem ipsum dolor sit amet..</p>
     </div>
@@ -67,17 +67,17 @@ permalink: /tutorials/
   <br><br>
   <div class="row">
     <div class="col-sm-4">
-      <span class="glyphicon glyphicon-leaf logo-small"></span>
+      <span class="fa fa-code-fork logo-small"></span>
       <h4>SOFTWARE</h4>
       <p>Lorem ipsum dolor sit amet..</p>
     </div>
     <div class="col-sm-4">
-      <span class="glyphicon glyphicon-certificate logo-small"></span>
+      <span class="fa fa-laptop logo-small"></span>
       <h4>COMPUTATIONAL CHEMISTRY</h4>
       <p>Lorem ipsum dolor sit amet..</p>
     </div>
     <div class="col-sm-4">
-      <span class="glyphicon glyphicon-wrench logo-small"></span>
+      <span class="fa fa-cloud-upload logo-small"></span>
       <h4 style="color:#303030;">SUPERCOMPUTER</h4>
       <p>Lorem ipsum dolor sit amet..</p>
     </div>
