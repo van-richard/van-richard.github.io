@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Command Line Tutorial! (Part 2) - Richard's World!</title>
+
+  <!-- Edit site and author settings in `_config.yml` to make the social details your own -->
+
+    <meta content="Richard's World!" property="og:site_name">
+  
+    <meta content="Command Line Tutorial! (Part 2)" property="og:title">
+  
+  
+    <meta content="article" property="og:type">
+  
+  
+    <meta content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+" property="og:description">
+  
+  
+    <meta content="http://localhost:4000/bash-tutorial2/" property="og:url">
+  
+  
+    <meta content="2022-05-12T00:00:00-05:00" property="article:published_time">
+    <meta content="http://localhost:4000/about/" property="article:author">
+  
+  
+    <meta content="http://localhost:4000/assets/img/test.jpg" property="og:image">
+  
+  
+    
+    <meta content="linux" property="article:section">
+    
+  
+  
+    
+  
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@">
+    <meta name="twitter:creator" content="@OMGITSvanADIUM">
+  
+    <meta name="twitter:title" content="Command Line Tutorial! (Part 2)">
+  
+  
+    <meta name="twitter:url" content="http://localhost:4000/bash-tutorial2/">
+  
+  
+    <meta name="twitter:description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+">
+  
+  
+    <meta name="twitter:image:src" content="http://localhost:4000/assets/img/test.jpg">
+  
+
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta property="og:image" content="">
+	<link rel="shortcut icon" href="/assets/img/test.jpg" type="image/x-icon">
+	<link rel="apple-touch-icon" href="/assets/img/test.jpg">
+	<link rel="apple-touch-icon" sizes="72x72" href="/assets/img/test.jpg">
+	<link rel="apple-touch-icon" sizes="144x144" href="/assets/img/test.jpg">
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#263959">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#263959">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#263959">
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=PT+Serif:400,700|Lato:300,400,700&display=swap" rel="stylesheet">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="/assets/fonts/font-awesome/css/font-awesome.min.css">
+	<!-- Styles -->
+	<link rel="stylesheet" href="/assets/css/main.css">
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <aside class="sidebar">
+  <header>
+    <div class="about">
+      <div class="cover-author-image">
+        <a href="/"><img src="/assets/img/test.jpg" alt="Richard Van"></a>
+      </div>
+      <div class="author-name">Richard Van</div>
+      <br>
+      <h4>Computational Biochemisty</h4>
+      <br>
+      <a href="https://sites.google.com/view/ccats-group">CCATS</a>      
+      <br>
+      <a href="https://van-richard.github.io/about/">ABOUT ME</a>      
+      <br>
+      <a href="https://van-richard.github.io/tutorials/">TUTORIALS</a>      
+      <br>
+    </div>
+  </header> <!-- End Header -->
+  <footer>
+    <section class="contact">
+      <h3 class="contact-title">Contact me</h3>
+      <ul>
+        
+          <li class="google"><a href="https://scholar.google.com/citations?user=d0ffBOYAAAAJ&hl=en&oi=sra" target="_blank"><i class="fa fa-google"></i></a></li>
+        
+        
+          <li><a href="https://twitter.com/OMGITSvanADIUM" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+        
+        
+          <li class="github"><a href="http://github.com/van-richard" target="_blank"><i class="fa fa-github"></i></a></li>
+        
+        
+          <li class="linkedin"><a href="https://in.linkedin.com/in/van-richard" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+        
+        
+          <li class="email"><a href="mailto:van@ou.edu"><i class="fa fa-envelope-o"></i></a></li>
+        
+      </ul>
+    </section> <!-- End Section Contact -->
+    <div class="copyright">
+      <p>2022 &copy; Richard Van</p>
+    </div>
+  </footer> <!-- End Footer -->
+</aside> <!-- End Sidebar -->
+<div class="content-box clearfix">
+  <article class="article-page">
+  <div class="page-content">
+    
+    
+    <div class="wrap-content">
+      <header class="header-page">
+        <h1 class="page-title">Command Line Tutorial! (Part 2)</h1>
+        <div class="page-date"><span>2022, May 12&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+      </header>
+      <p>Welcome to part 2 of the Command Line basic Usage tutorials!!</p>
+
+<h1 id="table-of-contents">Table of Contents</h1>
+<p><strong>2.</strong> Advanced Usage (loops, scripting, etc.)</p>
+
+<p>Quicklinks: <a href="#while">while</a>, <a href="#for">for</a></p>
+
+<h1 id="background">Background</h1>
+
+<p>In this tutorial, we will go over the formating of loops, and then making these into scripts. Loops in bash (or any coding language in general) are those quality of life improvements you find as you tacking more daunting and reptetitive tasks. A bash loop is a statement that allows code to be repeatedly excuted. This allows us to take a series of commands and keep re-running them until a particular situation is reached.</p>
+
+<p>There are loop structures in bash scripting, however, we’ll look the 2 I use the most below.</p>
+
+<h1 id="loops">Loops</h1>
+<p>One of the easiest and most useful loops to work with is <code class="language-plaintext highlighter-rouge">while</code>. When the while expression is true, keep executing these lines of code. The format of the command will look like this:</p>
+
+<h2 id="while">while</h2>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">while</span> <span class="p">[</span> <span class="n">arugment</span> <span class="p">]</span>
+<span class="k">do</span>
+<span class="p">[</span><span class="n">commands</span><span class="p">]</span>
+<span class="n">done</span></code></pre></figure>
+
+<p>An example of using <code class="language-plaintext highlighter-rouge">while</code> loops can be if we want a sequence of numbers from 1 to 10. We’ll start by setting a variable to a number. The variable I’ll use is “value.” The argument we’ll use is when “value” is less than or equal (-le) to 10, print the number of “value”, and then add 1 to value [((value++))]. Recall that the “$” is where I entered code, you’ll see a new symbol (“&gt;”) when excuting loops. Bash is essentially looking for you to end the loop with the statement “done.”</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="err">$</span> <span class="n">value</span><span class="o">=</span><span class="mi">1</span>
+<span class="err">$</span> <span class="k">while</span> <span class="p">[</span> <span class="vg">$value</span> <span class="o">-</span><span class="n">le</span> <span class="mi">10</span> <span class="p">]</span>
+<span class="o">&gt;</span> <span class="k">do</span>
+<span class="o">&gt;</span> <span class="n">echo</span> <span class="vg">$value</span>
+<span class="o">&gt;</span> <span class="p">((</span><span class="n">value</span><span class="o">++</span><span class="p">))</span>
+<span class="o">&gt;</span> <span class="n">done</span></code></pre></figure>
+
+<p>The next loop structure I like to use is a <code class="language-plaintext highlighter-rouge">for</code> loop. This is a little different than <code class="language-plaintext highlighter-rouge">while</code>, namely, what it does is say for each item in a given list, perform the given set of commands. The <code class="language-plaintext highlighter-rouge">for</code> loop will take each item in the list (in that order), assign that item to the variable, and excute the commands between “do” and “done.” The format looks like this:</p>
+
+<h2 id="for">for</h2>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">for</span> <span class="o">**</span><span class="n">variable</span><span class="o">**</span> <span class="k">in</span> <span class="p">[</span><span class="n">list</span><span class="p">]</span>
+<span class="k">do</span>
+<span class="p">[</span><span class="n">commands</span><span class="p">]</span>
+<span class="n">done</span></code></pre></figure>
+
+<p>To illustrate this, here is an example of looping through a list of names:</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="err">$</span> <span class="n">names</span><span class="o">=</span><span class="s1">'Richard Scott Van'</span>
+<span class="err">$</span> <span class="k">for</span> <span class="nb">name</span> <span class="k">in</span> <span class="vg">$names</span>
+<span class="o">&gt;</span> <span class="k">do</span>
+<span class="o">&gt;</span> <span class="n">echo</span> <span class="vg">$name</span>
+<span class="o">&gt;</span> <span class="n">done</span></code></pre></figure>
+
+<h1 id="scripting">Scripting</h1>
+
+<p>I’m sure at this point, you’re asking yourself when are you going to need this?? Say you wanted to use Alphafold to predict structures of your protein, but you have a lot of homologues. To keep things orderly, you might create separate folders for each homologue, and have the same inputs for each folder, where the only difference is the sequence. This will be a lot of copying, making files, and work. So we can use a loop, but what if you plan on doing this multiple times for other projects? We can save our commands to a bash script. Bash scripts are ordinary text files which contain commands or mixture of commands. An example could be what we did for the previous <code class="language-plaintext highlighter-rouge">for</code> loop. To turn it into a script, we’ll add the “&gt;” mark and give the file the name, “for loop example.”</p>
+
+<p>Now, how does bash differentiate between normal text files and scripts? We’ll need to add a line to “for_loop_example.sh,” specifically we’ll add one line at the top. This line is called a Shebang which tells bash to read it as script. Additionally, I prefer to name my scripts with the “.sh” extension to differentiate this with other files. So the first thing I’ll do is use <code class="language-plaintext highlighter-rouge">echo</code> to first make the Shebang, and then append (»; two greater than symbols) the for loop to the file.</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="err">$</span> <span class="n">echo</span> <span class="s2">"$!/bin/bash"</span> <span class="o">&gt;</span> <span class="n">for_loop_example</span><span class="p">.</span><span class="nf">sh</span>
+<span class="err">$</span> <span class="n">names</span><span class="o">=</span><span class="s1">'richard scott van'</span>
+<span class="err">$</span> <span class="k">for</span> <span class="nb">name</span> <span class="k">in</span> <span class="vg">$names</span>
+<span class="o">&gt;</span> <span class="k">do</span>
+<span class="o">&gt;</span> <span class="n">echo</span> <span class="vg">$name</span>
+<span class="o">&gt;</span> <span class="n">done</span> <span class="o">&gt;&gt;</span> <span class="n">for_loop_example</span><span class="p">.</span><span class="nf">sh</span></code></pre></figure>
+
+<p>If you <code class="language-plaintext highlighter-rouge">ls</code>, you should see the script. To run it, you’ll type “bash” before the script:</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="err">$</span> <span class="n">bash</span> <span class="n">for_loop_example</span><span class="p">.</span><span class="nf">sh</span></code></pre></figure>
+
+<p>Once you get better, you can also use <code class="language-plaintext highlighter-rouge">vi</code> (or any text editor) to make a new file, and then write out the script manually.</p>
+
+
+      <div class="page-footer">
+        <div class="page-share">
+          <a href="https://twitter.com/intent/tweet?text=Command Line Tutorial! (Part 2)&url=http://localhost:4000/bash-tutorial2/" title="Share on Twitter" rel="nofollow" target="_blank">Twitter</a>
+          <a href="https://facebook.com/sharer.php?u=http://localhost:4000/bash-tutorial2/" title="Share on Facebook" rel="nofollow" target="_blank">Facebook</a>
+          <a href="https://plus.google.com/share?url=http://localhost:4000/bash-tutorial2/" title="Share on Google+" rel="nofollow" target="_blank">Google+</a>
+        </div>
+        <div class="page-tag">
+          
+        </div>
+      </div>
+    </div> <!-- End Wrap Content -->
+  </div> <!-- End Page Content -->
+</article> <!-- End Article Page -->
+
+</div>
+
+  </div>
+  
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', '', 'auto');
+  ga('send', 'pageview');
+</script> <!-- End Analytics -->
+
+</body>
+</html>

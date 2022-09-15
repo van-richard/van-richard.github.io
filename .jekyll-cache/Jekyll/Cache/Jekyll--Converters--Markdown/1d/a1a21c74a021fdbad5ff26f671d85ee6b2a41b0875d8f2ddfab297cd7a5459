@@ -1,0 +1,76 @@
+I"†<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>Bootstrap Theme Company Page</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+  .jumbotron {
+    background-color: #f4511e;
+    color: #fff;
+    padding: 100px 25px;
+  }
+  .container-fluid {
+    padding: 50px 100px;
+  }
+  .bg-grey {
+    background-color: #f6f6f6;
+  }
+  .logo-small {
+    color: #8A0808;
+    font-size: 50px;
+  }
+  .logo {
+    color: #f4511e;
+    font-size: 200px;
+  }
+  </style>
+</head>
+<body>
+
+<!-- Container (Services Section) -->
+<div class="container-fluid text-center">
+  <h2>What do you need help with?</h2>
+  <br />
+  <div class="row">
+    <div class="col-sm-4">
+      <span class="fa fa-linux logo-small"></span>
+      <h4>LINUX <br /> <br /> </h4>
+        <p><a href="/linux/">Intro. to Command Line</a></p>
+    </div>
+    <div class="col-sm-4">
+      <span class="fa fa-print logo-small"></span>
+      <h4>PYTHON <br /> <br /> </h4>
+      <p>Lorem ipsum dolor sit amet..</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="fa fa-video-camera logo-small"></span>
+      <h4>MACHINE LEARNING <br /> </h4>
+      <p>Lorem ipsum dolor sit amet..</p>
+    </div>
+  </div>
+  <br /><br />
+  <div class="row">
+    <div class="col-sm-4">
+      <span class="fa fa-code-fork logo-small"></span>
+      <h4>SOFTWARE <br /> <br /> </h4>
+      <h4> </h4>
+      <p>Lorem ipsum dolor sit amet..</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="fa fa-laptop logo-small"></span>
+      <h4>COMPUTATIONAL CHEMISTRY</h4>
+      <p>Lorem ipsum dolor sit amet..</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="fa fa-cloud-upload logo-small"></span>
+      <h4>SUPERCOMPUTER <br /> <br /> </h4>
+      <p>Lorem ipsum dolor sit amet..</p>
+    </div>
+  </div>
+</div>
+</body>
+
+:ET

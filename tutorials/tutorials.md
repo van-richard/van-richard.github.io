@@ -7,8 +7,6 @@ permalink: /tutorials/
 <head>
   <!-- Theme Made By www.w3schools.com - No Copyright -->
   <title>Bootstrap Theme Company Page</title>
-  <meta charset="utf-8">
-  <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -20,24 +18,11 @@ permalink: /tutorials/
     padding: 100px 25px;
   }
   .container-fluid {
-    padding: 60px 50px;
-  }
-  .bg-grey {
-    background-color: #f6f6f6;
+    padding: 50px 0px;
   }
   .logo-small {
     color: #8A0808;
-    font-size: 50px;
-  }
-  .logo {
-    color: #f4511e;
-    font-size: 200px;
-  }
-  @media screen and (max-width: 768px) {
-    .col-sm-4 {
-      text-align: center;
-      margin: 25px 0;
-    }
+    font-size: 40px;
   }
   </style>
 </head>
@@ -50,37 +35,36 @@ permalink: /tutorials/
   <div class="row">
     <div class="col-sm-4">
       <span class="fa fa-linux logo-small"></span>
-      <h4>LINUX</h4>
-        <p><a href="/linux/">Intro. to Command Line</a></p>
+      <h3>LINUX <br> <br> </h3>
+        <h4><a href="/linux/">Intro. to Command Line</a></h4>
     </div>
     <div class="col-sm-4">
       <span class="fa fa-print logo-small"></span>
-      <h4>PYTHON</h4>
-      <p>Lorem ipsum dolor sit amet..</p>
+      <h3>PYTHON <br> <br> </h3>
+      <h4>Lorem ipsum dolor sit amet..</h4>
     </div>
     <div class="col-sm-4">
       <span class="fa fa-video-camera logo-small"></span>
-      <h4>MACHINE LEARNING</h4>
-      <p>Lorem ipsum dolor sit amet..</p>
+      <h3>MACHINE LEARNING <br> <br> </h3>
+      <h4>Lorem ipsum dolor sit amet..</h4>
     </div>
   </div>
   <br><br>
   <div class="row">
     <div class="col-sm-4">
       <span class="fa fa-code-fork logo-small"></span>
-      <h4>SOFTWARE</h4>
-      <h4> </h4>
-      <p>Lorem ipsum dolor sit amet..</p>
+      <h3>SOFTWARE <br> <br> </h3>
+      <h4>Lorem ipsum dolor sit amet..</h4>
     </div>
     <div class="col-sm-4">
       <span class="fa fa-laptop logo-small"></span>
-      <h4>COMPUTATIONAL CHEMISTRY</h4>
-      <p>Lorem ipsum dolor sit amet..</p>
+      <h3>COMPUTATIONAL CHEMISTRY</h3>
+      <h4>Lorem ipsum dolor sit amet..</h4>
     </div>
     <div class="col-sm-4">
       <span class="fa fa-cloud-upload logo-small"></span>
-      <h4 style="color:#303030;">SUPERCOMPUTER</h4>
-      <p>Lorem ipsum dolor sit amet..</p>
+      <h3>SUPERCOMPUTER <br> <br> </h3>
+      <h4>Lorem ipsum dolor sit amet..</h4>
     </div>
   </div>
 </div>
