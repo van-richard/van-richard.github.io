@@ -9,8 +9,7 @@ permalink: /tutorials/
   <title>Bootstrap Theme Company Page</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <style>
@@ -49,17 +48,17 @@ permalink: /tutorials/
   <br>
   <div class="row">
     <div class="col-sm-4">
-      <span class="fa-brands fa-python logo-small"></span>
+      <span class="fa-brands fa-linux logo-small"></span>
       <h4>LINUX</h4>
       <a href="van-richard.github.io/tutorials/linux/>Intro. to Command Line</a>
     </div>
     <div class="col-sm-4">
-      <span class="glyphicon glyphicon-heart logo-small"></span>
+      <span class="fa-brand fa-python logo-small"></span>
       <h4>PYTHON</h4>
       <p>Lorem ipsum dolor sit amet..</p>
     </div>
     <div class="col-sm-4">
-      <span class="glyphicon glyphicon-lock logo-small"></span>
+      <span class="fa-solid fa-display-code logo-small"></span>
       <h4>AMBER</h4>
       <p>Lorem ipsum dolor sit amet..</p>
     </div>
