@@ -60,7 +60,7 @@ permalink: /tutorials/
     </div>
     <div class="col-sm-4">
       <span class="fa fa-video-camera logo-small"></span>
-      <h4>AMBER</h4>
+      <h4>MACHINE LEARNING</h4>
       <p>Lorem ipsum dolor sit amet..</p>
     </div>
   </div>
@@ -69,6 +69,7 @@ permalink: /tutorials/
     <div class="col-sm-4">
       <span class="fa fa-code-fork logo-small"></span>
       <h4>SOFTWARE</h4>
+      <h4> </h4>
       <p>Lorem ipsum dolor sit amet..</p>
     </div>
     <div class="col-sm-4">
