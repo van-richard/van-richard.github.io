@@ -25,7 +25,7 @@ permalink: /tutorials/
     background-color: #f6f6f6;
   }
   .logo-small {
-    color: #f4511e;
+    color: #8A0808;
     font-size: 50px;
   }
   .logo {
@@ -50,7 +50,7 @@ permalink: /tutorials/
     <div class="col-sm-4">
       <span class="glyphicon glyphicon-off logo-small"></span>
       <h4>LINUX</h4>
-      [Intro. to Command Line](/command_line/)
+      >a href="van-richard.github.io/tutorials/linux/>Intro. to Command Line</a>
       <p>Lorem ipsum dolor sit amet..</p>
     </div>
     <div class="col-sm-4">
