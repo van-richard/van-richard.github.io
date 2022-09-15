@@ -48,12 +48,12 @@ permalink: /tutorials/
   <br>
   <div class="row">
     <div class="col-sm-4">
-      <span class="fa-brands fa-linux logo-small"></span>
+      <span class="fa-solid fa-laptop-code logo-small"></span>
       <h4>LINUX</h4>
       <a href="van-richard.github.io/tutorials/linux/>Intro. to Command Line</a>
     </div>
     <div class="col-sm-4">
-      <span class="fa-brand fa-python logo-small"></span>
+      <span class="fa-solid fa-laptop-code logo-small"></span>
       <h4>PYTHON</h4>
       <p>Lorem ipsum dolor sit amet..</p>
     </div>
