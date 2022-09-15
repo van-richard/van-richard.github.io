@@ -51,7 +51,7 @@ permalink: /tutorials/
     <div class="col-sm-4">
       <span class="fa fa-linux logo-small"></span>
       <h4>LINUX</h4>
-        <p><a href="/tutorials/linux">Intro. to Command Line</a></p>
+        <p><a href="/linux/">Intro. to Command Line</a></p>
     </div>
     <div class="col-sm-4">
       <span class="fa fa-print logo-small"></span>
