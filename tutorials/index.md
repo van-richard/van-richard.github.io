@@ -4,8 +4,6 @@ title: Tutorials
 permalink: /tutorials/
 ---
 
-<!DOCTYPE html>
-<html lang="en">
 <head>
   <!-- Theme Made By www.w3schools.com - No Copyright -->
   <title>Bootstrap Theme Company Page</title>
@@ -44,66 +42,25 @@ permalink: /tutorials/
 </head>
 <body>
 
-<div class="jumbotron text-center">
-  <h1>Company</h1> 
-  <p>We specialize in blablabla</p> 
-  <form class="form-inline">
-    <div class="input-group">
-      <input type="email" class="form-control" size="50" placeholder="Email Address" required>
-      <div class="input-group-btn">
-        <button type="button" class="btn btn-danger">Subscribe</button>
-      </div>
-    </div>
-  </form>
-</div>
-
-<!-- Container (About Section) -->
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-sm-8">
-      <h2>About Company Page</h2>
-      <h4>Lorem ipsum..</h4>      
-      <p>Lorem ipsum..</p>
-      <button class="btn btn-default btn-lg">Get in Touch</button>
-    </div>
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-signal logo"></span>
-    </div>
-  </div>
-</div>
-
-<div class="container-fluid bg-grey">
-  <div class="row">
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-globe logo"></span>
-    </div>
-    <div class="col-sm-8">
-      <h2>Our Values</h2>
-      <h4><strong>MISSION:</strong> Our mission lorem ipsum..</h4>      
-      <p><strong>VISION:</strong> Our vision Lorem ipsum..</p>
-    </div>
-  </div>
-</div>
-
 <!-- Container (Services Section) -->
 <div class="container-fluid text-center">
-  <h2>SERVICES</h2>
-  <h4>What we offer</h4>
+  <h2>What do you need help with?</h2>
   <br>
   <div class="row">
     <div class="col-sm-4">
       <span class="glyphicon glyphicon-off logo-small"></span>
-      <h4>POWER</h4>
+      <h4>LINUX</h4>
+      [Intro. to Command Line](/command_line/)
       <p>Lorem ipsum dolor sit amet..</p>
     </div>
     <div class="col-sm-4">
       <span class="glyphicon glyphicon-heart logo-small"></span>
-      <h4>LOVE</h4>
+      <h4>PYTHON</h4>
       <p>Lorem ipsum dolor sit amet..</p>
     </div>
     <div class="col-sm-4">
       <span class="glyphicon glyphicon-lock logo-small"></span>
-      <h4>JOB DONE</h4>
+      <h4>AMBER</h4>
       <p>Lorem ipsum dolor sit amet..</p>
     </div>
   </div>
@@ -111,17 +68,17 @@ permalink: /tutorials/
   <div class="row">
     <div class="col-sm-4">
       <span class="glyphicon glyphicon-leaf logo-small"></span>
-      <h4>GREEN</h4>
+      <h4>SOFTWARE</h4>
       <p>Lorem ipsum dolor sit amet..</p>
     </div>
     <div class="col-sm-4">
       <span class="glyphicon glyphicon-certificate logo-small"></span>
-      <h4>CERTIFIED</h4>
+      <h4>COMPUTATIONAL CHEMISTRY</h4>
       <p>Lorem ipsum dolor sit amet..</p>
     </div>
     <div class="col-sm-4">
       <span class="glyphicon glyphicon-wrench logo-small"></span>
-      <h4 style="color:#303030;">HARD WORK</h4>
+      <h4 style="color:#303030;">SUPERCOMPUTER</h4>
       <p>Lorem ipsum dolor sit amet..</p>
     </div>
   </div>
