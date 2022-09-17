@@ -8,19 +8,19 @@ title: About Me
 **Disclaimer:** This website is under constant modification.
 If you find something isn't right then,
 I might be doing some change in the back-end.
-
+<br>
 **The Philosophy**
-
+<br>
 “Yesterday is history,
-
+<br>
 Tomorrow is a mystery,
-
+<br>
 And today is a gift
-
+<br>
 That is why it’s called the present”
-
+<br>
 — Master Oogway
-
+<br>
 My ultimate goal in life is to enjoy every waking moment that I have, to consistently be invested in everything I’m apart of, and drive this ambition to make the world a better place. A belief that is so rare in the world, especially when in a Ph.D. where our impact can feel so narrow. Nevertheless, the people we interact with, our friends and family, the students we mentor, our colleagues, and our community is impacted by our presence, whether we are aware of this or or not. Many people underestimate the salience altruism, of being apart of their community. This passion we bring to in conversation impacts the next and this becomes a ripple in the ocean we call life.  The minuscule, the tedious, the unappealing, and even the monotonous things we dread can always lead to the most serendipitous . So as a takeaway, please… please enjoy every venture, enjoy the morning sunrise and sunsets, engage with the people, and always never forget to breathe and enjoy the now. 
 
 ## The Research ## 
