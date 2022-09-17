@@ -884,7 +884,7 @@ table tfoot td {
 }
 
 .wrapper {
-  max-width: 100%;
+  max-width: 90%;
   position: relative;
 }
 
@@ -1003,7 +1003,7 @@ table tfoot td {
 .content-box {
   padding: 20px;
   padding-left: 260px;
-  max-width: 100%;
+  max-width: 90%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;

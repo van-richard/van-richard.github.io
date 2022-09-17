@@ -1,10 +1,4 @@
----
-layout: main
-title: Tutorials
-permalink: /tutorials/
----
-
-<head>
+I"	<head>
 <style>
   .container-fluid {
     min-width: 100%;
@@ -62,29 +56,29 @@ permalink: /tutorials/
 
 <div class="container-fluid text-center">
   <h2 style="text-align: center;">What do you need help with?</h2>
-  <br>
+  <br />
   <div class="container">
    <div class="col">
    <span class="fa fa-linux logo-small"></span>
-   <h3 style="text-align: center;">LINUX<br></h3>
+   <h3 style="text-align: center;">LINUX<br /></h3>
    <h4 style="text-align: center;"><a href="/linux/">Intro. to Command Line</a></h4>
    </div>
    <div class="col">
    <span class="fa fa-print logo-small"></span>
-   <h3 style="text-align: center;">PYTHON<br></h3>
+   <h3 style="text-align: center;">PYTHON<br /></h3>
    <h4 style="text-align: center;">TBD</h4>
    </div>
    <div class="col">
    <span class="fa fa-video-camera logo-small"></span>
-   <h3 style="text-align: center;">MACHINE LEARNING<br></h3>
+   <h3 style="text-align: center;">MACHINE LEARNING<br /></h3>
    <h4 style="text-align: center;">TBD</h4>
    </div>
   </div>
-  <br><br>
+  <br /><br />
   <div class="container">
    <div class="col">
    <span class="fa fa-code-fork logo-small"></span>
-   <h3 style="text-align: center;">SOFTWARE<br></h3>
+   <h3 style="text-align: center;">SOFTWARE<br /></h3>
    <h4 style="text-align: center;">TBD</h4>
    </div>
    <div class="col">
@@ -94,12 +88,11 @@ permalink: /tutorials/
    </div>
    <div class="col">
    <span class="fa fa-cloud-upload logo-small"></span>
-   <h3 style="text-align: center;">SUPERCOMPUTER<br></h3>
+   <h3 style="text-align: center;">SUPERCOMPUTER<br /></h3>
    <h4 style="text-align: center;">TBD</h4>
    </div>
   </div>
 </div>
 </body>
 
-
-
+:ET
