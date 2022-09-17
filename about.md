@@ -1,7 +1,16 @@
 ---
 layout: main
 title: About Me
+permalink: /about/
 ---
+
+<head>
+  <style>
+    p {
+      overflow: hidden;
+    }
+  </style>
+</head>
 
 ## About Me ## 
 
