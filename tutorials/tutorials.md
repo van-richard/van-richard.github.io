@@ -5,64 +5,98 @@ permalink: /tutorials/
 ---
 
 <head>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <style>
-  .jumbotron {
-    background-color: #f4511e;
-    color: #fff;
-    padding: 100px 25px;
-  }
+<style>
   .container-fluid {
-    padding: 50px 0px;
+    width: 100%;
   }
   .logo-small {
     color: #8A0808;
-    font-size: 40px;
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
   }
-  </style>
+  .container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  @media (min-width: 768px) {
+    .container {
+      width: 750px;
+      text-align: center;
+    }
+  }
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+      text-align: center;
+    }
+  }
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+      text-align: center;
+    }
+  }
+  .container .col p {
+    padding: .25rem .75rem;
+    text-align: center;
+  }
+  @media only screen and (min-width:600px) {
+    .container .col {
+      float: left;
+      width: 50%;
+      text-align: center;
+    }
+  }
+  @media only screen and (min-width:768px) {
+    .container .col {
+      width: 33.333%;
+      text-align: center;
+    }
+  }
+</style>
 </head>
 <body>
 
 <div class="container-fluid text-center">
-  <h2>What do you need help with?</h2>
+  <h2 style="text-align: center;">What do you need help with?</h2>
   <br>
-  <div class="row">
-    <div class="col-sm-4">
-      <span class="fa fa-linux logo-small"></span>
-      <h3>LINUX <br> <br> </h3>
-        <h4><a href="/linux/">Intro. to Command Line</a></h4>
-    </div>
-    <div class="col-sm-4">
-      <span class="fa fa-print logo-small"></span>
-      <h3>PYTHON <br> <br> </h3>
-      <h4>Lorem ipsum dolor sit amet..</h4>
-    </div>
-    <div class="col-sm-4">
-      <span class="fa fa-video-camera logo-small"></span>
-      <h3>MACHINE LEARNING <br> <br> </h3>
-      <h4>Lorem ipsum dolor sit amet..</h4>
-    </div>
+  <div class="container">
+   <div class="col">
+   <span class="fa fa-linux logo-small"></span>
+   <h3>LINUX<br></h3>
+   <h4><a href="/linux/">Intro. to Command Line</a></h4>
+   </div>
+   <div class="col">
+   <span class="fa fa-print logo-small"></span>
+   <h3>PYTHON<br></h3>
+   <h4>TBD</h4>
+   </div>
+   <div class="col">
+   <span class="fa fa-video-camera logo-small"></span>
+   <h3>MACHINE LEARNING<br></h3>
+   <h4>TBD</h4>
+   </div>
   </div>
   <br><br>
-  <div class="row">
-    <div class="col-sm-4">
-      <span class="fa fa-code-fork logo-small"></span>
-      <h3>SOFTWARE <br> <br> </h3>
-      <h4>Lorem ipsum dolor sit amet..</h4>
-    </div>
-    <div class="col-sm-4">
-      <span class="fa fa-laptop logo-small"></span>
-      <h3>COMPUTATIONAL CHEMISTRY</h3>
-      <h4>Lorem ipsum dolor sit amet..</h4>
-    </div>
-    <div class="col-sm-4">
-      <span class="fa fa-cloud-upload logo-small"></span>
-      <h3>SUPERCOMPUTER <br> <br> </h3>
-      <h4>Lorem ipsum dolor sit amet..</h4>
-    </div>
+  <div class="container">
+   <div class="col">
+   <span class="fa fa-code-fork logo-small"></span>
+   <h3>SOFTWARE<br><br></h3>
+   <h4>TBD</h4>
+   </div>
+   <div class="col">
+   <span class="fa fa-laptop logo-small"></span>
+   <h3>COMPUTATIONAL CHEMISTRY</h3>
+   <h4>TBD</h4>
+   </div>
+   <div class="col">
+   <span class="fa fa-cloud-upload logo-small"></span>
+   <h3>SUPERCOMPUTER<br><br></h3>
+   <h4>TBD</h4>
+   </div>
   </div>
 </div>
 </body>

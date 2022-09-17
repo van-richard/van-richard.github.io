@@ -1,0 +1,91 @@
+I"þ<head>
+<style>
+  .container-fluid {
+    width: 100%;
+  }
+  .logo-small {
+    color: #8A0808;
+    font-size: 60px;
+    text-align: center;
+  }
+  .container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  @media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+  }
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }
+  .container .col p {
+    padding: .25rem .75rem;
+  }
+  @media only screen and (min-width:600px) {
+    .container .col {
+      float: left;
+      width: 50%;
+    }
+  }
+  @media only screen and (min-width:768px) {
+    .container .col {
+      width: 33.333%;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="container-fluid text-center">
+  <h2 style="text-align: center;">What do you need help with?</h2>
+  <br />
+  <div class="container">
+    <div class="col">
+      <span class="fa fa-linux logo-small"></span>
+      <h3>LINUX <br /> <br /> </h3>
+      <h4><a href="/linux/">Intro. to Command Line</a></h4>
+    </div>
+    <div class="col">
+      <span class="fa fa-print logo-small"></span>
+      <h3>PYTHON <br /> <br /> </h3>
+      <h4>Lorem ipsum dolor sit amet..</h4>
+    </div>
+    <div class="col">
+      <span class="fa fa-video-camera logo-small"></span>
+      <h3>MACHINE LEARNING <br /> <br /> </h3>
+      <h4>Lorem ipsum dolor sit amet..</h4>
+    </div>
+  </div>
+  <br /><br />
+  <div class="container">
+    <div class="col">
+      <span class="fa fa-code-fork logo-small"></span>
+      <h3>SOFTWARE <br /> <br /> </h3>
+      <h4>Lorem ipsum dolor sit amet..</h4>
+    </div>
+    <div class="col">
+      <span class="fa fa-laptop logo-small"></span>
+      <h3>COMPUTATIONAL CHEMISTRY</h3>
+      <h4>Lorem ipsum dolor sit amet..</h4>
+    </div>
+    <div class="col">
+      <span class="fa fa-cloud-upload logo-small"></span>
+      <h3>SUPERCOMPUTER <br /> <br /> </h3>
+      <h4>Lorem ipsum dolor sit amet..</h4>
+    </div>
+  </div>
+</div>
+</body>
+
+:ET
