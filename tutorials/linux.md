@@ -20,3 +20,4 @@ permalink: /linux/
 {% endfor %}
 
 {% include pagination.html %}
+
