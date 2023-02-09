@@ -1,0 +1,35 @@
+I"�<head>
+  <style>
+    p {
+      overflow: auto;
+    }
+  </style>
+</head>
+
+<h1><strong>Disclaimer:</strong> Under constant modification.</h1>
+
+<h2 id="the-research">The Research</h2>
+
+<p>Currently a 3rd year Ph.D Candidate in the Department of Chemistry and Biochemistry at the University of Oklahoma. I am mentored by Dr. Yihan Shao in the area of Computational Biochemistry. The main research project I’m driving involves free energy simulations of CRIPSR-Cas9 DNA cleavage. CRIPSR-Cas systems remain the most prominent and attractive approach to gene therapy (as seen by the start of 2(3) FDA clinical trials). However, further application of this technology has been limited due to specificity and/or other issues. While considerable research has been done in this area, little is known about the precise catalytic mechanism of these enzymes. Not to mention the mechanism of improved Cas variants that are used to treat human disease. To further elucidate the mechanism of DNA cleavage, computational modeling can provide critical insights into the structure and function specific amino acids through atomistic Molecular Dynamics (MD). Therefore, the goal of the project can be seen as two goals:```</p>
+<ol>
+  <li>Understand the underlying biochemical processes to guide the development of future drug therapies.</li>
+  <li>Implementation of the latest and most advanced computational techniques to investigate enzymatic processes.</li>
+</ol>
+
+<p>To understand the structure function relationship, classical MD can be easily employed. However, to investigate the chemistry (I.e. the enzymatic process), quantum mechanics/molecular mechanism (QM/MM) simulation methods are more commonly used. Often this leads to the dilemma of computation cost versus accuracy in choosing the level of electronic detail. Many approaches have been developed to improve the cost while retaining chemical accuracy of these simulations such as multiple time step (MTS) simulations. Additionally, machine learning models have been developed to guide drug discovery, materials chemistry, and others. In recent years these improvements of machine learning models have opened new doors in the field of natural science, and the field of computational modeling of biomolecular systems has benefitted from this. To highlight this, our lab has been the first to develop a delta-MLP for the study of enzymatic reactions and this has greatly improved the computational cost while retaining high level accuracy. With high hopes, goal 2 is the development of a Cas9 delta-MLP is currently being developed.</p>
+
+<p>While current my focus area is in the study of modeling enzymatic reactions, my previous/current side projects include:</p>
+
+<p>A. Develop computational models of pH-low insertion peptides (pHLIP) to guide the design of variants to improve pH selectivity.
+B. Screening small-molecule imaging probes for Alzheimer’s disease.
+C. Screening of PET tracers for the endocannabinoid systems.
+D. Small-molecule drug discovery for the inhibition of Bax/Bak.</p>
+
+<h2 id="my-interests">My Interests</h2>
+
+<p><strong>Powerbuilding.</strong> I started going to the gym around the summer of 2014. The preconception I had was that people who go to the gym either wanted to lose weigh or had some body-type goal in mind. Around this time, I had became close friends with some gym rats, whom did not “look” like your gym-addict type (I.e. muscle bound strong man, or the larger-but-fit-looking average person). They introduced me to concept of powerlifting, which I immediately feel in love with.</p>
+
+<p><strong>Photography/Cinematography.</strong> The first camera I was ever given was a Canon 60d back in 2010. During that time, I didn’t have any idea what photography was, much less filmmaking, so the camera sat around for a few months. During the years where I was breakdancing, I started using the camera to film my friends at practices and events. Eventually I became known as the camera guy, so I always carried around my the camera. One thing led to another, and I began enjoying the hobby, this allowed me to do freelance photography/film for a bit for hip hop jams and car events. Nowadays, I just enjoy making the casual snippets of my day to day life, which occasionally gets posted to my YouTube.</p>
+
+<p><strong>Hip-Hop.</strong> Growing up in San Jose (CA), I didn’t listen to music or watch very much TV. Days were mostly spent riding my bike when I was done with my studies. Things changed when I moved to Oklahoma City (OK) in my teenage years, where I met a local group of bboys (breakdancers). They took my under their wing and taught my the history and culture of hip-hop, which I instantly fell in love with. The original pillars of hip-hop included MCing, DJing, bboying, and graffiti writing. My interests led me to fall under the umbrella of bboying.</p>
+:ET
