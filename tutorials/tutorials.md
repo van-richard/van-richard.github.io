@@ -86,6 +86,9 @@ permalink: /tutorials/
    <h3 style="text-align: center;">PYTHON<br></h3>
    <h4 style="text-align: center;">What is it?</h4>
    <h4 style="text-align: center;">Installation (Conda/All OS)</h4>
+   <h4 style="text-align: center;">Jupyter Notebook/Lab</h4>
+   <h4 style="text-align: center;">Making Scripts</h4>
+   <h4 style="text-align: center;">Making Packages</h4>
    </div>
   </div>
   <br><br>
