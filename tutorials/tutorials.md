@@ -69,16 +69,20 @@ permalink: /tutorials/
    <span class="fa fa-linux logo-small"></span>
    <h3 style="text-align: center;">LINUX/MacOS<br></h3>
    <h4 style="text-align: center;"><a href="/linux/">Intro. to Command Line</a></h4>
+   <h4 style="text-align: center;">Command Line Primer</h4>
+   <h4 style="text-align: center;">Command Line Cheatsheet</h4>
    </div>
    <div class="col">
    <span class="fa fa-windows logo-small"></span>
    <h3 style="text-align: center;">WINDOWS<br></h3>
-   <h4 style="text-align: center;">TBD</h4>
+   <h4 style="text-align: center;">How to get Command Line</h4>
    </div>
    <div class="col">
    <span class="fa fa-file-code-o logo-small"></span>
    <h3 style="text-align: center;">PYTHON<br></h3>
-   <h4 style="text-align: center;">TBD</h4>
+   <h4 style="text-align: center;">What is it?</h4>
+   <h4 style="text-align: center;">Installation</h4>
+   <h4 style="text-align: center;">Making Figures</h4>
    </div>
   </div>
   <br><br>
@@ -92,11 +96,14 @@ permalink: /tutorials/
    <span class="fa fa-code-fork logo-small"></span>
    <h3 style="text-align: center;">SOFTWARE<br></h3>
    <h4 style="text-align: center;">How to use AMBER</h4>
+   <h4 style="text-align: center;">How to use QChem</h4>
+   <h4 style="text-align: center;">Basic Theory on Molecular Simulations</h4>
    </div>
    <div class="col">
    <span class="fa fa-random logo-small"></span>
    <h3 style="text-align: center;">MISCELLANEOUS</h3>
    <h4 style="text-align: center;">Using a Supercomputer</h4>
+   <h4 style="text-align: center;">Make Your Own Github Pages</h4>
    </div>
   </div>
 </div>
