@@ -89,12 +89,12 @@ permalink: /tutorials/
    </div>
    <div class="col">
    <span class="fa fa-laptop logo-small"></span>
-   <h3 style="text-align: center;">COMPUTATIONAL CHEMISTRY</h3>
+   <h3 style="text-align: center;">SUPERCOMPUTER</h3>
    <h4 style="text-align: center;">TBD</h4>
    </div>
    <div class="col">
    <span class="fa fa-cloud-upload logo-small"></span>
-   <h3 style="text-align: center;">SUPERCOMPUTER<br></h3>
+   <h3 style="text-align: center;">WINDOWS<br></h3>
    <h4 style="text-align: center;">TBD</h4>
    </div>
   </div>
