@@ -7,7 +7,7 @@ permalink: /about/
 <head>
   <style>
     p {
-      overflow: hidden;
+      overflow: auto;
     }
   </style>
 </head>
