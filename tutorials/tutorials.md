@@ -20,6 +20,7 @@ permalink: /tutorials/
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
+    height: 500px;
   }
   @media (min-width: 768px) {
     .container {
@@ -53,7 +54,6 @@ permalink: /tutorials/
   @media only screen and (min-width:768px) {
     .container .col {
       width: 33.333%;
-      height: 300px;
       text-align: center;
     }
   }
@@ -71,18 +71,19 @@ permalink: /tutorials/
    <h4 style="text-align: center;"><a href="/linux/">Intro. to Command Line</a></h4>
    <h4 style="text-align: center;">Command Line Primer</h4>
    <h4 style="text-align: center;">Command Line Cheatsheet</h4>
+   <h4 style="text-align: center;">SLURM</h4>
    </div>
    <div class="col">
    <span class="fa fa-windows logo-small"></span>
    <h3 style="text-align: center;">WINDOWS<br></h3>
    <h4 style="text-align: center;">How to get Command Line</h4>
+   <h4 style="text-align: center;">Other Software</h4>
    </div>
    <div class="col">
    <span class="fa fa-file-code-o logo-small"></span>
    <h3 style="text-align: center;">PYTHON<br></h3>
    <h4 style="text-align: center;">What is it?</h4>
-   <h4 style="text-align: center;">Installation</h4>
-   <h4 style="text-align: center;">Making Figures</h4>
+   <h4 style="text-align: center;">Installation (Conda/All OS)</h4>
    </div>
   </div>
   <br><br>
@@ -90,20 +91,24 @@ permalink: /tutorials/
    <div class="col">
    <span class="fa fa-video-camera logo-small"></span>
    <h3 style="text-align: center;">MACHINE LEARNING<br></h3>
-   <h4 style="text-align: center;">TBD</h4>
+   <h4 style="text-align: center;">What is it?</h4>
+   <h4 style="text-align: center;">Neural Network</h4>
+   <h4 style="text-align: center;">Gaussian Process Regression</h4>
    </div>
    <div class="col">
    <span class="fa fa-code-fork logo-small"></span>
-   <h3 style="text-align: center;">SOFTWARE<br></h3>
+   <h3 style="text-align: center;">Molecular Modeling<br></h3>
+   <h4 style="text-align: center;">Basic Theory</h4>
+   <h4 style="text-align: center;">Common Software</h4>
    <h4 style="text-align: center;">How to use AMBER</h4>
    <h4 style="text-align: center;">How to use QChem</h4>
-   <h4 style="text-align: center;">Basic Theory on Molecular Simulations</h4>
+   <h4 style="text-align: center;">Data Analysis</h4>
    </div>
    <div class="col">
    <span class="fa fa-random logo-small"></span>
    <h3 style="text-align: center;">MISCELLANEOUS</h3>
-   <h4 style="text-align: center;">Using a Supercomputer</h4>
-   <h4 style="text-align: center;">Make Your Own Github Pages</h4>
+   <h4 style="text-align: center;">What is a Supercomputer?</h4>
+   <h4 style="text-align: center;">Make Your Own Github Pages (website)</h4>
    </div>
   </div>
 </div>
