@@ -76,8 +76,10 @@ permalink: /tutorials/
    <div class="col">
    <span class="fa fa-windows logo-small"></span>
    <h3 style="text-align: center;">WINDOWS<br></h3>
-   <h4 style="text-align: center;">How to get Command Line</h4>
+   <h4 style="text-align: center;">How to get Linux Terminal</h4>
    <h4 style="text-align: center;">Other Software</h4>
+   <h4 style="text-align: center;">Dual-Boot Linux</h4>
+   <h4 style="text-align: center;">Linux Virtual Machine</h4>
    </div>
    <div class="col">
    <span class="fa fa-file-code-o logo-small"></span>
@@ -103,6 +105,7 @@ permalink: /tutorials/
    <h4 style="text-align: center;">How to use AMBER</h4>
    <h4 style="text-align: center;">How to use QChem</h4>
    <h4 style="text-align: center;">Data Analysis</h4>
+   <h4 style="text-align: center;">Making Figures/Videos</h4>
    </div>
    <div class="col">
    <span class="fa fa-random logo-small"></span>
