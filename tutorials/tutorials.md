@@ -66,7 +66,7 @@ permalink: /tutorials/
   <div class="container">
    <div class="col">
    <span class="fa fa-linux logo-small"></span>
-   <h3 style="text-align: center;">LINUX<br></h3>
+   <h3 style="text-align: center;">LINUX/MacOS<br></h3>
    <h4 style="text-align: center;"><a href="/linux/">Intro. to Command Line</a></h4>
    </div>
    <div class="col">
@@ -88,12 +88,12 @@ permalink: /tutorials/
    <h4 style="text-align: center;">TBD</h4>
    </div>
    <div class="col">
-   <span class="fa fa-laptop logo-small"></span>
+   <span class="fa fa-clouds logo-small"></span>
    <h3 style="text-align: center;">SUPERCOMPUTER</h3>
    <h4 style="text-align: center;">TBD</h4>
    </div>
    <div class="col">
-   <span class="fa fa-cloud-upload logo-small"></span>
+   <span class="fa fa-windows logo-small"></span>
    <h3 style="text-align: center;">WINDOWS<br></h3>
    <h4 style="text-align: center;">TBD</h4>
    </div>
