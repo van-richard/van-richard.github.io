@@ -73,7 +73,7 @@
 <style>
 body,html {
   background-image: url("assets/img/city.jpg");
-  height:100%;
+  height: 100%;
   width: 100%;
   background-repeat:no-repeat;
   -webkit-background-size: cover;
@@ -82,10 +82,7 @@ body,html {
   background-size: cover;
   position: fixed;
   overflow: auto;
-background-attachment: fixed;
-} 
-h1 {
-  font-family:'Garamond', Georgia, serif;
+background-attachment: autofixed;
 }
 </style>
 </head>
@@ -97,7 +94,7 @@ h1 {
         <a href="/"><img src="/assets/img/test.jpg" alt="Richard Van"></a>
       </div>
       <div class="author-name">Richard Van</div>
-      <a>Computational Biochemisty</a>
+      <a>Computational Biochemistry</a>
       <br>
       <a href="/about/">About Me</a>      
       &nbsp;
@@ -114,35 +111,40 @@ h1 {
       <a href="/tutorials/">Coding Resources</a>      
       <br><br>
       <section class="research">
-      <h2 class='research-title'>Research Questions</h2>
+        <h2 class='research-title'>Research Questions</h2>
       </section>
-      <div class="row" style="display: flex; margin: 0% 0% 0% 10%;">
-         <video width="320" height="240" autoplay muted>
+      <div class="row">
+        <div class="column">
+          <video autoplay muted>
             <source src="/assets/img/mechanism.mp4" type="video/mp4">
-         </video>
-         <p style=" font-size: 24px; height: 240px; margin: 10% 0% 0% 0%; ">What effect does various mutation have on the function of CRISPR-Cas9?</p>
+          </video>
+        </div>
+        <div class="column">
+          <p>What effect does various mutation have on the function of CRISPR-Cas9?</p>
+        </div>
       </div>
-      <div class="row" style="display: flex; margin: 0% 10% 0% 0%;">
-         <p style=" font-size: 24px; height: 240px; margin: 10% 0% 0% 0%; ">How do these mutations affect the CRISPR-Cas conformational transitions?</p>
-         <video width="320" height="240" autoplay muted>
+      <div class="row">
+        <div class="column">
+          <p>How do these mutations affect the CRISPR-Cas conformational transitions?</p>
+        </div>
+        <div class="column">
+          <video autoplay muted>
             <source src="/assets/img/mechanism.mp4" type="video/mp4">
-         </video>
+          </video>
+        </div>
       </div>
-      <div class="row" style="display: flex; margin: 0% 0% 0% 10%;">
-         <video width="320" height="240" autoplay muted>
-            <source src="/assets/img/mechanism.mp4" type="video/mp4">
-         </video>
-        <p style=" font-size: 24px; height: 240px; margin: 10% 0% 0% 0%; ">What pka shift affect the pH-dependent transition of pHLIP?</p>
+      <div class="row">
+         <div class="column">
+            <video autoplay muted>
+              <source src="/assets/img/mechanism.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="column">
+            <p>What pka shift affect the pH-dependent transition of pHLIP?</p>
+          </div>
       </div>
-    </div>
   </header> <!-- End Header -->
   <footer>
-<!--<div class="content-box">
-<video width="320" height="240" autoplay muted>
-  <source src="/assets/img/mechanism.mp4" type="video/mp4">
-</video>
-</div>
---!>
     <section class="contact">
       <h3 class="contact-title">Contact me</h3>
       <ul>
