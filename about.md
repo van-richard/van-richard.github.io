@@ -13,9 +13,9 @@ permalink: /about/
 </head>
 
 ## About Me ## 
-
+<br>
 **Disclaimer:** 
-
+<br>
 Under constant modification.
 <br>
 **The Philosophy**

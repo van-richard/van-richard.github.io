@@ -13,7 +13,6 @@ permalink: /what-is-computational-chemistry/
 </head>
 
 ## What is Computational Chemistry ## 
-
-
+<br>
 **Under Construction** 
 
