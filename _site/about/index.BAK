@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>About Me - Richard's World!</title>
+
+  <!-- Edit site and author settings in `_config.yml` to make the social details your own -->
+
+    <meta content="Richard's World!" property="og:site_name">
+  
+    <meta content="About Me" property="og:title">
+  
+  
+    <meta content="article" property="og:type">
+  
+  
+    <meta content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+" property="og:description">
+  
+  
+    <meta content="http://localhost:4000/about/" property="og:url">
+  
+  
+  
+    <meta content="http://localhost:4000/assets/img/test.jpg" property="og:image">
+  
+  
+  
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@">
+    <meta name="twitter:creator" content="@OMGITSvanADIUM">
+  
+    <meta name="twitter:title" content="About Me">
+  
+  
+    <meta name="twitter:url" content="http://localhost:4000/about/">
+  
+  
+    <meta name="twitter:description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+">
+  
+  
+    <meta name="twitter:image:src" content="http://localhost:4000/assets/img/test.jpg">
+  
+
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta property="og:image" content="">
+	<link rel="shortcut icon" href="/assets/img/test.jpg" type="image/x-icon">
+	<link rel="apple-touch-icon" href="/assets/img/test.jpg">
+	<link rel="apple-touch-icon" sizes="72x72" href="/assets/img/test.jpg">
+	<link rel="apple-touch-icon" sizes="144x144" href="/assets/img/test.jpg">
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#263959">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#263959">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#263959">
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=PT+Serif:400,700|Lato:300,400,700&display=swap" rel="stylesheet">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="/assets/fonts/font-awesome/css/font-awesome.min.css">
+	<!-- Styles -->
+	<link rel="stylesheet" href="/assets/css/main.css">
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <style>
+a {font-size: 100%;}
+</style>
+
+<aside class="sidebar">
+  <header>
+    <div class="about">
+      <div class="cover-author-image">
+        <a href="/"><img src="/assets/img/test.jpg" alt="Richard Van"></a>
+      </div>
+      <div class="author-name">Richard Van</div>
+      <br>
+      <a>Computational Biochemisty</a>
+      <br><br>
+      <a><strong>Links</a>
+      <br>
+      <a href="https://van-richard.github.io/about/">About Me</a>      
+      <br>
+      <a href="https://van-richard.github.io/what-is-computational-chemistry/">What is Computational Chemistry?</a>      
+      <br>
+      <a href="https://van-richard.github.io/tutorials/">Coding Tutorials</a>      
+      <br>
+      <a href="https://sites.google.com/view/ccats-group" >CCATS Research Group</a>      
+      <br>
+    </div>
+  </header> <!-- End Header -->
+  <footer>
+    <section class="contact">
+      <h3 class="contact-title">Contact me</h3>
+      <ul>
+        
+          <li class="google"><a href="https://scholar.google.com/citations?user=d0ffBOYAAAAJ&hl=en&oi=sra" target="_blank"><i class="fa fa-google"></i></a></li>
+        
+        
+          <li><a href="https://twitter.com/OMGITSvanADIUM" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+        
+        
+          <li class="github"><a href="http://github.com/van-richard" target="_blank"><i class="fa fa-github"></i></a></li>
+        
+        
+          <li class="linkedin"><a href="https://in.linkedin.com/in/van-richard" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+        
+        
+          <li class="email"><a href="mailto:van@ou.edu"><i class="fa fa-envelope-o"></i></a></li>
+        
+      </ul>
+    </section> <!-- End Section Contact -->
+    <div class="copyright">
+      <p>2023 &copy; Richard Van</p>
+    </div>
+  </footer> <!-- End Footer -->
+</aside> <!-- End Sidebar -->
+<div class="content-box clearfix">
+  <head>
+  <style>
+    p {
+      overflow: hidden;
+    }
+  </style>
+</head>
+
+## About Me ## 
+
+**Disclaimer:** This website is under constant modification.
+If you find something isn't right then,
+I might be doing some change in the back-end.
+<br>
+**The Philosophy**
+<br>
+“Yesterday is history,
+<br>
+Tomorrow is a mystery,
+<br>
+And today is a gift
+<br>
+That is why it’s called the present”
+<br>
+— Master Oogway
+<br>
+My ultimate goal in life is to enjoy every waking moment that I have, to consistently be invested in everything I’m apart of, and drive this ambition to make the world a better place. A belief that is so rare in the world, especially when in a Ph.D. where our impact can feel so narrow. Nevertheless, the people we interact with, our friends and family, the students we mentor, our colleagues, and our community is impacted by our presence, whether we are aware of this or or not. Many people underestimate the salience altruism, of being apart of their community. This passion we bring to in conversation impacts the next and this becomes a ripple in the ocean we call life.  The minuscule, the tedious, the unappealing, and even the monotonous things we dread can always lead to the most serendipitous . So as a takeaway, please… please enjoy every venture, enjoy the morning sunrise and sunsets, engage with the people, and always never forget to breathe and enjoy the now.
+
+## The Research ## 
+Currently a 3rd year Ph.D Candidate in the Department of Chemistry and Biochemistry at the University of Oklahoma. I am mentored by Dr. Yihan Shao in the area of Computational Biochemistry. The main research project I’m driving involves free energy simulations of CRIPSR-Cas9 DNA cleavage. CRIPSR-Cas systems remain the most prominent and attractive approach to gene therapy (as seen by the start of 2(3) FDA clinical trials). However, further application of this technology has been limited due to specificity and/or other issues. While considerable research has been done in this area, little is known about the precise catalytic mechanism of these enzymes. Not to mention the mechanism of improved Cas variants that are used to treat human disease. To further elucidate the mechanism of DNA cleavage, computational modeling can provide critical insights into the structure and function specific amino acids through atomistic Molecular Dynamics (MD). Therefore, the goal of the project can be seen as two goals:```
+1. Understand the underlying biochemical processes to guide the development of future drug therapies.
+2. Implementation of the latest and most advanced computational techniques to investigate enzymatic processes.
+
+To understand the structure function relationship, classical MD can be easily employed. However, to investigate the chemistry (I.e. the enzymatic process), quantum mechanics/molecular mechanism (QM/MM) simulation methods are more commonly used. Often this leads to the dilemma of computation cost versus accuracy in choosing the level of electronic detail. Many approaches have been developed to improve the cost while retaining chemical accuracy of these simulations such as multiple time step (MTS) simulations. Additionally, machine learning models have been developed to guide drug discovery, materials chemistry, and others. In recent years these improvements of machine learning models have opened new doors in the field of natural science, and the field of computational modeling of biomolecular systems has benefitted from this. To highlight this, our lab has been the first to develop a delta-MLP for the study of enzymatic reactions and this has greatly improved the computational cost while retaining high level accuracy. With high hopes, goal 2 is the development of a Cas9 delta-MLP is currently being developed.
+
+While current my focus area is in the study of modeling enzymatic reactions, my previous/current side projects include:
+
+A. Develop computational models of pH-low insertion peptides (pHLIP) to guide the design of variants to improve pH selectivity.
+B. Screening small-molecule imaging probes for Alzheimer’s disease.
+C. Screening of PET tracers for the endocannabinoid systems.
+D. Small-molecule drug discovery for the inhibition of Bax/Bak.
+
+## My Interests ##
+
+**Powerbuilding.** I started going to the gym around the summer of 2014. The preconception I had was that people who go to the gym either wanted to lose weigh or had some body-type goal in mind. Around this time, I had became close friends with some gym rats, whom did not “look” like your gym-addict type (I.e. muscle bound strong man, or the larger-but-fit-looking average person). They introduced me to concept of powerlifting, which I immediately feel in love with. 
+
+**Photography/Cinematography.** The first camera I was ever given was a Canon 60d back in 2010. During that time, I didn’t have any idea what photography was, much less filmmaking, so the camera sat around for a few months. During the years where I was breakdancing, I started using the camera to film my friends at practices and events. Eventually I became known as the camera guy, so I always carried around my the camera. One thing led to another, and I began enjoying the hobby, this allowed me to do freelance photography/film for a bit for hip hop jams and car events. Nowadays, I just enjoy making the casual snippets of my day to day life, which occasionally gets posted to my YouTube. 
+
+**Hip-Hop.** Growing up in San Jose (CA), I didn’t listen to music or watch very much TV. Days were mostly spent riding my bike when I was done with my studies. Things changed when I moved to Oklahoma City (OK) in my teenage years, where I met a local group of bboys (breakdancers). They took my under their wing and taught my the history and culture of hip-hop, which I instantly fell in love with. The original pillars of hip-hop included MCing, DJing, bboying, and graffiti writing. My interests led me to fall under the umbrella of bboying,
+
+</div>
+
+  </div>
+  
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', '', 'auto');
+  ga('send', 'pageview');
+</script> <!-- End Analytics -->
+
+</body>
+</html>
