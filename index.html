@@ -1,11 +1,11 @@
 ---
-layout: main-page
+layout: default
 ---
 
 <head>
 <style>
 body,html {
-  background-image: url("assets/img/Fuji-2.jpg");
+  background-image: url("assets/img/city.jpg");
   height:100%;
   width: 100%;
   background-repeat:no-repeat;
@@ -13,18 +13,86 @@ body,html {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  position: fixed;
+  overflow: auto;
+background-attachment: fixed;
 } 
 h1 {
   font-family:'Garamond', Georgia, serif;
 }
 </style>
 </head>
-<!--
-<body>
-<div class="content-box">
-  <h1 style="padding-left: 10%;">Science is just one big </h>
-  <h1 style="font-size: 80px; padding-left: 40%;">adVANture</h>
+
+<div class="center-nav">
+  <header>
+    <div class="about">
+      <div class="cover-author-image">
+        <a href="{{site.baseurl}}/"><img src="{{site.baseurl}}/assets/img/{% if site.author-img %}{{site.author-img}}{% endif %}" alt="{{site.author}}"></a>
+      </div>
+      <div class="author-name">{{site.author}}</div>
+      <br>
+      <a>Computational Biochemisty</a>
+      <br><br>
+      <a><strong>Links</a>
+      <br>
+      <a href="https://van-richard.github.io/about/">About Me</a>      
+      &nbsp;
+      <a href="https://van-richard.github.io/cv.pdf">CV</a>      
+      &nbsp;
+      <a href="https://sites.google.com/view/ccats-group" >CCATS Research Group</a>      
+      &nbsp;
+      <br>
+      <a href="https://van-richard.github.io/what-is-computational-chemistry/">What is Computational Chemistry?</a>      
+      &nbsp;
+      <a href="https://van-richard.github.io/tutorials/">Coding Tutorials</a>      
+      <br><br>
+      <div class="row" style="display: flex; margin: 0% 0% 0% 10%;">
+         <video width="320" height="240" autoplay muted>
+            <source src="/assets/img/mechanism.mp4" type="video/mp4">
+         </video>
+         <p style=" font-size: 32px; height: 240px; margin: 12% 0% 0% 10%; ">Enzyme<br> Catalysis</p>
+      </div>
+    </div>
+  </header> <!-- End Header -->
+  <footer>
+<!--<div class="content-box">
+<video width="320" height="240" autoplay muted>
+  <source src="/assets/img/mechanism.mp4" type="video/mp4">
+</video>
 </div>
-</body>
--->
-</html>
+--!>
+    <section class="contact">
+      <h3 class="contact-title">Contact me</h3>
+      <ul>
+        {% if site.social-google %}
+          <li class="google"><a href="https://scholar.google.com/{{site.social-google}}" target="_blank"><i class="fa fa-google"></i></a></li>
+        {% else %}
+          <li class="google"><a href="https://scholar.google.com/" target="_blank"><i class="fa fa-google" aria-hidden="true"></i></a></li>
+        {% endif %}
+        {% if site.social-twitter %}
+          <li><a href="https://twitter.com/{{ site.social-twitter }}" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+        {% else %}
+          <li><a href="https://twitter.com/artemsheludko_" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+        {% endif %}
+        {% if site.social-github %}
+          <li class="github"><a href="http://github.com/{{site.social-github}}" target="_blank"><i class="fa fa-github"></i></a></li>
+        {% else %}
+          <li class="github"><a href="http://github.com/" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+        {% endif %}
+        {% if site.social-linkedin %}
+          <li class="linkedin"><a href="https://in.linkedin.com/in/{{site.social-linkedin}}" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+        {% else %}
+          <li class="linkedin"><a href="https://in.linkedin.com/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+        {% endif %}
+        {% if site.social-email %}
+          <li class="email"><a href="mailto:{{site.social-email}}"><i class="fa fa-envelope-o"></i></a></li>
+        {% else %}
+          <li class="email"><a href="mailto:"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
+        {% endif %}
+      </ul>
+    </section> <!-- End Section Contact -->
+    <div class="copyright">
+      <p style="margin: 0 0 5%">{{site.time | date: '%Y'}} &copy; {{site.author}}</p>
+    </div>
+  </footer> <!-- End Footer -->
+</div> <!-- End Sidebar -->

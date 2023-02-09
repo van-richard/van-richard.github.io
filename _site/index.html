@@ -69,9 +69,26 @@
 <body>
 
   <div class="wrapper">
-    <style>
-a {font-size: 110%;}
+    <head>
+<style>
+body,html {
+  background-image: url("assets/img/city.jpg");
+  height:100%;
+  width: 100%;
+  background-repeat:no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: fixed;
+  overflow: auto;
+background-attachment: fixed;
+} 
+h1 {
+  font-family:'Garamond', Georgia, serif;
+}
 </style>
+</head>
 
 <div class="center-nav">
   <header>
@@ -86,16 +103,31 @@ a {font-size: 110%;}
       <a><strong>Links</a>
       <br>
       <a href="https://van-richard.github.io/about/">About Me</a>      
+      &nbsp;
+      <a href="https://van-richard.github.io/cv.pdf">CV</a>      
+      &nbsp;
+      <a href="https://sites.google.com/view/ccats-group" >CCATS Research Group</a>      
+      &nbsp;
       <br>
       <a href="https://van-richard.github.io/what-is-computational-chemistry/">What is Computational Chemistry?</a>      
-      <br>
+      &nbsp;
       <a href="https://van-richard.github.io/tutorials/">Coding Tutorials</a>      
-      <br>
-      <a href="https://sites.google.com/view/ccats-group" >CCATS Research Group</a>      
-      <br>
+      <br><br>
+      <div class="row" style="display: flex; margin: 0% 0% 0% 10%;">
+         <video width="320" height="240" autoplay muted>
+            <source src="/assets/img/mechanism.mp4" type="video/mp4">
+         </video>
+         <p style=" font-size: 32px; height: 240px; margin: 12% 0% 0% 10%; ">Enzyme<br> Catalysis</p>
+      </div>
     </div>
   </header> <!-- End Header -->
   <footer>
+<!--<div class="content-box">
+<video width="320" height="240" autoplay muted>
+  <source src="/assets/img/mechanism.mp4" type="video/mp4">
+</video>
+</div>
+--!>
     <section class="contact">
       <h3 class="contact-title">Contact me</h3>
       <ul>
@@ -117,39 +149,10 @@ a {font-size: 110%;}
       </ul>
     </section> <!-- End Section Contact -->
     <div class="copyright">
-      <p>2023 &copy; Richard Van</p>
+      <p style="margin: 0 0 5%">2023 &copy; Richard Van</p>
     </div>
   </footer> <!-- End Footer -->
 </div> <!-- End Sidebar -->
-<div class="content-box clearfix">
-  <head>
-<style>
-body,html {
-  background-image: url("assets/img/Fuji-2.jpg");
-  height:100%;
-  width: 100%;
-  background-repeat:no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-} 
-h1 {
-  font-family:'Garamond', Georgia, serif;
-}
-</style>
-</head>
-<!--
-<body>
-<div class="content-box">
-  <h1 style="padding-left: 10%;">Science is just one big </h>
-  <h1 style="font-size: 80px; padding-left: 40%;">adVANture</h>
-</div>
-</body>
--->
-</html>
-
-</div>
 
   </div>
   

@@ -927,15 +927,16 @@ table tfoot td {
           flex-direction: column;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
+       -ms-flex-pack: justify;
           justify-content: space-between;
-  position: fixed;
-  top: 5%;
+  position: relative;
+  /*top: 5%;
   left: 25%;
-  bottom: 5%;
+  bottom: 5%; */
+  margin: 2% 0% 2% 25%;
   width: 50%;
-  background-color: #ffffff;
-  opacity: 0.75;
+  overflow:auto;
+  background-color: rgba( 255, 255, 255, 0.75);
 }
   
 .sidebar {
@@ -958,7 +959,7 @@ table tfoot td {
   bottom: 0;
   width: 240px;
   height: 100%;
-  padding: 20px 10px;
+  padding: 20px 10px; 
   background-color: #ffffff;
 }
 
@@ -975,6 +976,7 @@ table tfoot td {
           border-radius: 100%;
   overflow: hidden;
   background-color: #333030;
+  opacity: 100%;
 }
 
 .about img {
@@ -1027,6 +1029,7 @@ table tfoot td {
 }
 
 .content-box {
+  position: fixed;
   padding: 20px;
   padding-left: 260px;
   max-width: 100%;
@@ -1480,7 +1483,6 @@ a.newer-posts:hover {
   .contact-title, .copyright {
     display: none;
   }
-}
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
