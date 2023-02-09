@@ -3,20 +3,9 @@ layout: main
 title: About Me
 permalink: /about/
 ---
-
-<head>
-  <style>
-    p {
-      overflow: auto;
-    }
-  </style>
-</head>
-
-<h1><strong>Disclaimer:</strong> Under constant modification.</h1>
-
 ## The Research 
 
-Currently a 3rd year Ph.D Candidate in the Department of Chemistry and Biochemistry at the University of Oklahoma. I am mentored by Dr. Yihan Shao in the area of Computational Biochemistry. The main research project I’m driving involves free energy simulations of CRIPSR-Cas9 DNA cleavage. CRIPSR-Cas systems remain the most prominent and attractive approach to gene therapy (as seen by the start of 2(3) FDA clinical trials). However, further application of this technology has been limited due to specificity and/or other issues. While considerable research has been done in this area, little is known about the precise catalytic mechanism of these enzymes. Not to mention the mechanism of improved Cas variants that are used to treat human disease. To further elucidate the mechanism of DNA cleavage, computational modeling can provide critical insights into the structure and function specific amino acids through atomistic Molecular Dynamics (MD). Therefore, the goal of the project can be seen as two goals:```
+Currently a 4th year Ph.D Candidate in the Department of Chemistry and Biochemistry at the University of Oklahoma. I am mentored by Dr. Yihan Shao in the area of Computational Biochemistry. The main research project I’m driving involves free energy simulations of CRIPSR-Cas9 DNA cleavage. CRIPSR-Cas systems remain the most prominent and attractive approach to gene therapy (as seen by the start of 2(3) FDA clinical trials). However, further application of this technology has been limited due to specificity and/or other issues. While considerable research has been done in this area, little is known about the precise catalytic mechanism of these enzymes. Not to mention the mechanism of improved Cas variants that are used to treat human disease. To further elucidate the mechanism of DNA cleavage, computational modeling can provide critical insights into the structure and function specific amino acids through atomistic Molecular Dynamics (MD). Therefore, the goal of the project can be seen as two goals:```
 1. Understand the underlying biochemical processes to guide the development of future drug therapies.
 2. Implementation of the latest and most advanced computational techniques to investigate enzymatic processes.
 

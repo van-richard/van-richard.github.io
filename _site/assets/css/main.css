@@ -1051,6 +1051,46 @@ table tfoot td {
           align-items: stretch;
 }
 
+.research .research-title {
+  position: relative;
+  color: #333030;
+  font-weight: 400;
+  font-size: 24px;
+  margin: 0 0 5px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.research .research-title::before {
+  content: "";
+  display: block;
+  height: 2px;
+  width: -webkit-calc(50% - 160px);
+  width: calc(50% - 160px);
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  position: absolute;
+  top: 50%;
+  left: 2%;
+  background-color: #515151;
+}
+
+.research .research-title::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: -webkit-calc(50% - 160px);
+  width: calc(50% - 160px);
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  position: absolute;
+  top: 50%;
+  right: 2%;
+  background-color: #515151;
+}
+
 .contact .contact-title {
   position: relative;
   color: #333030;
