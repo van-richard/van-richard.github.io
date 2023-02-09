@@ -20,7 +20,7 @@ permalink: /tutorials/
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
-    height: 500px;
+    height: 400px;
   }
   @media (min-width: 768px) {
     .container {
