@@ -953,7 +953,7 @@ table tfoot td {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  position: relative;
+  position: fixed;
   top: 0;
   left: 0;
   bottom: 0;
@@ -1027,7 +1027,6 @@ table tfoot td {
 }
 
 .content-box {
-  position: fixed;
   padding: 20px;
   padding-left: 260px;
   max-width: 100%;
@@ -1424,11 +1423,10 @@ a.newer-posts:hover {
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
   .sidebar {
-    position: relative;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
-    display: flex;
+    display: absolute;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
@@ -1445,7 +1443,7 @@ a.newer-posts:hover {
             box-shadow: 0 1px 1px 0 rgba(31, 35, 46, 0.15);
   }
   .sidebar footer {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
   }
   .about {
     text-align: center;

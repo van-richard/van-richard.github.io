@@ -1,4 +1,4 @@
-I"�<head>
+I"�<head>
   <style>
     p {
       overflow: auto;
@@ -6,26 +6,22 @@
   </style>
 </head>
 
-<h2 id="about-me">About Me</h2>
-<p><br />
-<strong>Disclaimer:</strong> 
-<br />
-Under constant modification.
-<br />
-<strong>The Philosophy</strong>
-<br />
-“Yesterday is history,
-<br />
+<h2 id="about-me--">About Me ## <br /></h2>
+
+<p><strong>Disclaimer:</strong></p>
+
+<p>Under constant modification.</p>
+
+<p><strong>The Philosophy</strong></p>
+
+<p>“Yesterday is history,
 Tomorrow is a mystery,
-<br />
 And today is a gift
-<br />
 That is why it’s called the present”
-<br />
-— Master Oogway
-<br /></p>
+— Master Oogway</p>
 
 <h2 id="the-research">The Research</h2>
+
 <p>Currently a 3rd year Ph.D Candidate in the Department of Chemistry and Biochemistry at the University of Oklahoma. I am mentored by Dr. Yihan Shao in the area of Computational Biochemistry. The main research project I’m driving involves free energy simulations of CRIPSR-Cas9 DNA cleavage. CRIPSR-Cas systems remain the most prominent and attractive approach to gene therapy (as seen by the start of 2(3) FDA clinical trials). However, further application of this technology has been limited due to specificity and/or other issues. While considerable research has been done in this area, little is known about the precise catalytic mechanism of these enzymes. Not to mention the mechanism of improved Cas variants that are used to treat human disease. To further elucidate the mechanism of DNA cleavage, computational modeling can provide critical insights into the structure and function specific amino acids through atomistic Molecular Dynamics (MD). Therefore, the goal of the project can be seen as two goals:```</p>
 <ol>
   <li>Understand the underlying biochemical processes to guide the development of future drug therapies.</li>
@@ -47,5 +43,6 @@ D. Small-molecule drug discovery for the inhibition of Bax/Bak.</p>
 
 <p><strong>Photography/Cinematography.</strong> The first camera I was ever given was a Canon 60d back in 2010. During that time, I didn’t have any idea what photography was, much less filmmaking, so the camera sat around for a few months. During the years where I was breakdancing, I started using the camera to film my friends at practices and events. Eventually I became known as the camera guy, so I always carried around my the camera. One thing led to another, and I began enjoying the hobby, this allowed me to do freelance photography/film for a bit for hip hop jams and car events. Nowadays, I just enjoy making the casual snippets of my day to day life, which occasionally gets posted to my YouTube.</p>
 
-<p><strong>Hip-Hop.</strong> Growing up in San Jose (CA), I didn’t listen to music or watch very much TV. Days were mostly spent riding my bike when I was done with my studies. Things changed when I moved to Oklahoma City (OK) in my teenage years, where I met a local group of bboys (breakdancers). They took my under their wing and taught my the history and culture of hip-hop, which I instantly fell in love with. The original pillars of hip-hop included MCing, DJing, bboying, and graffiti writing. My interests led me to fall under the umbrella of bboying,</p>
+<p><strong>Hip-Hop.</strong> Growing up in San Jose (CA), I didn’t listen to music or watch very much TV. Days were mostly spent riding my bike when I was done with my studies. Things changed when I moved to Oklahoma City (OK) in my teenage years, where I met a local group of bboys (breakdancers). They took my under their wing and taught my the history and culture of hip-hop, which I instantly fell in love with. The original pillars of hip-hop included MCing, DJing, bboying, and graffiti writing. My interests led me to fall under the umbrella of bboying.
+&lt;/p&gt;</p>
 :ET
