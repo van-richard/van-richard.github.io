@@ -2,7 +2,11 @@
 layout: default
 ---
 
-<aside class="sidebar">
+<style>
+a {font-size: 110%;}
+</style>
+
+<div class="center-nav">
   <header>
     <div class="about">
       <div class="cover-author-image">
@@ -10,13 +14,17 @@ layout: default
       </div>
       <div class="author-name">{{site.author}}</div>
       <br>
-      <h4>Computational Biochemisty</h4>
+      <a>Computational Biochemisty</a>
+      <br><br>
+      <a><strong>Links</a>
       <br>
-      <a href="https://sites.google.com/view/ccats-group">CCATS</a>      
+      <a href="https://van-richard.github.io/about/">About Me</a>      
       <br>
-      <a href="https://van-richard.github.io/about/">ABOUT ME</a>      
+      <a href="https://van-richard.github.io/what-is-computational-chemistry/">What is Computational Chemistry?</a>      
       <br>
-      <a href="https://van-richard.github.io/tutorials/">TUTORIALS</a>      
+      <a href="https://van-richard.github.io/tutorials/">Coding Tutorials</a>      
+      <br>
+      <a href="https://sites.google.com/view/ccats-group" >CCATS Research Group</a>      
       <br>
     </div>
   </header> <!-- End Header -->
@@ -55,7 +63,7 @@ layout: default
       <p>{{site.time | date: '%Y'}} &copy; {{site.author}}</p>
     </div>
   </footer> <!-- End Footer -->
-</aside> <!-- End Sidebar -->
+</div> <!-- End Sidebar -->
 <div class="content-box clearfix">
   {{ content }}
 </div>
