@@ -5,6 +5,10 @@
 <lastmod>2022-03-30T17:00:00-05:00</lastmod>
 </url>
 <url>
+<loc>http://localhost:4000/bash-tutorial/</loc>
+<lastmod>2022-03-30T17:00:00-05:00</lastmod>
+</url>
+<url>
 <loc>http://localhost:4000/bash-tutorial2/</loc>
 <lastmod>2022-05-12T00:00:00-05:00</lastmod>
 </url>
@@ -30,7 +34,6 @@
 <loc>http://localhost:4000/what-is-computational-chemistry/</loc>
 </url>
 <url>
-<loc>http://localhost:4000/cv.pdf</loc>
-<lastmod>2023-02-09T01:19:01-06:00</lastmod>
+<loc>http://localhost:4000/windows/</loc>
 </url>
 </urlset>
