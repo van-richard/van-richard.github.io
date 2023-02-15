@@ -1,6 +1,23 @@
 ---
-layout: main
+layout: default
 ---
+
+<aside class="sidebar">
+  <header>
+    {% include about.html %}
+  </header>
+  
+  <footer>
+    <div class="copyright">
+      <p>{{site.time | date: '%Y'}} &copy; {{site.author}}</p>
+    </div>
+  </footer>
+</aside>
+
+<div class="content-box clearfix">
+  {{ content }}
+</div>
+
 <article class="article-page">
   <div class="page-content">
     {% if page.img %}

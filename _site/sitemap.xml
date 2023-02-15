@@ -1,18 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>http://localhost:4000/bash-tutorial/</loc>
-<lastmod>2022-03-30T17:00:00-05:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/bash-tutorial/</loc>
-<lastmod>2022-03-30T17:00:00-05:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/bash-tutorial2/</loc>
-<lastmod>2022-05-12T00:00:00-05:00</lastmod>
-</url>
-<url>
 <loc>http://localhost:4000/about/</loc>
 </url>
 <url>
@@ -35,10 +23,10 @@
 </url>
 <url>
 <loc>http://localhost:4000/pdf/bash_primer.pdf</loc>
-<lastmod>2023-02-10T22:21:58-06:00</lastmod>
+<lastmod>2023-02-14T21:19:23-06:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/pdf/cv.pdf</loc>
-<lastmod>2023-02-10T22:19:03-06:00</lastmod>
+<lastmod>2023-02-14T21:19:23-06:00</lastmod>
 </url>
 </urlset>

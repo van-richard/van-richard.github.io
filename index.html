@@ -1,81 +1,18 @@
 ---
 layout: default
 ---
-
-<head>
-<style>
-body,html {
-  background-image: url("assets/img/city.jpg");
-  height: 100%;
-  width: 100%;
-  background-repeat:no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  position: fixed;
-  overflow: auto;
-background-attachment: autofixed;
-}
-</style>
-</head>
-
+{% include about.html %}
+<!--
 <div class="center-nav">
   <header>
-    <div class="about">
-      <div class="cover-author-image">
-        <a href="{{site.baseurl}}/"><img src="{{site.baseurl}}/assets/img/{% if site.author-img %}{{site.author-img}}{% endif %}" alt="{{site.author}}"></a>
-      </div>
-      <div class="author-name">{{site.author}}</div>
-      <br>
-      <a href="{{site.baseurl}}/about/">About Me</a>      
-      &nbsp;
-      <a href="{{site.baseurl}}/pdf/cv.pdf">CV</a>      
-      &nbsp;
-      <br>
-      <a href="https://sites.google.com/view/ccats-group" >CCATS Research Group (OU)</a>      
-      &nbsp;
-      <a href="https://www.lobos.nih.gov/cbs/cbs.shtml">LoBos CBS Research Group (NHLBI)</a>      
-      &nbsp;
-      <br>
-      <a href="{{site.baseurl}}/what-is-computational-chemistry/">What is Computational Chemistry?</a>      
-      &nbsp;
-      <a href="{{site.baseurl}}/tutorials/">Coding Resources</a>      
-    </div>
-  </header> <!-- End Header -->
+    {% include about.html %}
+  </header>
+-->
   <footer>
-    <section class="contact">
-      <h3 class="contact-title">Contact me</h3>
-      <ul>
-        {% if site.social-google %}
-          <li class="google"><a href="https://scholar.google.com/{{site.social-google}}" target="_blank"><i class="fa fa-google"></i></a></li>
-        {% else %}
-          <li class="google"><a href="https://scholar.google.com/" target="_blank"><i class="fa fa-google" aria-hidden="true"></i></a></li>
-        {% endif %}
-        {% if site.social-twitter %}
-          <li><a href="https://twitter.com/{{ site.social-twitter }}" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-        {% else %}
-          <li><a href="https://twitter.com/artemsheludko_" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-        {% endif %}
-        {% if site.social-github %}
-          <li class="github"><a href="http://github.com/{{site.social-github}}" target="_blank"><i class="fa fa-github"></i></a></li>
-        {% else %}
-          <li class="github"><a href="http://github.com/" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
-        {% endif %}
-        {% if site.social-linkedin %}
-          <li class="linkedin"><a href="https://in.linkedin.com/in/{{site.social-linkedin}}" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-        {% else %}
-          <li class="linkedin"><a href="https://in.linkedin.com/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-        {% endif %}
-        {% if site.social-email %}
-          <li class="email"><a href="mailto:{{site.social-email}}"><i class="fa fa-envelope-o"></i></a></li>
-        {% else %}
-          <li class="email"><a href="mailto:"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
-        {% endif %}
-      </ul>
-    </section> <!-- End Section Contact -->
+    {% include contact.html %}  
     <div class="copyright">
-      <p style="margin: 0 0 2%">{{site.time | date: '%Y'}} &copy; {{site.author}}</p>
+      <p>{{site.time | date: '%Y'}} &copy; {{site.author}}</p>
     </div>
-  </footer> <!-- End Footer -->
-</div> <!-- End Sidebar -->
+  </footer> 
+</div> 
+</body>

@@ -68,7 +68,7 @@ permalink: /tutorials/
    <div class="col">
    <span class="fa fa-linux logo-small"></span>
    <h3 style="text-align: center;">LINUX/MacOS<br></h3>
-   <h4 style="text-align: center;"><a href="/linux/">Intro. to Command Line</a></h4>
+   <h4 style="text-align: center;"><a href="{{site.baseurl}}/linux/">Intro. to Command Line</a></h4>
    <h4 style="text-align: center;"><a href="{{site.baseurl}}/pdf/bash_primer.pdf">Command Line Primer</a></h4>
    <h4 style="text-align: center;">Command Line Cheatsheet</h4>
    <h4 style="text-align: center;">SLURM</h4>

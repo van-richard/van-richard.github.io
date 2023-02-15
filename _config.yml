@@ -32,6 +32,13 @@ plugins:
   - jekyll-paginate
   - jemoji
 
+collections:
+  linux:
+    output: true
+  windows:
+    output: true
+collections_dir: tutorials
+
 paginate: 8
 paginate_path: "/page/:num"
 

@@ -1,10 +1,9 @@
 ---
 layout: main
-title: windows
-permalink: /windows/
+permalink: /linux/
 ---
 
-{% for post in site.categories.windows %}
+{% for post in site.linux %}
 <article class="post">
   {% if post.img %}
     <a class="post-thumbnail" style="background-image: url({{"/assets/img/" | prepend: site.baseurl | append : post.img}})" href="{{post.url | prepend: site.baseurl}}"></a>
@@ -19,5 +18,4 @@ permalink: /windows/
 </article>
 {% endfor %}
 
-{% include pagination.html %}
 
