@@ -1,18 +1,13 @@
 ---
-layout: default
+layout: main-page
 ---
+
 {% include about.html %}
-<!--
-<div class="center-nav">
-  <header>
-    {% include about.html %}
-  </header>
--->
-  <footer>
-    {% include contact.html %}  
-    <div class="copyright">
-      <p>{{site.time | date: '%Y'}} &copy; {{site.author}}</p>
-    </div>
-  </footer> 
-</div> 
-</body>
+
+<footer>
+  {% include contact.html %}  
+  <div class="copyright">
+    <p>{{site.time | date: '%Y'}} &copy; {{site.author}}</p>
+  </div>
+</footer> 
+
