@@ -3,11 +3,11 @@ description: > # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
-permalink: ':title/'
+#permalink: ':title/'
 domain: https://van-richard.github.io
 url: https://van-richard.github.io # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: ''
-site-twitter: #if your site has a twitter account, enter it here
+
 
 # Author Settings
 author: Richard Van # add your name
@@ -19,12 +19,6 @@ social-github: van-richard # add your Github handle
 social-linkedin: van-richard # add your Linkedin handle
 social-email: van@ou.edu # add your Email address
 
-# Disqus
-discus-identifier: VV # add your discus identifier
-
-# Tracker
-analytics: # Google Analytics
-
 # Build Settings
 markdown: kramdown
 plugins:
@@ -32,15 +26,7 @@ plugins:
   - jekyll-paginate
   - jemoji
 
-collections:
-  linux:
-    output: true
-  windows:
-    output: true
-collections_dir: tutorials
-
 paginate: 8
-paginate_path: "/page/:num"
+paginate_path: "/:num"
 
-exclude: ["node_modules", "gulpfile.js", "package.json", "yarn.lock"]
 excerpt_separator: "" 

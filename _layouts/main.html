@@ -1,19 +1,24 @@
----
-layout: default
----
+<!DOCTYPE HTML>
+<html>
+	{% include head.html %}
+	<body class="landing is-preload">
+		<div id="page-wrapper">
+			<header id="header" class="alt">
+				{% include navigation.html %}
+			</header>
 
-<aside class="sidebar">
-  <header>
-    {% include about.html %}
-  </header>
-  
-  <footer>
-    <div class="copyright">
-      <p>{{site.time | date: '%Y'}} &copy; {{site.author}}</p>
-    </div>
-  </footer>
-</aside>
+			<section id="banner">
+				<div class="inner">
+						<h2>{{ site.author }}</h2>
+						<p>Computational Biochemistry<br />
+						.</p>
+				</div>
+				<a href="#one" class="more scrolly">Learn More</a>
+			</section>
 
-<div class="content-box clearfix">
-  {{ content }}
-</div>
+		{{ content }}
+		{% include footer.html %}
+		</div>
+		{% include scripts.html %}
+	</body>
+</html>

@@ -1,0 +1,6 @@
+- name: Home
+  link: /
+- name: CV
+  link: /pdf/cv.pdf
+- name: Tutorials
+  link: /tutorials.html

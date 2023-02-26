@@ -32,9 +32,9 @@
   {% endif %}
   
   {% if page.img %}
-    <meta content="{{ site.url }}{{ site.baseurl }}/assets/img/{{ page.img }}" property="og:image">
+    <meta content="{{ site.url }}{{ site.baseurl }}/images/{{ page.img }}" property="og:image">
   {% else %}
-    <meta content="{{ site.url }}{{ site.baseurl }}/assets/img/{{ site.author-img }}" property="og:image">
+    <meta content="{{ site.url }}{{ site.baseurl }}/images/{{ site.author-img }}" property="og:image">
   {% endif %}
   
   {% if page.categories %}
@@ -48,47 +48,33 @@
     <meta content="{{ tag }}" property="article:tag">
     {% endfor %}
   {% endif %}
-
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:site" content="@{{ site.site-twitter }}">
-  <meta name="twitter:creator" content="@{{ site.social-twitter }}">
   
   {% if page.title %}
-    <meta name="twitter:title" content="{{ page.title }}">
+    <meta name="title" content="{{ page.title }}">
   {% else %}
-    <meta name="twitter:title" content="{{ site.title }}">
+    <meta name="title" content="{{ site.title }}">
   {% endif %}
   
   {% if page.url %}
-    <meta name="twitter:url" content="{{ site.url }}{{ page.url }}">
+    <meta name="url" content="{{ site.url }}{{ page.url }}">
   {% endif %}
   
   {% if page.description %}
-    <meta name="twitter:description" content="{{ page.description }}">
+    <meta name="description" content="{{ page.description }}">
   {% else %}
-    <meta name="twitter:description" content="{{ site.description }}">
+    <meta name="description" content="{{ site.description }}">
   {% endif %}
   
   {% if page.img %}
-    <meta name="twitter:image:src" content="{{ site.url }}{{ site.baseurl }}/assets/img/{{ page.img }}">
+    <meta name="image:src" content="{{ site.url }}{{ site.baseurl }}/images/{{ page.img }}">
   {% else %}
-    <meta name="twitter:image:src" content="{{ site.url }}{{ site.baseurl }}/assets/img/{{ site.author-img }}">
+    <meta name="image:src" content="{{ site.url }}{{ site.baseurl }}/images/{{ site.author-img }}">
   {% endif %}
 
 	<meta name="description" content="{{ page.description }}">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<meta property="og:image" content="">
-	<!-- Chrome, Firefox OS and Opera -->
-	<meta name="theme-color" content="#263959">
-	<!-- Windows Phone -->
-	<meta name="msapplication-navbutton-color" content="#263959">
-	<!-- iOS Safari -->
-	<meta name="apple-mobile-web-app-status-bar-style" content="#263959">
-	<!-- Google Fonts -->
-	<link href="https://fonts.googleapis.com/css?family=PT+Serif:400,700|Lato:300,400,700&display=swap" rel="stylesheet">
-	<!-- Font Awesome -->
-	<link rel="stylesheet" href="{{ "/assets/fonts/font-awesome/css/font-awesome.min.css" | prepend: site.baseurl }}">
-	<!-- Styles -->
-	<link rel="stylesheet" href="{{ "/assets/css/main.css" | prepend: site.baseurl }}">
+	
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <link rel="stylesheet" href="assets/css/main.css"/>
+  <noscript><link rel="stylesheet" href="assets/css/noscript.css"/></noscript>
 </head>

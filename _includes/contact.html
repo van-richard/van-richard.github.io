@@ -1,30 +1,7 @@
-<section class="contact">
-    <h3 class="contact-title">Contact me</h3>
-    <ul>
-      {% if site.social-google %}
-        <li class="google"><a href="https://scholar.google.com/{{site.social-google}}" target="_blank"><i class="fa fa-google"></i></a></li>
-      {% else %}
-        <li class="google"><a href="https://scholar.google.com/" target="_blank"><i class="fa fa-google" aria-hidden="true"></i></a></li>
-      {% endif %}
-      {% if site.social-twitter %}
-        <li><a href="https://twitter.com/{{ site.social-twitter }}" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-      {% else %}
-        <li><a href="https://twitter.com/artemsheludko_" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-      {% endif %}
-      {% if site.social-github %}
-        <li class="github"><a href="http://github.com/{{site.social-github}}" target="_blank"><i class="fa fa-github"></i></a></li>
-      {% else %}
-        <li class="github"><a href="http://github.com/" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
-      {% endif %}
-      {% if site.social-linkedin %}
-        <li class="linkedin"><a href="https://in.linkedin.com/in/{{site.social-linkedin}}" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-      {% else %}
-        <li class="linkedin"><a href="https://in.linkedin.com/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-      {% endif %}
-      {% if site.social-email %}
-        <li class="email"><a href="mailto:{{site.social-email}}"><i class="fa fa-envelope-o"></i></a></li>
-      {% else %}
-        <li class="email"><a href="mailto:"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
-      {% endif %}
-    </ul>
-  </section>
+<ul class="icons">
+    <li><a href="https://scholar.google.com/{{site.social-google}}" class="icon brands fa-google"><span class="label">Google</span></a></li>
+    <li><a href="https://twitter.com/{{site.social-twitter}}" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+    <li><a href="http://github.com/{{site.social-github}}" class="icon brands fa-github"><span class="label">Github</span></a></li>
+    <li><a href="https://in.linkedin.com/in/{{site.social-linkedin}}" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+    <li><a href="mailto:{{site.social-email}}" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+</ul>
