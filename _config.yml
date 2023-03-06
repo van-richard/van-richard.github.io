@@ -1,8 +1,6 @@
 title: Richard's World! 
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+computational chemistry Molecular Dynamics QM/MM enzymatic reactions  CRISPR-Cas9 Membrane Simulations
 #permalink: ':title/'
 domain: https://van-richard.github.io
 url: https://van-richard.github.io # the base hostname & protocol for your site, e.g. http://example.com
@@ -30,3 +28,5 @@ paginate: 8
 paginate_path: "/:num"
 
 excerpt_separator: "" 
+
+    
