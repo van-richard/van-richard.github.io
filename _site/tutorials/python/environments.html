@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<title>Creating Virtual Environments - Richard's World!</title>
+  
+  <meta content="Richard's World!" property="og:site_name">
+  
+  
+    <meta content="Creating Virtual Environments" property="og:title">
+  
+  
+  
+    <meta content="article" property="og:type">
+  
+  
+  
+    <meta content="References to Conda commands for Package Management" property="og:description">
+  
+  
+  
+    <meta content="http://localhost:4000/tutorials/python/environments.html" property="og:url">
+  
+  
+  
+  
+  
+    <meta content="http://localhost:4000/images/images/test.jpg" property="og:image">
+  
+  
+  
+  
+  
+  
+  
+    <meta name="title" content="Creating Virtual Environments">
+  
+  
+  
+    <meta name="url" content="http://localhost:4000/tutorials/python/environments.html">
+  
+  
+  
+    <meta name="description" content="References to Conda commands for Package Management">
+  
+  
+  
+    <meta name="image:src" content="http://localhost:4000/images/images/test.jpg">
+  
+
+	<meta name="description" content="References to Conda commands for Package Management">
+	<meta property="og:image" content="">
+	
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <link rel="stylesheet" href="http://localhost:4000/assets/css/main.css"/>
+  <noscript><link rel="stylesheet" href="http://localhost:4000//assets/css/noscript.css"/></noscript>
+</head>
+
+	<body class="is-preload">
+			<div id="page-wrapper">
+				<header id="header">
+					<nav id="nav">
+    <ul>
+        <li class="special">
+                <a href="#menu" class="menuToggle"><span>Menu</span></a>
+                <div id="menu">
+                    <ul>
+                        
+                        <li>
+                            <a href="/">Home</a>
+                        </li>
+                        
+                        <li>
+                            <a href="/pdf/cv.pdf">CV</a>
+                        </li>
+                        
+                        <li>
+                            <a href="/tutorials/">Tutorials</a>
+                        </li>
+                         
+                    </ul>												
+                </div>
+        </li>
+    </ul>
+</nav>
+				</header>
+				
+				<article id="main">
+	<header>
+		<h2>Creating Virtual Environments</h2>
+		<p>References to Conda commands for Package Management</p>
+	</header>
+	<section class="wrapper style5">
+		<div class="inner">
+			<h3 id="table-of-contents">Table of Contents</h3>
+
+<ol>
+  <li><a href="#conda-commands">Conda Commands</a></li>
+  <li><a href="#example-with-ambertools">Example with AmberTools</a></li>
+</ol>
+
+<h3 id="conda-commands">Conda Commands</h3>
+
+<p>Creating a new virtual environment.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>conda create -n &lt;name&gt;                          # Create New environment
+conda create -n &lt;name&gt; python=&lt;version-number&gt;  # Specific Python version
+</code></pre></div></div>
+<p><br />
+Running the new environment.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>conda activate &lt;name&gt;
+</code></pre></div></div>
+<p><br />
+In your new activated environment, you can now install needed packages.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>conda install &lt;package-name&gt;                 # Install Package
+conda install -c conda-forge &lt;package-name&gt;  # Install package from a specific channel (-c)
+</code></pre></div></div>
+<p><br />
+To leave a virutal environment.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>conda deactivate
+</code></pre></div></div>
+<p><br />
+Deleting conda environments and related packages.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>conda env remove -n &lt;name&gt;
+</code></pre></div></div>
+<p><br />
+List available environments.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>conda env list
+</code></pre></div></div>
+<p><br />
+List packages within an environment.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>conda activate &lt;name&gt;
+conda list
+</code></pre></div></div>
+<p><br /></p>
+
+<h3 id="example-with-ambertools">Example with AmberTools</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>conda create -n ambertools
+conda activate ambertools
+conda install -c conda-forge ambertools=22 compilers
+</code></pre></div></div>
+			
+		</div>
+	</section>
+</article>
+
+				<footer id="footer">
+    <ul class="icons">
+    <li><a href="https://scholar.google.com/citations?user=d0ffBOYAAAAJ&hl=en&oi=sra" class="icon brands fa-google"><span class="label">Google</span></a></li>
+    <li><a href="https://twitter.com/OMGITSvanADIUM" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+    <li><a href="http://github.com/van-richard" class="icon brands fa-github"><span class="label">Github</span></a></li>
+    <li><a href="https://in.linkedin.com/in/van-richard" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+    <li><a href="mailto:van@ou.edu" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+</ul>
+
+    <ul class="copyright">
+        <li>2023 &copy; Richard Van</li>
+    </ul>
+</footer>
+			</div>
+		<script src="/assets/js/jquery.min.js"></script>
+<script src="/assets/js/jquery.scrollex.min.js"></script>
+<script src="/assets/js/jquery.scrolly.min.js"></script>
+<script src="/assets/js/browser.min.js"></script>
+<script src="/assets/js/breakpoints.min.js"></script>
+<script src="/assets/js/util.js"></script>
+<script src="/assets/js/main.js"></script>
+<script src="/assets/js/copycode.js"></script>
+
+	</body>
+</html>
