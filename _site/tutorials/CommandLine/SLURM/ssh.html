@@ -2,12 +2,12 @@
 <html>
 	<head>
 	<meta charset="utf-8">
-	<title>SLURM Commands - Richard's World!</title>
+	<title>SSH to Remote Server - Richard's World!</title>
   
   <meta content="Richard's World!" property="og:site_name">
   
   
-    <meta content="SLURM Commands" property="og:title">
+    <meta content="SSH to Remote Server" property="og:title">
   
   
   
@@ -15,11 +15,11 @@
   
   
   
-    <meta content="Commands to help you navigate SLURM environments" property="og:description">
+    <meta content="Tips and Tricks for Remote Access to the Supercomputer" property="og:description">
   
   
   
-    <meta content="http://localhost:4000/tutorials/CommandLine/slurm.html" property="og:url">
+    <meta content="http://localhost:4000/Tutorials/CommandLine/SLURM/ssh.html" property="og:url">
   
   
   
@@ -33,22 +33,22 @@
   
   
   
-    <meta name="title" content="SLURM Commands">
+    <meta name="title" content="SSH to Remote Server">
   
   
   
-    <meta name="url" content="http://localhost:4000/tutorials/CommandLine/slurm.html">
+    <meta name="url" content="http://localhost:4000/Tutorials/CommandLine/SLURM/ssh.html">
   
   
   
-    <meta name="description" content="Commands to help you navigate SLURM environments">
+    <meta name="description" content="Tips and Tricks for Remote Access to the Supercomputer">
   
   
   
     <meta name="image:src" content="http://localhost:4000/images/test.jpg">
   
 
-	<meta name="description" content="Commands to help you navigate SLURM environments">
+	<meta name="description" content="Tips and Tricks for Remote Access to the Supercomputer">
 	<meta property="og:image" content="">
 	
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
@@ -87,16 +87,42 @@
 				
 				<article id="main">
 	<header>
-		<h2>SLURM Commands</h2>
-		<p>Commands to help you navigate SLURM environments</p>
+		<h2>SSH to Remote Server</h2>
+		<p>Tips and Tricks for Remote Access to the Supercomputer</p>
 	</header>
 	<section class="wrapper style5">
 		<div class="inner">
-			
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="err">$</span> <span class="n">ssh</span> <span class="o">&lt;</span><span class="n">username</span><span class="o">&gt;</span><span class="vi">@schooner</span><span class="p">.</span><span class="nf">oscer</span><span class="p">.</span><span class="nf">ou</span><span class="p">.</span><span class="nf">edu</span>
-<span class="err">$</span> <span class="n">scp</span> <span class="o">&lt;</span><span class="n">username</span><span class="o">&gt;</span><span class="vi">@schooner</span><span class="p">.</span><span class="nf">oscer</span><span class="p">.</span><span class="nf">ou</span><span class="p">.</span><span class="nf">edu</span><span class="ss">:/</span><span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">directory</span> <span class="o">.</span>
-<span class="err">$</span> <span class="n">squeue</span>
-<span class="err">$</span> <span class="n">sinfo</span> </code></pre></figure>
+			<p>Examples shown below references the OSCER Supercomputer at the University of Oklahoma. However, this similar commands can be used for other supercomputers with minor adjustments.</p>
+
+<p>If your OS is Linux/Mac, please skip to: <a href="slurm.html">Login</a></p>
+
+<p>If your OS is Windows and you need to SSH to a remote server, you have 2 options:</p>
+
+<ol>
+  <li>SSH with Windows Powershell (<strong>REQ:</strong> Windows 10, Powershell 5.1+, Adminstrative Access).</li>
+  <li>SSH with PuTTy.</li>
+</ol>
+
+<h3 id="ssh-with-windows-powershell">SSH with Windows Powershell</h3>
+
+<p><strong>Prerequsite Checklist</strong></p>
+
+<p>Open Powershell and Run as Administrator.</p>
+
+<p>Run winver.exe and press enter to see the version details for your Windows device.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ winver.exe
+</code></pre></div></div>
+<p><br />
+Run $PSVersionTable.PSVersion. Verify your major version is at least 5, and your minor version at least 1. Learn more about installing PowerShell on Windows.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ PSVersionTable.PSVersion
+</code></pre></div></div>
+<p><br />
+Run the command below. The output will show True when you’re a member of the built-in Administrators group.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ (New-Object Security.Principal.WindowsPrincipal([Security.Principal.WindowsIdentity]::GetCurrent())).IsInRole([Security.Principal.WindowsBuiltInRole]::Administrator)
+</code></pre></div></div>
 
 			
 		</div>
@@ -124,5 +150,7 @@
 <script src="/assets/js/breakpoints.min.js"></script>
 <script src="/assets/js/util.js"></script>
 <script src="/assets/js/main.js"></script>
+<script src="/assets/js/copycode.js"></script>
+
 	</body>
 </html>

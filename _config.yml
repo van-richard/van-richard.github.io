@@ -8,7 +8,7 @@ baseurl: ''
 
 # Author Settings
 author: Richard Van # add your name
-author-img: test.jpg  # add your photo
+author-img: images/test.jpg  # add your photo
 about-author: I hate html already. # add description
 social-google: citations?user=d0ffBOYAAAAJ&hl=en&oi=sra
 social-twitter: OMGITSvanADIUM # add your Twitter handle
@@ -18,6 +18,10 @@ social-email: van@ou.edu # add your Email address
 
 # Build Settings
 markdown: kramdown
+kramdown:
+  # use Github Flavored Markdown
+  input: GFM
+
 plugins:
   - jekyll-sitemap
   - jekyll-paginate

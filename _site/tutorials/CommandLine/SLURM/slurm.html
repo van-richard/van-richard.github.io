@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<title>Quickstart to SLURM Commands - Richard's World!</title>
+  
+  <meta content="Richard's World!" property="og:site_name">
+  
+  
+    <meta content="Quickstart to SLURM Commands" property="og:title">
+  
+  
+  
+    <meta content="article" property="og:type">
+  
+  
+  
+    <meta content="Commands to assist in navigating SLURM environments" property="og:description">
+  
+  
+  
+    <meta content="http://localhost:4000/Tutorials/CommandLine/SLURM/slurm.html" property="og:url">
+  
+  
+  
+  
+  
+    <meta content="http://localhost:4000/images/test.jpg" property="og:image">
+  
+  
+  
+  
+  
+  
+  
+    <meta name="title" content="Quickstart to SLURM Commands">
+  
+  
+  
+    <meta name="url" content="http://localhost:4000/Tutorials/CommandLine/SLURM/slurm.html">
+  
+  
+  
+    <meta name="description" content="Commands to assist in navigating SLURM environments">
+  
+  
+  
+    <meta name="image:src" content="http://localhost:4000/images/test.jpg">
+  
+
+	<meta name="description" content="Commands to assist in navigating SLURM environments">
+	<meta property="og:image" content="">
+	
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <link rel="stylesheet" href="http://localhost:4000/assets/css/main.css"/>
+  <noscript><link rel="stylesheet" href="http://localhost:4000//assets/css/noscript.css"/></noscript>
+</head>
+
+	<body class="is-preload">
+			<div id="page-wrapper">
+				<header id="header">
+					<nav id="nav">
+    <ul>
+        <li class="special">
+                <a href="#menu" class="menuToggle"><span>Menu</span></a>
+                <div id="menu">
+                    <ul>
+                        
+                        <li>
+                            <a href="/">Home</a>
+                        </li>
+                        
+                        <li>
+                            <a href="/pdf/cv.pdf">CV</a>
+                        </li>
+                        
+                        <li>
+                            <a href="/tutorials/">Tutorials</a>
+                        </li>
+                         
+                    </ul>												
+                </div>
+        </li>
+    </ul>
+</nav>
+				</header>
+				
+				<article id="main">
+	<header>
+		<h2>Quickstart to SLURM Commands</h2>
+		<p>Commands to assist in navigating SLURM environments</p>
+	</header>
+	<section class="wrapper style5">
+		<div class="inner">
+			<p>Examples shown below references the OSCER Supercomputer at the University of Oklahoma. However, this similar commands can be used for other supercomputers with minor adjustments.</p>
+
+<p>NOTE: Change <code class="language-plaintext highlighter-rouge">&lt;username&gt;</code> with your supercomputing account name.</p>
+
+<h3 id="table-of-content">Table of Content</h3>
+
+<ol>
+  <li><a href="#Login">Login</a></li>
+  <li><a href="#download-filesfolders">Download Files/Folders</a></li>
+  <li><a href="#uploading-filesfolders">Upload Files/Folders</a></li>
+  <li><a href="#checking-slurm-queue">SLURM Queue</a></li>
+  <li><a href="#get-node-information">Node Information</a></li>
+</ol>
+
+<h3 id="login">Login</h3>
+
+<p>OSCER has 2 login nodes, if you don’t specify which of the two, then it will automatically chose on for you.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ssh &lt;username&gt;@schooner.oscer.ou.edu    # Auto
+</code></pre></div></div>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ssh &lt;username&gt;@schooner1.oscer.ou.edu   # Login Node 1
+</code></pre></div></div>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ssh &lt;username&gt;@schooner2.oscer.ou.edu   # Login Node 2
+</code></pre></div></div>
+<p><br /></p>
+
+<h3 id="download-filesfolders">Download Files/Folders</h3>
+
+<p>There are 2 options to downloading files and folders.</p>
+
+<ol>
+  <li>Download with <code class="language-plaintext highlighter-rouge">scp</code> (Good for small and/or few files/folders)
+    <ul>
+      <li>For files, you will need to be in a second terminal where the <em>working directory is on your local computer</em> and where you want the file to be located</li>
+      <li>For Folders, follow the previous step, and add the flag <code class="language-plaintext highlighter-rouge">scp -r</code>.</li>
+    </ul>
+  </li>
+  <li>Download with <code class="language-plaintext highlighter-rouge">rsync</code> (For copying large amounts of data, and generally the preferred approach).
+    <ul>
+      <li>If a lot of data needs to be transfered it is also preferred to use the data transfer login node on OSCER (dtn2.oscer.ou.edu).</li>
+      <li>Same approach as <code class="language-plaintext highlighter-rouge">scp</code> but use the flags <code class="language-plaintext highlighter-rouge">rsynv -avuim</code>.</li>
+      <li><code class="language-plaintext highlighter-rouge">-a</code> archive - preserve as most of the data.</li>
+      <li><code class="language-plaintext highlighter-rouge">-v</code> verbose - print summary of file transfer.</li>
+      <li><code class="language-plaintext highlighter-rouge">-u</code> update - only newest file will be kept.</li>
+      <li><code class="language-plaintext highlighter-rouge">-i</code> itemize - list of the changes.</li>
+      <li><code class="language-plaintext highlighter-rouge">-m</code> prune - delete empty folders.</li>
+    </ul>
+  </li>
+</ol>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>scp &lt;username&gt;@schooner.oscer.ou.edu:/path/to/file .               # File Download
+</code></pre></div></div>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>scp &lt;username&gt;@schooner.oscer.ou.edu:/path/to/directory .          # Folder Download
+</code></pre></div></div>
+<p><br /></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>rsync -avuim &lt;username&gt;@dtn2.oscer.ou.edu:/path/to/file .      # File Download
+</code></pre></div></div>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>rsync -avuim &lt;username&gt;@dtn2.oscer.ou.edu:/path/to/directory . # Folder Download
+</code></pre></div></div>
+<p><br /></p>
+
+<h3 id="uploading-filesfolders">Uploading Files/Folders</h3>
+
+<p>The commands <code class="language-plaintext highlighter-rouge">scp</code> and <code class="language-plaintext highlighter-rouge">rsync</code> also uploads files and folders, just switch the [source] and [destination].</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>scp file &lt;username&gt;@schooner.oscer.ou.edu:/path/to/file                  # File Upload
+</code></pre></div></div>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>scp directory &lt;username&gt;@schooner.oscer.ou.edu:/path/to/directory        # Folder Upload
+</code></pre></div></div>
+<p><br /></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>rsync -avuim file &lt;username&gt;@dtn2.oscer.ou.edu:/path/to/file         # File Upload
+</code></pre></div></div>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>rsync -avuim folder &lt;username&gt;@dtn2.oscer.ou.edu:/path/to/directory  # Folder Upload
+</code></pre></div></div>
+<p><br /></p>
+
+<h3 id="checking-slurm-queue">Checking SLURM queue</h3>
+
+<p>Shows all jobs running/pending in queue.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>squeue 
+</code></pre></div></div>
+<p><br />
+Show <em>your</em> jobs that are running/pending in queue.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>squeue -u &lt;username&gt; 
+</code></pre></div></div>
+<p><br />
+Find running/pending jobs for a specific partition.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>squeue -p &lt;ParitionName&gt;
+</code></pre></div></div>
+<p><br /></p>
+
+<h3 id="get-node-information">Get Node information</h3>
+
+<p>List nodes.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sinfo
+</code></pre></div></div>
+<p><br />
+Find all available nodes.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sinfo | grep "idle"
+</code></pre></div></div>
+<p><br />
+Find information on why a specific node is down</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sinfo -R
+</code></pre></div></div>
+			
+		</div>
+	</section>
+</article>
+
+				<footer id="footer">
+    <ul class="icons">
+    <li><a href="https://scholar.google.com/citations?user=d0ffBOYAAAAJ&hl=en&oi=sra" class="icon brands fa-google"><span class="label">Google</span></a></li>
+    <li><a href="https://twitter.com/OMGITSvanADIUM" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+    <li><a href="http://github.com/van-richard" class="icon brands fa-github"><span class="label">Github</span></a></li>
+    <li><a href="https://in.linkedin.com/in/van-richard" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+    <li><a href="mailto:van@ou.edu" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+</ul>
+
+    <ul class="copyright">
+        <li>2023 &copy; Richard Van</li>
+    </ul>
+</footer>
+			</div>
+		<script src="/assets/js/jquery.min.js"></script>
+<script src="/assets/js/jquery.scrollex.min.js"></script>
+<script src="/assets/js/jquery.scrolly.min.js"></script>
+<script src="/assets/js/browser.min.js"></script>
+<script src="/assets/js/breakpoints.min.js"></script>
+<script src="/assets/js/util.js"></script>
+<script src="/assets/js/main.js"></script>
+<script src="/assets/js/copycode.js"></script>
+
+	</body>
+</html>
