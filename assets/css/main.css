@@ -2559,7 +2559,7 @@ input, select, textarea {
 			display: block;
 			position: relative;
 			text-align: left;
-			width: 50%;
+			width: auto;
 		}
 
 			.features li:nth-child(1) {

@@ -1,6 +1,10 @@
 - name: Home
-  link: /
+  url: /
+
 - name: CV
-  link: /pdf/cv.pdf
+  url: /pdf/cv.pdf
+
 - name: Tutorials
-  link: /tutorials/
+  url: /tutorials/
+
+

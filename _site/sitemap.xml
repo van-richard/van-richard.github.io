@@ -16,10 +16,16 @@
 <loc>http://localhost:4000/tutorials/python/miniconda.html</loc>
 </url>
 <url>
+<loc>http://localhost:4000/python/</loc>
+</url>
+<url>
 <loc>http://localhost:4000/tutorials/terminal/slurm/slurm.html</loc>
 </url>
 <url>
 <loc>http://localhost:4000/tutorials/terminal/slurm/ssh.html</loc>
+</url>
+<url>
+<loc>http://localhost:4000/terminal/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/tutorials/</loc>
