@@ -1,10 +1,14 @@
 - name: Home
   link: /
 
-- name: CV
+- name: About Me
+  link: /about/
+
+- name: Curriculum Vitae
   link: /pdf/cv.pdf
+
+- name: Research
+  link: /research/
 
 - name: Tutorials
   link: /tutorials/
-
-

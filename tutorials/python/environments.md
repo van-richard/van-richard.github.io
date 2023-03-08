@@ -56,6 +56,19 @@ conda activate <name>
 conda list
 ```
 <br />
+Exporting environments to a YML file.
+
+```
+conda activate <name>
+conda env export > <name>.yml
+```
+<br />
+Installing a Conda environment from a YML file.
+
+```
+codna env create -f <name>.yml
+```
+<br />
 
 ### Example with AmberTools
 
