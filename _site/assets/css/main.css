@@ -2551,7 +2551,7 @@ input, select, textarea {
 		justify-content: center;
 		list-style: none;
 		padding: 0;
-		width: 100%;
+		/* width: auto; */
 	}
 
 		.features li {
@@ -2559,7 +2559,7 @@ input, select, textarea {
 			display: block;
 			position: relative;
 			text-align: left;
-			width: auto;
+			width: 50%;
 		}
 
 			.features li:nth-child(1) {
@@ -3528,6 +3528,8 @@ input, select, textarea {
 								width: 2em;
 							}
 
+						
+
 							@media screen and (max-width: 736px) {
 
 								#header nav > ul > li > a.menuToggle {
@@ -3542,7 +3544,7 @@ input, select, textarea {
 
 						@media screen and (max-width: 736px) {
 
-							#header nav > ul > li > a {
+							#header nav > ul > li > ul {
 								padding: 0 0 0 1.5em;
 							}
 
