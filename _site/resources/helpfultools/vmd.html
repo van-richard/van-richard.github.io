@@ -2,12 +2,12 @@
 <html>
 	<head>
 	<meta charset="utf-8">
-	<title>tutorials - Richard's World!</title>
+	<title>VMD Commands - Richard's World!</title>
   
   <meta content="Richard's World!" property="og:site_name">
   
   
-    <meta content="tutorials" property="og:title">
+    <meta content="VMD Commands" property="og:title">
   
   
   
@@ -15,11 +15,11 @@
   
   
   
-    <meta content="" property="og:description">
+    <meta content="VMD Commands" property="og:description">
   
   
   
-    <meta content="http://localhost:4000/tutorials/" property="og:url">
+    <meta content="http://localhost:4000/resources/helpfultools/vmd.html" property="og:url">
   
   
   
@@ -33,22 +33,22 @@
   
   
   
-    <meta name="title" content="tutorials">
+    <meta name="title" content="VMD Commands">
   
   
   
-    <meta name="url" content="http://localhost:4000/tutorials/">
+    <meta name="url" content="http://localhost:4000/resources/helpfultools/vmd.html">
   
   
   
-    <meta name="description" content="">
+    <meta name="description" content="VMD Commands">
   
   
   
     <meta name="image:src" content="http://localhost:4000/images/test.jpg">
   
 
-	<meta name="description" content="">
+	<meta name="description" content="VMD Commands">
 	<meta property="og:image" content="">
 	
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
@@ -86,10 +86,10 @@
                                 </li>
                         
                                 <li>
-                                    <a href="/tutorials/">Tutorials</a>
+                                    <a href="/resources/">Resources</a>
                                 </li>
                          
-                        <li>
+                        <!-- <li>
                             <a href="/terminal/" style="padding-left: 5%;"><span>&#10148;</span> Command Line</a>
                         </li>
                         <li>
@@ -100,10 +100,20 @@
                         </li>
                         <li>
                             <a href="/helpfultools/" style="padding-left: 5%;"><span>&#10148;</span> Helpful Tools</a>
-                        </li>
-                    </ul>												
+                        </li> -->
+                        <!-- <a>Contact</a>
+                        <ul class="icons">
+                            <li><a href="https://scholar.google.com/citations?user=d0ffBOYAAAAJ&hl=en&oi=sra" class="icon brands fa-google" style="font-size: 2em;"><span class="label">Google</span></a></li>
+                            <li><a href="https://twitter.com/OMGITSvanADIUM" class="icon brands fa-twitter" style="font-size: 2em;"><span class="label">Twitter</span></a></li>
+                            <li><a href="http://github.com/van-richard" class="icon brands fa-github" style="font-size: 2em;"><span class="label">Github</span></a></li>
+                            <li><a href="https://in.linkedin.com/in/van-richard" class="icon brands fa-linkedin" style="font-size: 2em;"><span class="label">LinkedIn</span></a></li>
+                            <li><a href="mailto:van@ou.edu" class="icon solid fa-envelope" style="font-size: 2em;"><span class="label">Email</span></a></li>
+                        </ul> -->
+                    </ul>
+                    												
                 </div>
         </li>
+        
     </ul>
 </nav>
 
@@ -111,52 +121,31 @@
 				</header>
 				
 				<article id="main">
-    <header>
-        <h2>Tutorials</h2>
-        <p>A collection of resources for Computational Chemistry</p>
-    </header>
+	<header>
+		<h2>VMD Commands</h2>
+		<p>VMD Commands</p>
+	</header>
+	<section class="wrapper style5">
+		<div class="inner">
+			<p>Aligning structures with unequal number of atoms or different atom numbers.</p>
+<ol>
+  <li>Open RMSD calculator</li>
+  <li>Enter the command:</li>
+</ol>
 
-    <section class="wrapper style5">
-        <ul class="features">
-            <li class="fas fa-terminal">
-                <h3><a href="/terminal/">Command Line<br />
-                </a></h3>
-                <p>
-                    Bash <span>&#8226;</span>
-                    SLURM
-                </p>
-            </li>
-            <li class="fas fa-file-code">
-                <h3><a href="/python/">Python<br />
-                </a></h3>
-                <p>
-                    Conda <!-- <span>&#8226;</span> -->
-                </p>
-            </li>
-            <li class="fa fa-desktop">
-                <h3><a href="/simulations/">Simulations<br />
-                </a></h3>
-                <p>
-                    Theory <span>&#8226;</span>
-                    Amber <span>&#8226;</span>
-                    Analysis 
-                </p>
-            <li class="fa fa-cogs">
-                <h3><a href="/helpfultools/">Helpful Tools<br />
-                </a></h3>
-                <p>
-                    IQmol <span>&#8226;</span> 
-                    Chimera <span>&#8226;</span> 
-                    VMD <span>&#8226;</span> 
-                    LaTex 
-                    Git/Github <span>&#8226;</span> 
-                    Websites
-                </p>
-            </li>
-        </ul>
-    </section>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>(resid 60 and resname DC3) or (resid 52 and resname DC3)
+</code></pre></div></div>
+
+<p>Aligning trajectories</p>
+<ol>
+  <li>RMSD Trajectory</li>
+  <li>Choose mask for alignment</li>
+</ol>
+
+			
+		</div>
+	</section>
 </article>
-
 
 				<footer id="footer">
     <ul class="icons">
