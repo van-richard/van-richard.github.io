@@ -121,17 +121,18 @@
 
 <p>NOTE: Change <code class="language-plaintext highlighter-rouge">&lt;username&gt;</code> with your supercomputing account name.</p>
 
-<h3 id="table-of-content">Table of Content</h3>
+<h2 id="table-of-content">Table of Content</h2>
 
 <ol>
   <li><a href="#Login">Login</a></li>
-  <li><a href="#download-filesfolders">Download Files/Folders</a></li>
-  <li><a href="#uploading-filesfolders">Upload Files/Folders</a></li>
+  <li><a href="#Submitting-Jobs">Submitting Jobs</a></li>
   <li><a href="#checking-slurm-queue">SLURM Queue</a></li>
   <li><a href="#get-node-information">Node Information</a></li>
+  <li><a href="#download-filesfolders">Download Files/Folders</a></li>
+  <li><a href="#uploading-filesfolders">Upload Files/Folders</a></li>
 </ol>
 
-<h3 id="login">Login</h3>
+<h2 id="login">Login</h2>
 
 <p>OSCER has 2 login nodes, if you don’t specify which of the two, then it will automatically chose on for you.</p>
 
@@ -143,7 +144,128 @@
 </code></pre></div></div>
 <p><br /></p>
 
-<h3 id="download-filesfolders">Download Files/Folders</h3>
+<h2 id="submitting-jobs">Submitting Jobs</h2>
+
+<p>To submit jobs to the SLURM scheduler, use <code class="language-plaintext highlighter-rouge">sbatch</code> followed by the name of your batch script.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sbatch script.slurm
+</code></pre></div></div>
+<p><br /></p>
+
+<h3 id="slurm-flags">SLURM flags</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Option</th>
+      <th style="text-align: left">Meaning</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">--partition=NAME</td>
+      <td style="text-align: left">Job to run on partition “NAME”</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">--time=HH:MM:SS</td>
+      <td style="text-align: left">Amount of wall time requested for job (Hours:Minutes:Seconds)</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">--nodes=#</td>
+      <td style="text-align: left">Number of nodes to use</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">--ntasks=#</td>
+      <td style="text-align: left">Number of tasks (processors) to be run</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">--cpus-per-task=#</td>
+      <td style="text-align: left">Number of CPUs required for each task (e.g. ‘8’ for an 8-way multithreaded job)</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">--ntasks-per-core=1</td>
+      <td style="text-align: left">Do not use hyperthreading (this flag typically used for parallel jobs)</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">--mem=#g</td>
+      <td style="text-align: left">Memory required for the job (Note the g (GB) in this option)</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">--exclusive</td>
+      <td style="text-align: left">Allocate the node exclusively</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">--error=%j.err</td>
+      <td style="text-align: left">JOBID as name of stderr file (by default, slurm######.out in the submitting directory)</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">--output=%j.out</td>
+      <td style="text-align: left">JOBID as name of stdout file (by default, slurm######.out in the submitting directory)</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">--job-name=NAME</td>
+      <td style="text-align: left">Name your job, “NAME”, so you can identify it in the queue</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">--array=0-#</td>
+      <td style="text-align: left">Mechanism for submitting and managing similar jobs (# can be index values)</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="example">Example</h3>
+
+<p>Example of debug batch script.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#!/bin/bash
+#SBATCH --partition=debug
+#SBATCH --nodes=1
+#SBATCH --ntasks=1
+#SBATCH --mem=1g
+#SBATCH --output=%j.out
+#SBATCH --error=%j.err
+#SBATCH --time=00:05:00
+#SBATCH --job-name=example
+</code></pre></div></div>
+<p><br /></p>
+
+<h2 id="checking-slurm-queue">Checking SLURM queue</h2>
+
+<p>Shows all jobs running/pending in queue.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>squeue 
+</code></pre></div></div>
+<p><br />
+Show <em>your</em> jobs that are running/pending in queue.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>squeue -u &lt;username&gt; 
+</code></pre></div></div>
+<p><br />
+Find running/pending jobs for a specific partition.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>squeue -p &lt;ParitionName&gt;
+</code></pre></div></div>
+<p><br /></p>
+
+<h2 id="get-node-information">Get Node information</h2>
+
+<p>List nodes.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sinfo
+</code></pre></div></div>
+<p><br />
+Find all available nodes.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sinfo | grep "idle"
+</code></pre></div></div>
+<p><br />
+Find information on why a specific node is down</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sinfo -R
+</code></pre></div></div>
+<p><br /></p>
+
+<h2 id="download-filesfolders">Download Files/Folders</h2>
 
 <p>There are 2 options to downloading files and folders.</p>
 
@@ -157,7 +279,7 @@
   <li>Download with <code class="language-plaintext highlighter-rouge">rsync</code> (For copying large amounts of data, and generally the preferred approach).
     <ul>
       <li>If a lot of data needs to be transfered it is also preferred to use the data transfer login node on OSCER (dtn2.oscer.ou.edu).</li>
-      <li>Same approach as <code class="language-plaintext highlighter-rouge">scp</code> but use the flags <code class="language-plaintext highlighter-rouge">rsynv -avuim</code>.</li>
+      <li>Same approach as <code class="language-plaintext highlighter-rouge">scp</code> but use the flags <code class="language-plaintext highlighter-rouge">rsync -avuim</code>.</li>
       <li><code class="language-plaintext highlighter-rouge">-a</code> archive - preserve as most of the data.</li>
       <li><code class="language-plaintext highlighter-rouge">-v</code> verbose - print summary of file transfer.</li>
       <li><code class="language-plaintext highlighter-rouge">-u</code> update - only newest file will be kept.</li>
@@ -178,7 +300,7 @@
 </code></pre></div></div>
 <p><br /></p>
 
-<h3 id="uploading-filesfolders">Uploading Files/Folders</h3>
+<h2 id="uploading-filesfolders">Uploading Files/Folders</h2>
 
 <p>The commands <code class="language-plaintext highlighter-rouge">scp</code> and <code class="language-plaintext highlighter-rouge">rsync</code> also uploads files and folders, just switch the [source] and [destination].</p>
 
@@ -193,40 +315,6 @@
 </code></pre></div></div>
 <p><br /></p>
 
-<h3 id="checking-slurm-queue">Checking SLURM queue</h3>
-
-<p>Shows all jobs running/pending in queue.</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>squeue 
-</code></pre></div></div>
-<p><br />
-Show <em>your</em> jobs that are running/pending in queue.</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>squeue -u &lt;username&gt; 
-</code></pre></div></div>
-<p><br />
-Find running/pending jobs for a specific partition.</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>squeue -p &lt;ParitionName&gt;
-</code></pre></div></div>
-<p><br /></p>
-
-<h3 id="get-node-information">Get Node information</h3>
-
-<p>List nodes.</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sinfo
-</code></pre></div></div>
-<p><br />
-Find all available nodes.</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sinfo | grep "idle"
-</code></pre></div></div>
-<p><br />
-Find information on why a specific node is down</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sinfo -R
-</code></pre></div></div>
 			
 		</div>
 	</section>

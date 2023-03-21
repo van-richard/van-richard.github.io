@@ -119,7 +119,37 @@
 		<div class="inner">
 			<p>Examples shown below references the OSCER Supercomputer at the University of Oklahoma. However, this similar commands can be used for other supercomputers with minor adjustments.</p>
 
-<p>If your OS is Linux/Mac, please skip to: <a href="slurm.html">Login</a></p>
+<h2 id="linuxmac">Linux/Mac</h2>
+
+<p>If your OS is Linux/Mac, login is straight forward (<code class="language-plaintext highlighter-rouge">&lt;username&gt;</code> is your username):</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ssh &lt;username&gt;@schooner.oscer.ou.edu 
+</code></pre></div></div>
+<p><br /></p>
+
+<h3 id="login-with-no-password">Login with no password</h3>
+
+<p>On your computer, run the following:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ssh-keygen -t rsa -b 4096
+</code></pre></div></div>
+<p><br /></p>
+
+<p><strong>NOTE:</strong> Do not set a passphrase when creating the key (Press enter 3 times). Make sure that this file is only readable by you! The public key file (id_dsa.pub or id_rsa.pub) as the name implies can be uploaded to other systems to which you would like passwordless access.</p>
+
+<p>Now, create a <code class="language-plaintext highlighter-rouge">~/.ssh</code> directory on the cluster (doesn’t matter if this is already there).</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ssh &lt;username&gt;@schooner.oscer.ou.edu mkdir -p .ssh
+</code></pre></div></div>
+<p><br /></p>
+
+<p>Append the public key to the cluser and enter password one last time:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cat .ssh/id_rsa.pub | ssh &lt;username&gt;@schooner.oscer.ou.edu `cat &gt;&gt; ~/.ssh/authorized_keys`
+</code></pre></div></div>
+<p><br /></p>
+
+<h2 id="windows">Windows</h2>
 
 <p>If your OS is Windows and you need to SSH to a remote server, you have 2 options:</p>
 
@@ -148,7 +178,7 @@ Run the command below. The output will show True when you’re a member of the b
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ (New-Object Security.Principal.WindowsPrincipal([Security.Principal.WindowsIdentity]::GetCurrent())).IsInRole([Security.Principal.WindowsBuiltInRole]::Administrator)
 </code></pre></div></div>
-
+<p><br /></p>
 			
 		</div>
 	</section>
