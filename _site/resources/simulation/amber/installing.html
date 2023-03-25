@@ -2,24 +2,24 @@
 <html>
 	<head>
 	<meta charset="utf-8">
-	<title>Richard's World!</title>
+	<title>Installing Amber20 - Richard's World!</title>
   
   <meta content="Richard's World!" property="og:site_name">
   
   
-    <meta content="Richard's World!" property="og:title">
+    <meta content="Installing Amber20" property="og:title">
   
   
   
-    <meta content="website" property="og:type">
+    <meta content="article" property="og:type">
   
   
   
-    <meta content="" property="og:description">
+    <meta content="Notes on Installing Amber20 on Ubuntu Desktop" property="og:description">
   
   
   
-    <meta content="http://localhost:4000/simulations/" property="og:url">
+    <meta content="http://localhost:4000/resources/simulation/amber/installing.html" property="og:url">
   
   
   
@@ -33,22 +33,22 @@
   
   
   
-    <meta name="title" content="Richard's World!">
+    <meta name="title" content="Installing Amber20">
   
   
   
-    <meta name="url" content="http://localhost:4000/simulations/">
+    <meta name="url" content="http://localhost:4000/resources/simulation/amber/installing.html">
   
   
   
-    <meta name="description" content="">
+    <meta name="description" content="Notes on Installing Amber20 on Ubuntu Desktop">
   
   
   
     <meta name="image:src" content="http://localhost:4000/images/test.jpg">
   
 
-	<meta name="description" content="">
+	<meta name="description" content="Notes on Installing Amber20 on Ubuntu Desktop">
 	<meta property="og:image" content="">
 	
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
@@ -130,27 +130,93 @@
 				</header>
 				
 				<article id="main">
-    <header>
-        <h2>Molecular Modelling</h2>
-        <p>Notes and MD tutorials I wish I made sooner</p>
-    </header>
+	<header>
+		<h2>Installing Amber20</h2>
+		<p>Notes on Installing Amber20 on Ubuntu Desktop</p>
+	</header>
+	<section class="wrapper style5">
+		<div class="inner">
+			<p>Make sure you have the following installed! <a href="https://ambermd.org/InstUbuntu.php">Amber Installation</a></p>
 
-    <section class="wrapper style5">
-        <ul class="features">
-            <li>
-                <h3>Theory</h3>
-                <a href="#">Protein Structures<br />
-                </a><br />
-            </li>
-            <li>
-                <h3>Amber</h3>
-                <a href="#">Tutorial 1: Water Box<br />
-                </a><br />
-            </li>
-        </ul>
-    </section>
+<p>apt -y update
+apt -y install tcsh make <br />
+               gcc gfortran <br />
+               flex bison patch bc wget <br />
+               xorg-dev libz-dev libbz2-dev <br />
+               readline-doc libboost-all-dev <br />
+               libblas-dev liblapack-dev</p>
+
+<p>If you want to install Amber in parallel, you can use OpenMPI through:</p>
+
+<p>apt -y install openmpi-bin libopenmpi-dev openssh-client</p>
+
+<p>In your Programs/sources/ folder, untar the files:</p>
+
+<p>tar xvjf AmberTools20.tar.bz2
+tar xvjf Amber20.tar.bz2</p>
+
+<p>cd into amber20_src/build</p>
+
+<p>Modify the run_cmake script with the following flags:</p>
+
+<p>cmake $AMBER_PREFIX/amber20_src <br />
+    -DCMAKE_INSTALL_PREFIX=/home/van/Programs/amber20 <br />
+    -DCOMPILER=GNU  <br />
+    -DMPI=FALSE -DCUDA=FALSE -DINSTALL_TESTS=TRUE <br />
+    -DDOWNLOAD_MINICONDA=FALSE -DMINICONDA_USE_PY3=TRUE <br />
+    -DDISABLE_TOOLS=’cpptraj;mdgx’ -DTRUST_SYSTEM_LIBS=TRUE <br />
+    -DPRINT_PACKAGING_REPORT=TRUE <br />
+    2&gt;&amp;1 | tee  cmake.log</p>
+
+<p>Then run the following to install Amber CPU:</p>
+
+<p>./run_cmake
+make install 
+source /home/van/Programs/amber20/amber.sh</p>
+
+<p>After successful installation, run serial test before moving on:</p>
+
+<p>cd $AMBERHOME
+make test.serial</p>
+
+<h3 id="parallel-installation">Parallel Installation</h3>
+
+<p>cd /home/van/Programs/sources/amber20_src/build</p>
+
+<p>Modify the run_cmake script to set:</p>
+
+<p>-DMPI=TRUE</p>
+
+<p>Then run the following to install Amber MPI:</p>
+
+<p>./run_cmake
+make install -j 2
+source /home/van/Programs/amber20/amber.sh</p>
+
+<p>After successful installation, run parallel test before moving on:</p>
+
+<p>cd $AMBERHOME
+export DO_PARALLEL=”mpirun -np 4”
+make test.parallel</p>
+
+<h3 id="gpu-installation">GPU Installation</h3>
+
+<p>cd /home/van/Programs/sources/amber20_src/build</p>
+
+<p>Modify the run_cmake script to set:</p>
+
+<p>-DCUDA=TRUE</p>
+
+<p>Then run the following to install Amber MPI:</p>
+
+<p>./run_cmake
+make install -j 2
+source /home/van/Programs/amber20/amber.sh</p>
+
+			
+		</div>
+	</section>
 </article>
-            
 
 				<footer id="footer">
     <ul class="icons">
