@@ -78,17 +78,26 @@
                                 </li>
                         
                                 <li>
-                                    <a href="/pdf/cv.pdf">Curriculum Vitae</a>
+                                    <a href="/cv/">Curriculum Vitae</a>
                                 </li>
                         
                                 <li>
                                     <a href="/research/">Research</a>
                                 </li>
                         
-                                <li>
-                                    <a href="/resources/">Resources</a>
-                                </li>
-                         
+                        <li> 
+                            <a href="/resources/">resources</a>
+                                <div class="dropdown">
+                                    <div class="dropdown-content">
+                                        <a href="/terminal/" style="padding-left: 5%;"><span>&#10148;</span> Command Line</a>
+                                        <a href="/python/" style="padding-left: 5%;"><span>&#10148;</span> Python</a>
+                                        <a href="/simulations/" style="padding-left: 5%;"><span>&#10148;</span> Simulations</a>
+                                        <a href="/helpfultools/" style="padding-left: 5%;"><span>&#10148;</span> Helpful Tools</a>
+                                    </div>
+                                </div>
+                        </li>
+                    </ul>
+                 </div> 
                         <!-- <li>
                             <a href="/terminal/" style="padding-left: 5%;"><span>&#10148;</span> Command Line</a>
                         </li>
@@ -125,25 +134,32 @@
         <h2>Resources</h2>
         <p>A collection of how-to's for Computational Chemistry</p>
     </header>
-
-    <section class="wrapper style5">
+    
+    <section class="wrapper style5" style="padding: 2em 10em 2em 10em;">
         <ul class="features">
             <li class="fas fa-terminal">
-                <h3><a href="/terminal/">Command Line<br />
-                </a></h3>
-                <p>
-                    Bash <span>&#8226;</span>
-                    SLURM
-                </p>
+                <h2><a href="/terminal/">COMMAND LINE</a></h2>
+                <h3>BASH</h3>
+                <a href="/resources/terminal/bash/bash-primer.html">Bash Primer<br />
+                </a><br /><br />
+                <a href="/resources/terminal/bash/bash-tutorial1.html">Bash Tutorial (Part 1)<br />
+                </a><br />
+                <a href="/resources/terminal/bash/bash-tutorial2.html">Bash Tutorial (Part 2)<br />
+                </a><br /><br />
+                <h3>SLURM</h3>
+                <a href="/resources/terminal/slurm/slurm.html">SLURM Commands Cheatsheet<br />
+                </a><br />
+                <a href="/resources/terminal/slurm/ssh.html">SSH to Remote Server<br />
+                </a><br />
             </li>
             <li class="fas fa-file-code">
-                <h3><a href="/python/">Python<br />
-                </a></h3>
-                <p>
-                    Conda <!-- <span>&#8226;</span> -->
-                </p>
+                <h2><a href="/python/">Python</a></h2>
+                <h3>CONDA</h3>
+                <a href="/resources/python/miniconda.html">Install Conda (Miniforge3)<br />
+                </a><br />
+                <a href="/resources/python/environments.html">Conda Environment Cheatsheet<br />
             </li>
-            <li class="fa fa-desktop">
+            <!-- <li class="fa fa-desktop">
                 <h3><a href="/simulations/">Simulations<br />
                 </a></h3>
                 <p>
@@ -162,7 +178,7 @@
                     Git/Github <span>&#8226;</span> 
                     Websites
                 </p>
-            </li>
+            </li> -->
         </ul>
     </section>
 </article>
