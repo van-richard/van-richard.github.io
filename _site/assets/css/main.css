@@ -2555,10 +2555,10 @@ input, select, textarea {
 	}
 
 		.features li {
-			padding: 4em 4em 2em 6em ;
+			padding: 2em 4em 2em 8em ;
 			display: block;
 			position: relative;
-			text-align: left;
+			text-align: center;
 			width: 50%;
 		}
 
@@ -2607,8 +2607,8 @@ input, select, textarea {
 				color: #3a1e21e7;
 				position: absolute;
 				left: 1.75em;
-				top: 2.75em;
-				font-size: 1.5em;
+				top: 1em;
+				font-size: 2em;
 			}
 
 			.features li:nth-child(1) {
@@ -3391,7 +3391,7 @@ input, select, textarea {
 					text-decoration: none;
 					text-transform: uppercase;
 				}
-
+					
 					@media screen and (max-width: 736px) {
 
 						#menu ul > li > a {
@@ -3815,7 +3815,7 @@ input, select, textarea {
 /* Main */
 
 	#main > header {
-		padding: 12em 0 10em 0 ;
+		padding: 12em 0  0 ;
 		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
 		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
 		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
