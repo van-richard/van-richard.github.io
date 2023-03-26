@@ -1,25 +1,25 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
 	<head>
 	<meta charset="utf-8">
-	<title>Richard's World!</title>
+	<title>Installing Amber20 - Richard's World!</title>
   
   <meta content="Richard's World!" property="og:site_name">
   
   
-    <meta content="Richard's World!" property="og:title">
+    <meta content="Installing Amber20" property="og:title">
   
   
   
-    <meta content="website" property="og:type">
+    <meta content="article" property="og:type">
   
   
   
-    <meta content="" property="og:description">
+    <meta content="Notes on Installing Amber20 on Ubuntu Desktop" property="og:description">
   
   
   
-    <meta content="http://localhost:4000/" property="og:url">
+    <meta content="http://localhost:4000/resources/simulation/amber/installing.html" property="og:url">
   
   
   
@@ -33,22 +33,22 @@
   
   
   
-    <meta name="title" content="Richard's World!">
+    <meta name="title" content="Installing Amber20">
   
   
   
-    <meta name="url" content="http://localhost:4000/">
+    <meta name="url" content="http://localhost:4000/resources/simulation/amber/installing.html">
   
   
   
-    <meta name="description" content="">
+    <meta name="description" content="Notes on Installing Amber20 on Ubuntu Desktop">
   
   
   
     <meta name="image:src" content="http://localhost:4000/images/test.jpg">
   
 
-	<meta name="description" content="">
+	<meta name="description" content="Notes on Installing Amber20 on Ubuntu Desktop">
 	<meta property="og:image" content="">
 	
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
@@ -56,13 +56,13 @@
   <noscript><link rel="stylesheet" href="http://localhost:4000//assets/css/noscript.css"/></noscript>
 </head>
 
-	<body class="landing is-preload">
-		<div id="page-wrapper">
-			<header id="header" class>
-				<h1>
-					<a href=""index.html" style="text-transform: none;"> adVANtures</a>
-				</h1>
-				<nav id="nav">
+	<body class="is-preload">
+			<div id="page-wrapper">
+				<header id="header" class>
+					<h1>
+						<a href=""index.html" style="text-transform: none;"> adVANtures</a>
+					</h1>
+					<nav id="nav">
     <ul>
         <li class="special">
                 <a href="#menu" class="menuToggle"><span>Menu</span></a>
@@ -118,76 +118,98 @@
 </nav>
 
 
-			</header>
+				</header>
+				
+				<article id="main">
+	<header>
+		<h2>Installing Amber20</h2>
+		<p>Notes on Installing Amber20 on Ubuntu Desktop</p>
+	</header>
+	<section class="wrapper style5">
+		<div class="inner">
+			<p>Make sure you have the following installed! <a href="https://ambermd.org/InstUbuntu.php">Amber Installation</a></p>
+
+<p>apt -y update
+apt -y install tcsh make <br />
+               gcc gfortran <br />
+               flex bison patch bc wget <br />
+               xorg-dev libz-dev libbz2-dev <br />
+               readline-doc libboost-all-dev <br />
+               libblas-dev liblapack-dev</p>
+
+<p>If you want to install Amber in parallel, you can use OpenMPI through:</p>
+
+<p>apt -y install openmpi-bin libopenmpi-dev openssh-client</p>
+
+<p>In your Programs/sources/ folder, untar the files:</p>
+
+<p>tar xvjf AmberTools20.tar.bz2
+tar xvjf Amber20.tar.bz2</p>
+
+<p>cd into amber20_src/build</p>
+
+<p>Modify the run_cmake script with the following flags:</p>
+
+<p>cmake $AMBER_PREFIX/amber20_src <br />
+    -DCMAKE_INSTALL_PREFIX=/home/van/Programs/amber20 <br />
+    -DCOMPILER=GNU  <br />
+    -DMPI=FALSE -DCUDA=FALSE -DINSTALL_TESTS=TRUE <br />
+    -DDOWNLOAD_MINICONDA=FALSE -DMINICONDA_USE_PY3=TRUE <br />
+    -DDISABLE_TOOLS=’cpptraj;mdgx’ -DTRUST_SYSTEM_LIBS=TRUE <br />
+    -DPRINT_PACKAGING_REPORT=TRUE <br />
+    2&gt;&amp;1 | tee  cmake.log</p>
+
+<p>Then run the following to install Amber CPU:</p>
+
+<p>./run_cmake
+make install 
+source /home/van/Programs/amber20/amber.sh</p>
+
+<p>After successful installation, run serial test before moving on:</p>
+
+<p>cd $AMBERHOME
+make test.serial</p>
+
+<h3 id="parallel-installation">Parallel Installation</h3>
+
+<p>cd /home/van/Programs/sources/amber20_src/build</p>
+
+<p>Modify the run_cmake script to set:</p>
+
+<p>-DMPI=TRUE</p>
+
+<p>Then run the following to install Amber MPI:</p>
+
+<p>./run_cmake
+make install -j 2
+source /home/van/Programs/amber20/amber.sh</p>
+
+<p>After successful installation, run parallel test before moving on:</p>
+
+<p>cd $AMBERHOME
+export DO_PARALLEL=”mpirun -np 4”
+make test.parallel</p>
+
+<h3 id="gpu-installation">GPU Installation</h3>
+
+<p>cd /home/van/Programs/sources/amber20_src/build</p>
+
+<p>Modify the run_cmake script to set:</p>
+
+<p>-DCUDA=TRUE</p>
+
+<p>Then run the following to install Amber MPI:</p>
+
+<p>./run_cmake
+make install -j 2
+source /home/van/Programs/amber20/amber.sh</p>
+
 			
-			<section id="banner">
-				<div class="inner" style="background-color: #00000044;">
-						<h2>Richard Van<br />
-						</h2>
-						<p>Computational Biochemistry<br />
-						</p>
-						<p>Ph.D. Candidate Researching with:</p>
-						<a href="https://sites.google.com/view/ccats-group" style="text-transform: uppercase;">Dr. Yihan Shao (CC-ATS, OU)<br />
-						</a>
-						<p></p>
-						<a href="https://www.lobos.nih.gov/cbs/cbs.shtml" style="text-transform: uppercase;">Dr. Bernie Brooks (LBS, NHLBI)
-						</a>
-				</div>
-				<a href="#one" class="more scrolly">Learn More</a>
-			</section>
+		</div>
+	</section>
+</article>
 
-		<!-- <section id="one" class="wrapper style2 special">
-	<div class="inner">
-			<header class="major">
-					<h2>The Research</h2>
-			</header>
-			<ul class="icons major">
-					<li><span class="icon fa-gem major style1"><span class="label">Lorem</span></span></li>
-					<li><span class="icon fa-heart major style2"><span class="label">Ipsum</span></span></li>
-					<li><span class="icon solid fa-code major style3"><span class="label">Dolor</span></span></li>
-			</ul>
-	</div>
-</section> -->
-<section id="two" class="wrapper alt style2">
-	<section class="spotlight">
-		<div class="image"><img src="images/pic01.jpg" alt="" /></div><div class="content">
-			<h2>Understanding the How Cas Enzymes Target and Cleave DNA</h2>
-			<p><strong>Research Questions: </strong> 
-				<ol>
-					<li>How can mutations modulate the confromational dynamics and catalysis of Cas9?</li>
-					<li>What is the structural organization which allows for Cas12a to cleave two strands of DNA with a single active site?</li>
-					<li>Can the DNA integration activity of Cas1 and Cas2 be controlled?</li>
-				</ol> 
-			</p>
-		</div>
-	</section>
-	<section class="spotlight">
-		<div class="image"><img src="images/pic02.jpg" alt="" /></div><div class="content">
-			<h2>Targeting Pancreatic Cancer Cells with pH Selective Peptides</h2>
-			<p><strong>Research Questions: </strong> 
-				<ol>
-					<li>What contribution does pH have to the stability of pHLIP?</li>
-					<li>How does pKa shifts of titrable amino acid assist in the binding and insertion processes?</li>
-					<li>Can peptides be disigned to target a specific pH range?</li>
-				</ol>
-			</p>
-		</div>
-	</section>
-	<section class="spotlight">
-		<div class="image"><img src="images/pic03.jpg" alt="" /></div><div class="content">
-			<h2>Designing the Next Generation of Biomedical Imaging Probes</h2>
-			<p><strong>Systems: </strong> A-Beta Fibrils, mGluR</p>
-			<p><strong>Research Questions: </strong> 
-				<ol>
-					<li>How to identify neurological diseases in the early stages?</li>
-				</ol>
-			</p>
-		</div>
-	</section>
-</section>
-
-	
-		<footer id="footer">
+				<footer id="footer">
     <ul class="icons">
     <li><a href="https://scholar.google.com/citations?user=d0ffBOYAAAAJ&hl=en&oi=sra" class="icon brands fa-google"><span class="label">Google</span></a></li>
     <li><a href="https://twitter.com/OMGITSvanADIUM" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
@@ -200,7 +222,7 @@
         <li>2023 &copy; Richard Van</li>
     </ul>
 </footer>
-		</div>
+			</div>
 		<script src="/assets/js/jquery.min.js"></script>
 <script src="/assets/js/jquery.scrollex.min.js"></script>
 <script src="/assets/js/jquery.scrolly.min.js"></script>
