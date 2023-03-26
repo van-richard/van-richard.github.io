@@ -2677,7 +2677,8 @@ input, select, textarea {
 			-ms-order: 1;
 			order: 1;
 			border-radius: 0;
-			width: 40%;
+			width: 50%;
+			/* height: auto; */
 		}
 
 			.spotlight .image img {
@@ -2686,13 +2687,13 @@ input, select, textarea {
 			}
 
 		.spotlight .content {
-			padding: 2em 4em 0.1em 4em ;
+			padding: 0em 2em 0em 2em ;
 			-moz-order: 2;
 			-webkit-order: 2;
 			-ms-order: 2;
 			order: 2;
-			max-width: 48em;
-			width: 60%;
+			/* max-width: 48em; */
+			width: 50%;
 		}
 
 		.spotlight:nth-child(2n) {
@@ -3814,7 +3815,7 @@ input, select, textarea {
 /* Main */
 
 	#main > header {
-		padding: 12em 0  0 ;
+		padding: 8em 0 6em 0em ;
 		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
 		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
 		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");

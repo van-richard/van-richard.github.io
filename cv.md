@@ -1,5 +1,5 @@
 ---
-layout: resource
+layout: page 
 title: Curriculum viae 
 permalink: /cv/
 ---
