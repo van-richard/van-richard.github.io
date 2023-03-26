@@ -4,12 +4,9 @@
 - name: About Me
   link: /about/
 
-- name: Curriculum Vitae
-  link: /cv/
-
 - name: Research
   link: /research/
 
-# - name: Resources
-#   link: /resources/
+- name: Tutorials/Guides
+  link: /resources/
   
