@@ -4,4 +4,4 @@ permalink: /about/
 description: Under Construction
 ---
 
-[Curriculum Vitae](/pdf/cv.pdf)
+<!-- [Curriculum Vitae](/pdf/cv.pdf) -->

@@ -3,13 +3,10 @@
 	{% include head.html %}
 	<body class="is-preload">
 			<div id="page-wrapper">
-				<header id="header" class>
-					<h1><a href="/index.html" style="text-transform: none;"> adVANtures</a></h1>
-					{% include navigation.html %}
-				</header>
+				{% include header.html %}
 				{{ content }}
 				{% include footer.html %}
 			</div>
-		{% include scripts.html%}
+		{% include scripts.html %}
 	</body>
 </html>

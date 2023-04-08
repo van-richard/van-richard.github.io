@@ -1,4 +1,4 @@
-@import url(fontawesome-all.min.css);
+/* @import url("fontawesome-all.min.css"); */
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,800,800italic");
 
 /*
@@ -1812,6 +1812,7 @@ input, select, textarea {
 
 	}
 
+
 /* Form */
 
 	form {
@@ -2125,12 +2126,12 @@ input, select, textarea {
 
 		.image.fit {
 			display: block;
-			margin: 0 0 2em 0;
-			width: 25%;
+			/* margin: 50%; */
+			width: 95%;
 		}
 
 			.image.fit img {
-				width: 50%;
+				width: 100%;
 			}
 
 /* List */
@@ -3815,7 +3816,7 @@ input, select, textarea {
 /* Main */
 
 	#main > header {
-		padding: 8em 0 6em 0em ;
+		padding: 6em 0 4em 0em ;
 		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
 		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
 		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
@@ -3828,8 +3829,8 @@ input, select, textarea {
 	}
 
 		#main > header h2 {
-			font-size: 1.75em;
-			margin: 0 0 0.5em 0;
+			font-size: 2.5em;
+			/* margin: 0 0 0.5em 0; */
 		}
 
 		#main > header p {
@@ -3846,7 +3847,7 @@ input, select, textarea {
 		@media screen and (max-width: 1680px) {
 
 			#main > header {
-				padding: 10em 0 8em 0 ;
+				padding: 6em 0 4em 0 ;
 			}
 
 		}
@@ -3854,7 +3855,7 @@ input, select, textarea {
 		@media screen and (max-width: 1280px) {
 
 			#main > header {
-				padding: 8em 3em 6em 3em ;
+				padding: 6em 0em 4em 0em ;
 			}
 
 		}
@@ -3862,7 +3863,7 @@ input, select, textarea {
 		@media screen and (max-width: 980px) {
 
 			#main > header {
-				padding: 10em 3em 8em 3em ;
+				padding: 6em 0em 4em 0em ;
 			}
 
 		}

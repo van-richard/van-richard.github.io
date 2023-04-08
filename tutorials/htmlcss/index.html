@@ -1,0 +1,25 @@
+---
+layout: pages 
+permalink: /htmlcss/
+---
+
+<article id="main">
+    <header>
+        <h2>HTML/CSS</h2>
+        <p>how to make your own website with github</p>
+    </header>
+
+    <section class="wrapper style5">
+        <ul class="inner">
+            <ul class="inner">
+                <h3>Getting Started</h3>
+                {% for item in site.data.htmlcss-nav %}
+                <li>
+                    <a href="{{ item.link }}">{{ item.name }}</a>
+                </li>
+                {% endfor %}
+            </ul>
+            <br />
+    </section>
+</article>
+            

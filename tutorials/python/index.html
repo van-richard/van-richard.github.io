@@ -1,0 +1,24 @@
+---
+layout: pages 
+permalink: /python/
+---
+
+<article id="main">
+    <header>
+        <h2>Python</h2>
+        <p>Definitely broke my computer before this</p>
+    </header>
+
+    <section class="wrapper style5">
+        <ul class="inner">
+            <h3>Python</h3>
+            {% for item in site.data.python-nav %}
+            <li>
+                <a href="{{ item.link }}">{{ item.name }}</a>
+            </li>
+            {% endfor %}
+        </ul>
+        <br />
+    </section>
+</article>
+            
