@@ -3469,7 +3469,7 @@ input, select, textarea {
 
 			#header h1 a {
 				border: 0;
-				display: block;
+				/* display: block; */
 				height: inherit;
 				line-height: inherit;
 			}
