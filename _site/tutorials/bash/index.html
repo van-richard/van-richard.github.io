@@ -116,17 +116,464 @@
 	</header>
 	<section class="wrapper style5">
 		<div class="inner">
-			<section class="wrapper style5">
+			<style>
+  .pagination {
+	display: flex;
+}
+.previous, a.previous {
+	flex: 1;
+}
+.page_number {
+	flex: 1;
+}
+next, a.next {
+	flex: 1;
+}
+</style>
+
+<section class="wrapper style5">
     <div class="inner">
+      
+      <div class="content">
+            <p><h2 id="ls">ls</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ls
+</code></pre></div></div>
+</p>
+      </div>
+      
+      <div class="content">
+            <p><p>First line of the script is the shebang which tells the system how to execute the script: https://en.wikipedia.org/wiki/Shebang_(Unix)
+As you already figured, comments start with #. Shebang is also a comment.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#!/bin/bash
+</code></pre></div></div>
+
+<p>Simple hello world example:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>echo "Hello world!" # =&gt; Hello world!
+</code></pre></div></div>
+
+<p>Each command starts on a new line, or after a semicolon:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>echo "This is the first command"; echo "This is the second command"
+=&gt; This is the first command
+=&gt; This is the second command
+</code></pre></div></div>
+
+<p>Declaring a variable looks like this:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>variable="Some string"
+</code></pre></div></div>
+
+<p>But not like this:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>variable = "Some string" # =&gt; returns error "variable: command not found"
+</code></pre></div></div>
+
+<p>Bash will decide that <code class="language-plaintext highlighter-rouge">variable</code> is a command it must execute and give an error because it can’t be found.</p>
+
+<p>Nor like this:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>variable= "Some string" # =&gt; returns error: "Some string: command not found"
+</code></pre></div></div>
+
+<p>Bash will decide that “Some string” is a command it must execute and give an
+error because it can’t be found. In this case the “variable=” part is seen
+as a variable assignment valid only for the scope of the “Some string”
+command.</p>
+
+<p>Using the variable:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>echo "$variable" =&gt; Some string
+echo '$variable' =&gt; $variable
+</code></pre></div></div>
+
+<p>When you use a variable itself — assign it, export it, or else — you write
+its name without $. If you want to use the variable’s value, you should use $.
+Note that ‘ (single quote) won’t expand the variables!
+You can write variable without surrounding quotes but it’s not recommended.</p>
+
+<p>Parameter expansion ${…}:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>echo "${variable}" =&gt; Some string
+</code></pre></div></div>
+
+<p>This is a simple usage of parameter expansion such as two examples above.
+Parameter expansion gets a value from a variable.
+It “expands” or prints the value.
+During the expansion time the value or parameter can be modified.
+Below are other modifications that add onto this expansion.</p>
+
+<p>String substitution in variables:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>echo "${variable/Some/A}" =&gt; A string
+</code></pre></div></div>
+
+<p>This will substitute the first occurrence of “Some” with “A”.</p>
+
+<p>Substring from a variable:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>length=7
+echo "${variable:0:length}" =&gt; Some st
+</code></pre></div></div>
+
+<p>This will return only the first 7 characters of the value</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>echo "${variable: -5}" # =&gt; tring
+</code></pre></div></div>
+
+<p>This will return the last 5 characters (note the space before -5).
+The space before minus is mandatory here.</p>
+
+<p>String length:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>echo "${#variable}" # =&gt; 11
+</code></pre></div></div>
+
+<p>Indirect expansion:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>other_variable="variable"
+echo ${!other_variable} # =&gt; Some string
+</code></pre></div></div>
+
+<p>This will expand the value of <code class="language-plaintext highlighter-rouge">other_variable</code>.</p>
+
+<p>The default value for variable:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>echo "${foo:-"DefaultValueIfFooIsMissingOrEmpty"}"
+</code></pre></div></div>
+
+<p>=&gt; DefaultValueIfFooIsMissingOrEmpty
+This works for null (foo=) and empty string (foo=””); zero (foo=0) returns 0.
+Note that it only returns default value and doesn’t change variable value.</p>
+
+<p>Declare an array with 6 elements:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>array=(one two three four five six)
+</code></pre></div></div>
+
+<p>Print the first element:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>echo "${array[0]}" # =&gt; "one"
+</code></pre></div></div>
+
+<p>Print all elements:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>echo "${array[@]}" # =&gt; "one two three four five six"
+</code></pre></div></div>
+
+<p>Print the number of elements:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>echo "${#array[@]}" # =&gt; "6"
+</code></pre></div></div>
+
+<p>Print the number of characters in third element</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>echo "${#array[2]}" # =&gt; "5"
+</code></pre></div></div>
+<p>Print 2 elements starting from fourth:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>echo "${array[@]:3:2}" # =&gt; "four five"
+</code></pre></div></div>
+<p>Print all elements each of them on new line.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>for item in "${array[@]}"; do
+    echo "$item"
+done
+</code></pre></div></div>
+
+<p>Built-in variables:
+There are some useful built-in variables, like:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>echo "Last program's return value: $?"
+echo "Script's PID: $$"
+echo "Number of arguments passed to script: $#"
+echo "All arguments passed to script: $@"
+echo "Script's arguments separated into different variables: $1 $2..."
+</code></pre></div></div>
+
+<p>Brace Expansion {…}
+used to generate arbitrary strings:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>echo {1..10} # =&gt; 1 2 3 4 5 6 7 8 9 10
+echo {a..z} # =&gt; a b c d e f g h i j k l m n o p q r s t u v w x y z
+</code></pre></div></div>
+
+<p>This will output the range from the start value to the end value.
+Note that you can’t use variables here:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>from=1
+to=10
+echo {$from..$to} # =&gt; {$from..$to}
+</code></pre></div></div>
+
+<p>Now that we know how to echo and use variables,
+let’s learn some of the other basics of Bash!</p>
+
+<p>Our current directory is available through the command <code class="language-plaintext highlighter-rouge">pwd</code>.
+<code class="language-plaintext highlighter-rouge">pwd</code> stands for “print working directory”.
+We can also use the built-in variable <code class="language-plaintext highlighter-rouge">$PWD</code>.
+Observe that the following are equivalent:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>echo "I'm in $(pwd)" # execs `pwd` and interpolates output
+echo "I'm in $PWD" # interpolates the variable
+</code></pre></div></div>
+
+<p>If you get too much output in your terminal, or from a script, the command
+<code class="language-plaintext highlighter-rouge">clear</code> clears your screen:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>clear
+</code></pre></div></div>
+<p>Ctrl-L also works for clearing output.</p>
+
+<p>Reading a value from input:
+echo “What’s your name?”
+read name
+Note that we didn’t need to declare a new variable.
+echo “Hello, $name!”</p>
+
+<p>We have the usual if structure.
+Condition is true if the value of $name is not equal to the current user’s login username:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>if [[ "$name" != "$USER" ]]; then
+    echo "Your name isn't your username"
+else
+    echo "Your name is your username"
+fi
+</code></pre></div></div>
+
+<table>
+  <tbody>
+    <tr>
+      <td>To use &amp;&amp; and</td>
+      <td> </td>
+      <td>with if statements, you need multiple pairs of square brackets:</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>read age
+if [[ "$name" == "Steve" ]] &amp;&amp; [[ "$age" -eq 15 ]]; then
+    echo "This will run if $name is Steve AND $age is 15."
+fi
+
+if [[ "$name" == "Daniya" ]] || [[ "$name" == "Zach" ]]; then
+    echo "This will run if $name is Daniya OR Zach."
+fi
+</code></pre></div></div>
+
+<p>There are other comparison operators for numbers listed below:
+-ne - not equal
+-lt - less than
+-gt - greater than
+-le - less than or equal to
+-ge - greater than or equal to</p>
+
+<p>There is also the <code class="language-plaintext highlighter-rouge">=~</code> operator, which tests a string against the Regex pattern:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>email=me@example.com
+if [[ "$email" =~ [a-z]+@[a-z]{2,}\.(com|net|org) ]]
+then
+    echo "Valid email!"
+fi
+</code></pre></div></div>
+
+<p>There is also conditional execution</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>echo "Always executed" || echo "Only executed if first command fails"
+</code></pre></div></div>
+
+<p>=&gt; Always executed</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>echo "Always executed" &amp;&amp; echo "Only executed if first command does NOT fail"
+</code></pre></div></div>
+
+<p>=&gt; Always executed
+=&gt; Only executed if first command does NOT fail</p>
+
+<p>A single ampersand &amp; after a command runs it in the background. A background command’s
+output is printed to the terminal, but it cannot read from the input.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sleep 30 &amp;
+</code></pre></div></div>
+
+<p>List background jobs</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>jobs # =&gt; [1]+  Running                 sleep 30 &amp;
+</code></pre></div></div>
+
+<p>Bring the background job to the foreground</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>fg
+</code></pre></div></div>
+
+<p>Ctrl-C to kill the process, or Ctrl-Z to pause it
+Resume a background process after it has been paused with Ctrl-Z</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bg
+</code></pre></div></div>
+
+<p>Kill job number 2</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kill %2
+</code></pre></div></div>
+
+<p>%1, %2, etc. can be used for fg and bg as well</p>
+
+<p>Redefine command <code class="language-plaintext highlighter-rouge">ping</code> as alias to send only 5 packets</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>alias ping='ping -c 5'
+</code></pre></div></div>
+
+<p>Escape the alias and use command with this name instead</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>\ping 192.168.1.1
+</code></pre></div></div>
+
+<p>Print all aliases</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>alias -p
+</code></pre></div></div>
+
+<p>Expressions are denoted with the following format:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>echo $(( 10 + 5 )) # =&gt; 15
+</code></pre></div></div>
+
+<p>Unlike other programming languages, bash is a shell so it works in the context
+of a current directory. You can list files and directories in the current
+directory with the ls command:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ls # Lists the files and subdirectories contained in the current directory
+</code></pre></div></div>
+
+<p>This command has options that control its execution:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ls -l # Lists every file and directory on a separate line
+ls -t # Sorts the directory contents by last-modified date (descending)
+ls -R # Recursively `ls` this directory and all of its subdirectories
+</code></pre></div></div>
+
+<p>Results (stdout) of the previous command can be passed as input (stdin) to the next command
+using a pipe |. Commands chained in this way are called a “pipeline”, and are run concurrently.
+The <code class="language-plaintext highlighter-rouge">grep</code> command filters the input with provided patterns.
+That’s how we can list .txt files in the current directory:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ls -l | grep "\.txt"
+</code></pre></div></div>
+
+<p>Use <code class="language-plaintext highlighter-rouge">cat</code> to print files to stdout:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cat file.txt
+</code></pre></div></div>
+
+<p>We can also read the file using <code class="language-plaintext highlighter-rouge">cat</code>:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Contents=$(cat file.txt)
+</code></pre></div></div>
+
+<p>“\n” prints a new line character
+“-e” to interpret the newline escape characters as escape characters</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>echo -e "START OF FILE\n$Contents\nEND OF FILE"
+</code></pre></div></div>
+
+<p>=&gt; START OF FILE
+=&gt; [contents of file.txt]
+=&gt; END OF FILE</p>
+
+<p>Use <code class="language-plaintext highlighter-rouge">cp</code> to copy files or directories from one place to another.
+<code class="language-plaintext highlighter-rouge">cp</code> creates NEW versions of the sources,
+so editing the copy won’t affect the original (and vice versa).
+Note that it will overwrite the destination if it already exists.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cp srcFile.txt clone.txt
+cp -r srcDirectory/ dst/ # recursively copy
+</code></pre></div></div>
+
+<p>Look into <code class="language-plaintext highlighter-rouge">scp</code> or <code class="language-plaintext highlighter-rouge">sftp</code> if you plan on exchanging files between computers.
+<code class="language-plaintext highlighter-rouge">scp</code> behaves very similarly to <code class="language-plaintext highlighter-rouge">cp</code>.
+<code class="language-plaintext highlighter-rouge">sftp</code> is more interactive.</p>
+
+<p>Use <code class="language-plaintext highlighter-rouge">mv</code> to move files or directories from one place to another.
+<code class="language-plaintext highlighter-rouge">mv</code> is similar to <code class="language-plaintext highlighter-rouge">cp</code>, but it deletes the source.
+<code class="language-plaintext highlighter-rouge">mv</code> is also useful for renaming files!</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mv source.txt dst.txt # sorry, l33t hackers...
+</code></pre></div></div>
+
+<p>Since bash works in the context of a current directory, you might want to
+run your command in some other directory. We have cd for changing location:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd ~    # change to home directory
+cd      # also goes to home directory
+cd ..   # go up one directory
+        # (^^say, from /home/username/Downloads to /home/username)
+cd /home/username/Documents   # change to specified directory
+cd ~/Documents/..    # now in home directory (if ~/Documents exists)
+cd -    # change to last directory
+</code></pre></div></div>
+
+<p>=&gt; /home/username/Documents</p>
+
+<p>Use subshells to work across directories</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>(echo "First, I'm here: $PWD") &amp;&amp; (cd someDir; echo "Then, I'm here: $PWD")
+pwd # still in first directory
+</code></pre></div></div>
+
+<p>Use <code class="language-plaintext highlighter-rouge">mkdir</code> to create new directories.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mkdir myNewDir
+</code></pre></div></div>
+
+<p>The <code class="language-plaintext highlighter-rouge">-p</code> flag causes new intermediate directories to be created as necessary.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mkdir -p myNewDir/with/intermediate/directories
+</code></pre></div></div>
+
+<p>if the intermediate directories didn’t already exist, running the above
+command without the <code class="language-plaintext highlighter-rouge">-p</code> flag would return an error</p>
+
+<p>You can redirect command input and output (stdin, stdout, and stderr)
+using “redirection operators”. Unlike a pipe, which passes output to a command,
+a redirection operator has a command’s input come from a file or stream, or
+sends its output to a file or stream.</p>
+
+<p>Read from stdin until ^EOF$ and overwrite hello.py with the lines
+between “EOF” (which are called a “here document”):</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cat &gt; hello.py &lt;&lt; EOF
+#!/usr/bin/env python
+from __future__ import print_function
+import sys
+print("#stdout", file=sys.stdout)
+print("#stderr", file=sys.stderr)
+for line in sys.stdin:
+    print(line, file=sys.stdout)
+EOF
+</code></pre></div></div>
+
+</p>
+      </div>
+      
+      
+      <!-- Pagination links -->
+      <div class="pagination">
         
+          <span class="previous">Previous</span>
+        
+        <span class="page_number ">Page: 1 of 1</span>
+        
+          <span class="next ">Next</span>
+        
+      </div>
+
+      <div class="pagination">
+        
+    </div>
     </div>
 </section>
 
-<!-- 
-Pagination links
-<div class="pagination">
-    
-</div> -->
 			
 		</div>
 	</section>

@@ -27,14 +27,7 @@ plugins:
   - jekyll-paginate
   - jemoji
 
-gemspec
-group :jekyll_plugins do
-    gem 'jekyll-feed'
-    gem 'jekyll-sitemap'
-    gem 'jekyll-paginate'
-end
-
 paginate: 8
-paginate_path: "/tutorials/bash/page:num/"
+paginate_path: "./tutorials/bash/page:num/"
 
 excerpt_separator: "" 
