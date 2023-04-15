@@ -2,12 +2,12 @@
 <html>
 	<head>
 	<meta charset="utf-8">
-	<title>Git - Richard's World!</title>
+	<title>git - Richard's World!</title>
   
   <meta content="Richard's World!" property="og:site_name">
   
   
-    <meta content="Git" property="og:title">
+    <meta content="git" property="og:title">
   
   
   
@@ -19,7 +19,7 @@
   
   
   
-    <meta content="http://localhost:4000/tutorials/git/" property="og:url">
+    <meta content="http://localhost:4000/tutorials/git/index.html" property="og:url">
   
   
   
@@ -33,11 +33,11 @@
   
   
   
-    <meta name="title" content="Git">
+    <meta name="title" content="git">
   
   
   
-    <meta name="url" content="http://localhost:4000/tutorials/git/">
+    <meta name="url" content="http://localhost:4000/tutorials/git/index.html">
   
   
   
@@ -111,48 +111,157 @@
 </header>
 				<article id="main">
 	<header>
-		<h3>Git</h3>
+		<h3>git</h3>
 		<p></p>
 	</header>
 	<section class="wrapper style5">
 		<div class="inner">
-			<style>
-  .pagination {
-	display: flex;
-}
-.previous, a.previous {
-	flex: 1;
-}
-.page_number {
-	flex: 1;
-}
-next, a.next {
-	flex: 1;
-}
-</style>
-
-<section class="wrapper style5">
-    <div class="inner">
-      
-      
-      <!-- Pagination links -->
-      <div class="pagination">
-        
-          <span class="previous">Previous</span>
-        
-        <span class="page_number ">Page:  of </span>
-        
-          <span class="next ">Next</span>
-        
-      </div>
-
-      <div class="pagination">
-        
-    </div>
-    </div>
-</section>
-
 			
+			<div class="content">
+				  <p><h2 id="init">init</h2>
+<p>Create an empty Git repository. The Git repository’s settings, stored information, and more is stored in a directory (a folder) named <code class="language-plaintext highlighter-rouge">git</code>.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git init
+</code></pre></div></div>
+
+<h2 id="config">config</h2>
+
+<p>To configure settings. Whether it be for the repository, the system itself, or global configurations ( global config file is ~/.gitconfig ).</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ git config --global user.email "MyEmail@Zoho.com"
+$ git config --global user.name "My Name"
+
+$ git config --global user.email
+$ git config --global user.name
+</code></pre></div></div>
+
+<h2 id="add">add</h2>
+<p>To add files to the staging area/index. If you do not git add new files to the staging area/index, they will not be included in commits!</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># add a file in your current working directory
+$ git add HelloWorld.java
+
+# add a file in a nested dir
+$ git add /path/to/file/HelloWorld.c
+
+# Regular Expression support!
+$ git add ./*.java
+
+# You can also add everything in your working directory to the staging area.
+$ git add -A
+</code></pre></div></div>
+
+<h2 id="branch">branch</h2>
+<p>Manage your branches. You can view, edit, create, delete branches using this command.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># list existing branches &amp; remotes
+$ git branch -a
+
+# create a new branch
+$ git branch myNewBranch
+
+# delete a branch
+$ git branch -d myBranch
+
+# rename a branch
+# git branch -m &lt;oldname&gt; &lt;newname&gt;
+$ git branch -m myBranchName myNewBranchName
+
+# edit a branch's description
+$ git branch myBranchName --edit-description
+</code></pre></div></div>
+
+<h2 id="checkout">checkout</h2>
+<p>Updates all files in the working tree to match the version in the index, or specified tree.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># Checkout a repo - defaults to master branch
+$ git checkout
+
+# Checkout a specified branch
+$ git checkout branchName
+
+# Create a new branch &amp; switch to it
+# equivalent to "git branch &lt;name&gt;; git checkout &lt;name&gt;"
+
+$ git checkout -b newBranch
+</code></pre></div></div>
+
+<h2 id="clone">clone</h2>
+<p>Clones, or copies, an existing repository into a new directory. It also adds remote-tracking branches for each branch in the cloned repo, which allows you to push to a remote branch.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># Clone learnxinyminutes-docs
+$ git clone https://github.com/adambard/learnxinyminutes-docs.git
+
+# shallow clone - faster cloning that pulls only latest snapshot
+$ git clone --depth 1 https://github.com/adambard/learnxinyminutes-docs.git
+
+# clone only a specific branch
+$ git clone -b master-cn https://github.com/adambard/learnxinyminutes-docs.git --single-branch
+</code></pre></div></div>
+
+<h2 id="commit">commit</h2>
+<p>Stores the current contents of the index in a new “commit.” This commit contains the changes made and a message created by the user.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># commit with a message
+$ git commit -m "Added multiplyNumbers() function to HelloWorld.c"
+
+# signed commit with a message (user.signingkey must have been set
+# with your GPG key e.g. git config --global user.signingkey 5173AAD5)
+$ git commit -S -m "signed commit message"
+
+# automatically stage modified or deleted files, except new files, and then commit
+$ git commit -a -m "Modified foo.php and removed bar.php"
+
+# change last commit (this deletes previous commit with a fresh commit)
+$ git commit --amend -m "Correct message"
+</code></pre></div></div>
+
+<h2 id="pull">pull</h2>
+<p>Pulls from a repository and merges it with another branch.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># Update your local repo, by merging in new changes
+# from the remote "origin" and "master" branch.
+# git pull &lt;remote&gt; &lt;branch&gt;
+$ git pull origin master
+
+# By default, git pull will update your current branch
+# by merging in new changes from its remote-tracking branch
+$ git pull
+
+# Merge in changes from remote branch and rebase
+# branch commits onto your local repo, like: "git fetch &lt;remote&gt; &lt;branch&gt;, git
+# rebase &lt;remote&gt;/&lt;branch&gt;"
+$ git pull origin master --rebase
+</code></pre></div></div>
+
+<h2 id="push">push</h2>
+<p>Push and merge changes from a branch to a remote &amp; branch.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># Push and merge changes from a local repo to a
+# remote named "origin" and "master" branch.
+# git push &lt;remote&gt; &lt;branch&gt;
+$ git push origin master
+
+# By default, git push will push and merge changes from
+# the current branch to its remote-tracking branch
+$ git push
+
+# To link up current local branch with a remote branch, add -u flag:
+$ git push -u origin master
+# Now, anytime you want to push from that same local branch, use shortcut:
+$ git push
+</code></pre></div></div>
+</p>
+			</div>
+			
+				
+				<!-- 
+				  Showing buttons to move to the next and to the previous list of posts (pager buttons).
+				-->
+				
+			  
+				<p class="rss-subscribe">subscribe <a href="/feed.xml">via RSS</a></p>
+			  </div>
 		</div>
 	</section>
 </article>
