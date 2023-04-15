@@ -2,12 +2,12 @@
 <html>
 	<head>
 	<meta charset="utf-8">
-	<title>BASH Tutorial - Richard's World!</title>
+	<title>BASH - Richard's World!</title>
   
   <meta content="Richard's World!" property="og:site_name">
   
   
-    <meta content="BASH Tutorial" property="og:title">
+    <meta content="BASH" property="og:title">
   
   
   
@@ -15,11 +15,11 @@
   
   
   
-    <meta content="A guide to BASH (Part 1)" property="og:description">
+    <meta content="" property="og:description">
   
   
   
-    <meta content="http://localhost:4000/tutorials/terminal/bash/tutorial1.html" property="og:url">
+    <meta content="http://localhost:4000/tutorials/assignments/bash.html" property="og:url">
   
   
   
@@ -33,22 +33,22 @@
   
   
   
-    <meta name="title" content="BASH Tutorial">
+    <meta name="title" content="BASH">
   
   
   
-    <meta name="url" content="http://localhost:4000/tutorials/terminal/bash/tutorial1.html">
+    <meta name="url" content="http://localhost:4000/tutorials/assignments/bash.html">
   
   
   
-    <meta name="description" content="A guide to BASH (Part 1)">
+    <meta name="description" content="">
   
   
   
     <meta name="image:src" content="http://localhost:4000/images/test.jpg">
   
 
-	<meta name="description" content="A guide to BASH (Part 1)">
+	<meta name="description" content="">
 	<meta property="og:image" content="">
 	
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
@@ -111,8 +111,8 @@
 </header>
 				<article id="main">
 	<header>
-		<h3>BASH Tutorial</h3>
-		<p>A guide to BASH (Part 1)</p>
+		<h3>BASH</h3>
+		<p></p>
 	</header>
 	<section class="wrapper style5">
 		<div class="inner">
@@ -285,6 +285,74 @@
 <p>This conclude the introduction and basic usage of command line! There are tons of other commands that can be learned to help you achieve whatever goal you need, but everything I’ve shown you today should get you started with command line. Thank you for following!</p>
 
 <p>If you’re interested in more advanced usage, you can move on to Part 2 of the tutorial!</p>
+
+<p>Welcome to part 2 of the Command Line basic Usage tutorials!!</p>
+
+<h1 id="table-of-contents-1">Table of Contents</h1>
+<p><strong>2.</strong> Advanced Usage (loops, scripting, etc.)</p>
+
+<p>Quicklinks: <a href="#while">while</a>, <a href="#for">for</a></p>
+
+<h1 id="background-1">Background</h1>
+
+<p>In this tutorial, we will go over the formating of loops, and then making these into scripts. Loops in bash (or any coding language in general) are those quality of life improvements you find as you tacking more daunting and reptetitive tasks. A bash loop is a statement that allows code to be repeatedly excuted. This allows us to take a series of commands and keep re-running them until a particular situation is reached.</p>
+
+<p>There are loop structures in bash scripting, however, we’ll look the 2 I use the most below.</p>
+
+<h1 id="loops">Loops</h1>
+<p>One of the easiest and most useful loops to work with is <code class="language-plaintext highlighter-rouge">while</code>. When the while expression is true, keep executing these lines of code. The format of the command will look like this:</p>
+
+<h2 id="while">while</h2>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">while</span> <span class="p">[</span> <span class="n">arugment</span> <span class="p">]</span>
+<span class="k">do</span>
+<span class="p">[</span><span class="n">commands</span><span class="p">]</span>
+<span class="n">done</span></code></pre></figure>
+
+<p>An example of using <code class="language-plaintext highlighter-rouge">while</code> loops can be if we want a sequence of numbers from 1 to 10. We’ll start by setting a variable to a number. The variable I’ll use is “value.” The argument we’ll use is when “value” is less than or equal (-le) to 10, print the number of “value”, and then add 1 to value [((value++))]. Recall that the “$” is where I entered code, you’ll see a new symbol (“&gt;”) when excuting loops. Bash is essentially looking for you to end the loop with the statement “done.”</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="err">$</span> <span class="n">value</span><span class="o">=</span><span class="mi">1</span>
+<span class="err">$</span> <span class="k">while</span> <span class="p">[</span> <span class="vg">$value</span> <span class="o">-</span><span class="n">le</span> <span class="mi">10</span> <span class="p">]</span>
+<span class="o">&gt;</span> <span class="k">do</span>
+<span class="o">&gt;</span> <span class="n">echo</span> <span class="vg">$value</span>
+<span class="o">&gt;</span> <span class="p">((</span><span class="n">value</span><span class="o">++</span><span class="p">))</span>
+<span class="o">&gt;</span> <span class="n">done</span></code></pre></figure>
+
+<p>The next loop structure I like to use is a <code class="language-plaintext highlighter-rouge">for</code> loop. This is a little different than <code class="language-plaintext highlighter-rouge">while</code>, namely, what it does is say for each item in a given list, perform the given set of commands. The <code class="language-plaintext highlighter-rouge">for</code> loop will take each item in the list (in that order), assign that item to the variable, and excute the commands between “do” and “done.” The format looks like this:</p>
+
+<h2 id="for">for</h2>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">for</span> <span class="o">**</span><span class="n">variable</span><span class="o">**</span> <span class="k">in</span> <span class="p">[</span><span class="n">list</span><span class="p">]</span>
+<span class="k">do</span>
+<span class="p">[</span><span class="n">commands</span><span class="p">]</span>
+<span class="n">done</span></code></pre></figure>
+
+<p>To illustrate this, here is an example of looping through a list of names:</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="err">$</span> <span class="n">names</span><span class="o">=</span><span class="s1">'Richard Scott Van'</span>
+<span class="err">$</span> <span class="k">for</span> <span class="nb">name</span> <span class="k">in</span> <span class="vg">$names</span>
+<span class="o">&gt;</span> <span class="k">do</span>
+<span class="o">&gt;</span> <span class="n">echo</span> <span class="vg">$name</span>
+<span class="o">&gt;</span> <span class="n">done</span></code></pre></figure>
+
+<h1 id="scripting">Scripting</h1>
+
+<p>I’m sure at this point, you’re asking yourself when are you going to need this?? Say you wanted to use Alphafold to predict structures of your protein, but you have a lot of homologues. To keep things orderly, you might create separate folders for each homologue, and have the same inputs for each folder, where the only difference is the sequence. This will be a lot of copying, making files, and work. So we can use a loop, but what if you plan on doing this multiple times for other projects? We can save our commands to a bash script. Bash scripts are ordinary text files which contain commands or mixture of commands. An example could be what we did for the previous <code class="language-plaintext highlighter-rouge">for</code> loop. To turn it into a script, we’ll add the “&gt;” mark and give the file the name, “for loop example.”</p>
+
+<p>Now, how does bash differentiate between normal text files and scripts? We’ll need to add a line to “for_loop_example.sh,” specifically we’ll add one line at the top. This line is called a Shebang which tells bash to read it as script. Additionally, I prefer to name my scripts with the “.sh” extension to differentiate this with other files. So the first thing I’ll do is use <code class="language-plaintext highlighter-rouge">echo</code> to first make the Shebang, and then append (»; two greater than symbols) the for loop to the file.</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="err">$</span> <span class="n">echo</span> <span class="s2">"$!/bin/bash"</span> <span class="o">&gt;</span> <span class="n">for_loop_example</span><span class="p">.</span><span class="nf">sh</span>
+<span class="err">$</span> <span class="n">names</span><span class="o">=</span><span class="s1">'richard scott van'</span>
+<span class="err">$</span> <span class="k">for</span> <span class="nb">name</span> <span class="k">in</span> <span class="vg">$names</span>
+<span class="o">&gt;</span> <span class="k">do</span>
+<span class="o">&gt;</span> <span class="n">echo</span> <span class="vg">$name</span>
+<span class="o">&gt;</span> <span class="n">done</span> <span class="o">&gt;&gt;</span> <span class="n">for_loop_example</span><span class="p">.</span><span class="nf">sh</span></code></pre></figure>
+
+<p>If you <code class="language-plaintext highlighter-rouge">ls</code>, you should see the script. To run it, you’ll type “bash” before the script:</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="err">$</span> <span class="n">bash</span> <span class="n">for_loop_example</span><span class="p">.</span><span class="nf">sh</span></code></pre></figure>
+
+<p>Once you get better, you can also use <code class="language-plaintext highlighter-rouge">vi</code> (or any text editor) to make a new file, and then write out the script manually.</p>
 
 			
 		</div>

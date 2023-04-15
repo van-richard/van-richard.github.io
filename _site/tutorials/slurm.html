@@ -2,12 +2,12 @@
 <html>
 	<head>
 	<meta charset="utf-8">
-	<title>Quickstart to SLURM Commands - Richard's World!</title>
+	<title>SLURM - Richard's World!</title>
   
   <meta content="Richard's World!" property="og:site_name">
   
   
-    <meta content="Quickstart to SLURM Commands" property="og:title">
+    <meta content="SLURM" property="og:title">
   
   
   
@@ -15,11 +15,11 @@
   
   
   
-    <meta content="Commands to assist in navigating SLURM environments" property="og:description">
+    <meta content="" property="og:description">
   
   
   
-    <meta content="http://localhost:4000/tutorials/terminal/slurm/slurm.html" property="og:url">
+    <meta content="http://localhost:4000/tutorials/slurm.html" property="og:url">
   
   
   
@@ -33,22 +33,22 @@
   
   
   
-    <meta name="title" content="Quickstart to SLURM Commands">
+    <meta name="title" content="SLURM">
   
   
   
-    <meta name="url" content="http://localhost:4000/tutorials/terminal/slurm/slurm.html">
+    <meta name="url" content="http://localhost:4000/tutorials/slurm.html">
   
   
   
-    <meta name="description" content="Commands to assist in navigating SLURM environments">
+    <meta name="description" content="">
   
   
   
     <meta name="image:src" content="http://localhost:4000/images/test.jpg">
   
 
-	<meta name="description" content="Commands to assist in navigating SLURM environments">
+	<meta name="description" content="">
 	<meta property="og:image" content="">
 	
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
@@ -111,8 +111,8 @@
 </header>
 				<article id="main">
 	<header>
-		<h3>Quickstart to SLURM Commands</h3>
-		<p>Commands to assist in navigating SLURM environments</p>
+		<h3>SLURM</h3>
+		<p></p>
 	</header>
 	<section class="wrapper style5">
 		<div class="inner">
@@ -314,6 +314,68 @@ Find information on why a specific node is down</p>
 </code></pre></div></div>
 <p><br /></p>
 
+<p>Examples shown below references the OSCER Supercomputer at the University of Oklahoma. However, this similar commands can be used for other supercomputers with minor adjustments.</p>
+
+<h2 id="linuxmac">Linux/Mac</h2>
+
+<p>If your OS is Linux/Mac, login is straight forward (<code class="language-plaintext highlighter-rouge">&lt;username&gt;</code> is your username):</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ssh &lt;username&gt;@schooner.oscer.ou.edu 
+</code></pre></div></div>
+<p><br /></p>
+
+<h3 id="login-with-no-password">Login with no password</h3>
+
+<p>On your computer, run the following:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ssh-keygen -t rsa -b 4096
+</code></pre></div></div>
+<p><br /></p>
+
+<p><strong>NOTE:</strong> Do not set a passphrase when creating the key (Press enter 3 times). Make sure that this file is only readable by you! The public key file (id_dsa.pub or id_rsa.pub) as the name implies can be uploaded to other systems to which you would like passwordless access.</p>
+
+<p>Now, create a <code class="language-plaintext highlighter-rouge">~/.ssh</code> directory on the cluster (doesn’t matter if this is already there).</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ssh &lt;username&gt;@schooner.oscer.ou.edu mkdir -p .ssh
+</code></pre></div></div>
+<p><br /></p>
+
+<p>Append the public key to the cluser and enter password one last time:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cat .ssh/id_rsa.pub | ssh &lt;username&gt;@schooner.oscer.ou.edu `cat &gt;&gt; ~/.ssh/authorized_keys`
+</code></pre></div></div>
+<p><br /></p>
+
+<h2 id="windows">Windows</h2>
+
+<p>If your OS is Windows and you need to SSH to a remote server, you have 2 options:</p>
+
+<ol>
+  <li>SSH with Windows Powershell (<strong>REQ:</strong> Windows 10, Powershell 5.1+, Adminstrative Access).</li>
+  <li>SSH with PuTTy.</li>
+</ol>
+
+<h3 id="ssh-with-windows-powershell">SSH with Windows Powershell</h3>
+
+<p><strong>Prerequsite Checklist</strong></p>
+
+<p>Open Powershell and Run as Administrator.</p>
+
+<p>Run winver.exe and press enter to see the version details for your Windows device.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ winver.exe
+</code></pre></div></div>
+<p><br />
+Run $PSVersionTable.PSVersion. Verify your major version is at least 5, and your minor version at least 1. Learn more about installing PowerShell on Windows.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ PSVersionTable.PSVersion
+</code></pre></div></div>
+<p><br />
+Run the command below. The output will show True when you’re a member of the built-in Administrators group.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ (New-Object Security.Principal.WindowsPrincipal([Security.Principal.WindowsIdentity]::GetCurrent())).IsInRole([Security.Principal.WindowsBuiltInRole]::Administrator)
+</code></pre></div></div>
+<p><br /></p>
 			
 		</div>
 	</section>

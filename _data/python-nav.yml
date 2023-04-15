@@ -1,8 +1,0 @@
-- name: Installing Miniforge3
-  link: /tutorial/python/miniconda.html
-
-- name: Conda Environments
-  link: /tutorial/python/environments.html
-
-
-

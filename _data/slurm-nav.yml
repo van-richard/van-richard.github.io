@@ -1,5 +1,0 @@
-- name: SSH-ing
-  link: /tutorials/terminal/slurm/ssh.html
-  
-- name: SLURM Commands
-  link: /tutorials/terminal/slurm/slurm.html
