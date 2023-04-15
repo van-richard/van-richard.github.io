@@ -1,0 +1,17 @@
+---
+layout: pages 
+---
+
+<article id="main">
+	<header>
+		<h3>{{ page.title }}</h3>
+		<p>{{ page.description}}</p>
+	</header>
+	<section class="wrapper style5">
+		<div class="inner">
+			{% for post in paginator.posts %}
+            	<p>{{ post.content | markdownify }}</p>
+        	{% endfor %}	
+		</div>
+	</section>
+</article>
