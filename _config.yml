@@ -25,9 +25,18 @@ kramdown:
 plugins:
   - jekyll-sitemap
   - jekyll-paginate
+  - jekyll-paginate-multiple
   - jemoji
 
 paginate: 8
 paginate_path: "./tutorials/bash/page:num/"
+
+# paginate-multiple:
+#   - paginate: 8
+#     paginate_path: "./tutorials/bash/page:num/"
+#     sub_dir: "/bash"
+#   - paginate: 8 
+#     paginate_path: ".tutorials/git/page:num/"
+#     sub_dir: "/git"
 
 excerpt_separator: "" 
