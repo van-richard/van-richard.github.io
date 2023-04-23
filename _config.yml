@@ -26,4 +26,7 @@ plugins:
   - jekyll-sitemap
   - jemoji
 
+paginate: 8
+# paginate_path: "/:num"
+
 excerpt_separator: "" 
