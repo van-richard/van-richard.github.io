@@ -1,0 +1,18 @@
+<header id="header">
+	<div class="logo">
+		<span class="fa-solid fa-v"></span>
+	</div>
+	<div class="content">
+		<div class="inner">
+			<h1>Richard Van</h1>
+			<p>Computational Biochemistry</p>
+		</div>
+	</div>
+	<nav>
+		<ul>
+			{% for article in site.data.articles %}
+				<li><a href="#{{ article.id }}">{{ article.title }}</a></li>
+			{% endfor %}
+		</ul>
+	</nav>
+</header>
