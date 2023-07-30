@@ -13,7 +13,13 @@
 			{% for article in site.data.articles %}
 				<li><a href="#{{ article.id }}">{{ article.title }}</a></li>
 			{% endfor %}
-			<li><a href="https://van-richard.github.io/CompChemNotes">Tutorials</a></li>
+			<li><a href="https://van-richard.github.io/CompChemNotes">Notes</a></li>
+		</ul>
+		<ul>
+			{% for article in site.data.articles %}
+				<li><a href="#{{ article.id }}">{{ article.title }}</a></li>
+			{% endfor %}
+			<li><a href="https://van-richard.github.io/AmberTutorials">Tutorials</a></li>
 		</ul>
 	</nav>
 </header>
