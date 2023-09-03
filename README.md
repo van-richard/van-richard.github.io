@@ -2,4 +2,4 @@
 
 [Comp. Chem. Notes](https://van-richard.github.io/CompChemNotes/)
 
-[Amber Tutorials](https://van-richard.github.io/AmberTutorials)
+[Simulation Tutorials](https://van-richard.github.io/Tutorials)
