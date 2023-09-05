@@ -1,5 +1,7 @@
-# My notes in computational chemistry:
+# Personal Website
 
-[Comp. Chem. Notes](https://van-richard.github.io/CompChemNotes/)
+Please see:
+
+[Computational Chemistry Notes](https://van-richard.github.io/CompChemNotes/)
 
 [Simulation Tutorials](https://van-richard.github.io/Tutorials)
