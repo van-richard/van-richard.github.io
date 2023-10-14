@@ -1,5 +1,6 @@
-# My notes in computational chemistry:
+# My Website
 
-[Comp. Chem. Notes](https://van-richard.github.io/CompChemNotes/)
+My notes on coding in the world of computational chemistry.
 
-[Amber Tutorials](https://van-richard.github.io/AmberTutorials)
+[Website](https://van-richard.github.io/CodingNotes/) 
+
