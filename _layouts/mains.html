@@ -1,17 +1,27 @@
 <!DOCTYPE HTML>
 
 <html>
-	<head>
-		{% include 0-head.html %}
-	</head>
-	
-	<body class="is-preload">
-		<div id="wrapper">
-			{% include 1-header.html %}
-			{{ content }}
-			{% include footer.html %}
-		</div>
-		<div id="bg"></div>
-		{% include scripts.html %}
-	</body>
+<head>
+	<title>{% if page.title %}{{page.title}} - {{site.title}}{% else %}{{site.title}}{% endif %}</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="{{ site.url }}/assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="{{ site.url }}//assets/css/noscript.css" />
+	</noscript>
+	<noscript>
+		<link rel="stylesheet" href="{{ site.url }}//assets/css/toggle-search-bar.css" />
+	</noscript>
+</head>
+
+<body class="is-preload">
+	<div id="wrapper">
+		{% include 1-header.html %}
+		{{ content }}
+		{% include footer.html %}
+	</div>
+	<div id="bg"></div>
+	{% include scripts.html %}
+</body>
+
 </html>
