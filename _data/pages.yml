@@ -1,0 +1,9 @@
+- id: about
+  title: About
+  image: images/pic01.jpg
+
+- id: publications
+  title: Publications
+
+- id: presentations
+  title: Presentations

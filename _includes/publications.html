@@ -1,0 +1,12 @@
+<body>
+	<article id="publications">
+		<h2>Publications</h2>
+        	<ul>
+				{% for pub in site.data.pubs %}
+				<li>
+					<p>{{ pub.authors }}, {{ pub.title }}</p>
+				</li>
+				{% endfor %}
+			</ul>
+	</article>
+</body>

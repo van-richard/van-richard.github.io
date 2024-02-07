@@ -1,0 +1,12 @@
+<body>
+	<article id="presentations">
+		<h2>Presentations</h2>
+        	<ul>
+				{% for talk in site.data.talks %}
+				<li>
+					<p>{{ talk.location }}</p>
+				</li>
+				{% endfor %}
+			</ul>
+	</article>
+</body>

@@ -1,0 +1,19 @@
+- id: Google
+  url: https://scholar.google.com/citations?user=YQmlIIwAAAAJ&hl=en
+  icon: "icon brands fa-google"
+
+- id: Twitter
+  url: https://twitter.com/OMGITSvanADIUM
+  icon: icon brands fa-twitter
+
+- id: GitHub
+  url: http://github.com/van-richard
+  icon: icon brands fa-github
+
+- id: LinkedIn
+  url: https://in.urledin.com/in/van-richard
+  icon: icon brands fa-linkedin
+
+- id: Email 
+  url: mailto:richard.scott.van@gmail.com
+  icon: icon solid fa-envelope

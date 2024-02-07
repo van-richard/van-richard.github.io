@@ -5,16 +5,10 @@ domain: https://van-richard.github.io
 url: https://van-richard.github.io # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: ''
 
-
 # Author Settings
-author: Richard Van # add your name
-author-img: test.jpg  # add your photo
-about-author: I hate html already. # add description
-social-google: citations?user=YQmlIIwAAAAJ&hl=en
-social-twitter: OMGITSvanADIUM # add your Twitter handle
-social-github: van-richard # add your Github handle
-social-linkedin: van-richard # add your Linkedin handle
-social-email: richard.scott.van@gmail.com # add your Email address
+author: Richard Van 
+author-img: test.jpg  
+about-author: Computational Biochemistry
 
 # Build Settings
 markdown: kramdown

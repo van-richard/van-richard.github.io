@@ -1,27 +1,68 @@
 <!DOCTYPE HTML>
 
 <html>
-<head>
-	<title>{% if page.title %}{{page.title}} - {{site.title}}{% else %}{{site.title}}{% endif %}</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<meta charset="utf-8" />
-	<link rel="stylesheet" href="{{ site.url }}/assets/css/main.css" />
-	<noscript>
-		<link rel="stylesheet" href="{{ site.url }}//assets/css/noscript.css" />
-	</noscript>
-	<noscript>
-		<link rel="stylesheet" href="{{ site.url }}//assets/css/toggle-search-bar.css" />
-	</noscript>
-</head>
+	<head>
+		<title>
+			{% if page.title %}{{page.title}} - {{site.title}}{% else %}{{site.title}}{% endif %}
+		</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="{{ site.url }}/assets/css/main.css" />
+		<noscript>
+			<link rel="stylesheet" href="{{ site.url }}//assets/css/noscript.css" />
+		</noscript>
+		<noscript>
+			<link rel="stylesheet" href="{{ site.url }}//assets/css/toggle-search-bar.css" />
+		</noscript>
+	</head>
 
-<body class="is-preload">
-	<div id="wrapper">
-		{% include 1-header.html %}
-		{{ content }}
-		{% include footer.html %}
-	</div>
-	<div id="bg"></div>
-	{% include scripts.html %}
-</body>
+	<body class="is-preload">
+		<div id="wrapper">
+			<header id="header">
+				<div class="logo">
+					<span class="fa-solid fa-v"></span>
+				</div>
+				<div class="content">
+					<div class="inner">
+						<!-- _config.yml - author -->
+						<h1>{{ site.author }}</h1> 
+						<h3>{{ site.about-author }}</h3>
+					</div>
+				</div>
+				<nav>
+					<ul>
+						{% for page in site.data.pages %}
+						<li>
+							<a href="#{{ page.id }}">{{ page.title }}</a>
+						</li>
+						{% endfor %}
+						<li>
+							<a href="https://van-richard.github.io/CodingNotes">Notes/Tutorials</a>
+						</li>
+					</ul>
+				</nav>
+			</header>
+			
+			<div id="main">
+				{{ content }}
+			</div>
+		
+			<ul class="icons">
+				{% for link in site.data.links %}
+				<li>
+					<a href="{{ link.url }}" class="{{ link.icon }}" style="background-color: rgba(54, 58, 61, 0.634);">
+						<!-- <span class="label">{{ link.id }}</span>> -->
+					</a>
+				</li>
+				{% endfor %}
+			</ul>
+		</div>
+		<div id="bg"></div>
+		<script src="{{ site.url }}/assets/js/jquery.min.js"></script>
+		<script src="{{ site.url }}/assets/js/browser.min.js"></script>
+		<script src="{{ site.url }}/assets/js/breakpoints.min.js"></script>
+		<script src="{{ site.url }}/assets/js/util.js"></script>
+		<script src="{{ site.url }}/assets/js/main.js"></script>
+	</body>
 
 </html>
