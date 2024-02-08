@@ -1,12 +1,22 @@
+<style>
+	p {
+		margin: 0 0 0rem 0;
+	}
+
+	li {
+		margin: 0 0 0.5rem 0;
+	}
+</style>
+
 <body>
-	<article id="publications">
+	<article id="publications" style="width: 50rem;">
 		<h2>Publications</h2>
-        	<ul>
-				{% for pub in site.data.pubs %}
-				<li>
-					<p>{{ pub.authors }}, {{ pub.title }}</p>
-				</li>
-				{% endfor %}
-			</ul>
+		<ul>
+			{% for pub in site.data.pubs %}
+			<li>
+				<p>{{ pub.authors }}, {{ pub.title }}, <em>{{ pub.journal}}</em>, <b>{{ pub.year }}</b></p>
+			</li>
+			{% endfor %}
+		</ul>
 	</article>
 </body>

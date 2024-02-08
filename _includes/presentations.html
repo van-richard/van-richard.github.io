@@ -1,12 +1,27 @@
 <body>
-	<article id="presentations">
+	<article id="presentations" style="width: 50rem;">
 		<h2>Presentations</h2>
-        	<ul>
-				{% for talk in site.data.talks %}
-				<li>
-					<p>{{ talk.location }}</p>
-				</li>
-				{% endfor %}
-			</ul>
+		<ul>
+			<h3>Talks</h3>
+
+			{% for talk in site.data.talks %}
+			{% if talk.type == 'oral' %}
+			<li>
+				<p>{{ talk.location }}, {{ talk.year }}</p>
+			</li>
+			{% endif %}
+			{% endfor %}
+		</ul>
+		<ul>
+			<h3>Posters</h3>
+
+			{% for talk in site.data.talks %}
+			{% if talk.type == 'poster' %}
+			<li>
+				<p>{{ talk.location }}, {{ talk.year }}</p>
+			</li>
+			{% endif %}
+			{% endfor %}
+		</ul>
 	</article>
 </body>
