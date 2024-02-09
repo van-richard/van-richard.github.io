@@ -1,22 +1,93 @@
-<style>
-	p {
-		margin: 0 0 0rem 0;
-	}
+<article id="publications" style="width: 50rem;">
+	<h2>Publications</h2>
+	<div class="tab">
+		<button class="tablinks" onclick="opentab(event, '2024')" id="defaultOpen">2024</button>
+		<button class="tablinks" onclick="opentab(event, '2023')">2023</button>
+		<button class="tablinks" onclick="opentab(event, '2022')">2022</button>
+		<button class="tablinks" onclick="opentab(event, '2021')">2021</button>
+		<button class="tablinks" onclick="opentab(event, '2020')">2020</button>
+		<button class="tablinks" onclick="opentab(event, '2019')">2019</button>
+	</div>
 
-	li {
-		margin: 0 0 0.5rem 0;
-	}
-</style>
-
-<body>
-	<article id="publications" style="width: 50rem;">
-		<h2>Publications</h2>
+	<div id="2024" class="tabcontent">
 		<ul>
 			{% for pub in site.data.pubs %}
+			{% if pub.year == 2024 %}
 			<li>
 				<p>{{ pub.authors }}, {{ pub.title }}, <em>{{ pub.journal}}</em>, <b>{{ pub.year }}</b></p>
 			</li>
+			{% endif %}
 			{% endfor %}
 		</ul>
-	</article>
-</body>
+	</div>
+	<div id="2023" class="tabcontent">
+		<ul>
+			{% for pub in site.data.pubs %}
+			{% if pub.year == 2023 %}
+			<li>
+				<p>{{ pub.authors }}, {{ pub.title }}, <em>{{ pub.journal}}</em>, <b>{{ pub.year }}</b></p>
+			</li>
+			{% endif %}
+			{% endfor %}
+		</ul>
+	</div>	
+	<div id="2022" class="tabcontent">
+		<ul>
+			{% for pub in site.data.pubs %}
+			{% if pub.year == 2022 %}
+			<li>
+				<p>{{ pub.authors }}, {{ pub.title }}, <em>{{ pub.journal}}</em>, <b>{{ pub.year }}</b></p>
+			</li>
+			{% endif %}
+			{% endfor %}
+		</ul>
+	</div>	<div id="2021" class="tabcontent">
+		<ul>
+			{% for pub in site.data.pubs %}
+			{% if pub.year == 2021 %}
+			<li>
+				<p>{{ pub.authors }}, {{ pub.title }}, <em>{{ pub.journal}}</em>, <b>{{ pub.year }}</b></p>
+			</li>
+			{% endif %}
+			{% endfor %}
+		</ul>
+	</div>	<div id="2020" class="tabcontent">
+		<ul>
+			{% for pub in site.data.pubs %}
+			{% if pub.year == 2020 %}
+			<li>
+				<p>{{ pub.authors }}, {{ pub.title }}, <em>{{ pub.journal}}</em>, <b>{{ pub.year }}</b></p>
+			</li>
+			{% endif %}
+			{% endfor %}
+		</ul>
+	</div>	<div id="2019" class="tabcontent">
+		<ul>
+			{% for pub in site.data.pubs %}
+			{% if pub.year == 2019 %}
+			<li>
+				<p>{{ pub.authors }}, {{ pub.title }}, <em>{{ pub.journal}}</em>, <b>{{ pub.year }}</b></p>
+			</li>
+			{% endif %}
+			{% endfor %}
+		</ul>
+	</div>
+
+	<script>
+	function opentab(evt, tabname) {
+		var i, tabcontent, tablinks;
+		tabcontent = document.getElementsByClassName("tabcontent");
+		for (i = 0; i < tabcontent.length; i++) {
+			tabcontent[i].style.display = "none";
+		}
+		tablinks = document.getElementsByClassName("tablinks");
+		for (i = 0; i < tablinks.length; i++) {
+			tablinks[i].className = tablinks[i].className.replace(" active", "");
+		}
+		document.getElementById(tabname).style.display = "block";
+		evt.currentTarget.className += " active";
+		
+	}
+	document.getElementById("defaultOpen").click();
+	</script>
+</article>
