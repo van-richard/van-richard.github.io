@@ -1,0 +1,532 @@
+
+- date: 2024
+  papers:
+  - title: "Influence of structural moieties in squaraine dyes on optoacoustic signal shape and intensity"
+    author:
+      - MacCuaig, William M.
+      - Wickizer, Carly
+      - Van, Richard S.
+      - Buabeng, Emmanuel R.
+      - Lerner, Megan R.
+      - Grizzle, William E.
+      - Shao, Yihan
+      - Henary, Maged
+      - McNally, Lacey R.
+    parent:
+      type: periodical
+      title: Chem
+      volume: 10
+      issue: 2
+      publisher: Elsevier BV
+    page-range: 713--729
+    doi: "10.1016/j.chempr.2023.11.016"
+    issn: 2451-9294
+    
+  - title: "Preclinical Evaluation of Novel Positron Emission Tomography (PET) Probes for Imaging Leucine-Rich Repeat Kinase 2 (LRRK2)"
+    author:
+      - Chen, Zhen
+      - Chen, Jiahui
+      - Mori, Wakana
+      - Yi, Yongjia
+      - Rong, Jian
+      - Li, Yinlong
+      - Leon, Erick R. C.
+      - Shao, Tuo
+      - Song, Zhendong
+      - Yamasaki, Tomoteru
+      - Ishii, Hideki
+      - Zhang, Yiding
+      - Kokufuta, Tomomi
+      - Hu, Kuan
+      - Xie, Lin
+      - Josephson, Lee
+      - Van, Richard
+      - Shao, Yihan
+      - Factor, Stewart
+      - Zhang, Ming-Rong
+      - Liang, Steven H.
+    parent:
+      type: periodical
+      title: Journal of Medicinal Chemistry
+      volume: 67
+      issue: 4
+      publisher: American Chemical Society (ACS)
+    page-range: 2559--2569
+    doi: "10.1021/acs.jmedchem.3c01687"
+    issn: 1520-4804
+
+
+- date: 2023
+  papers:
+  - title: "Machine learning based implicit solvent model for aqueous-solution alanine dipeptide molecular dynamics simulations"
+    author:
+      - Yao, Songyuan
+      - Van, Richard
+      - Pan, Xiaoliang
+      - Park, Ji H.
+      - Mao, Yuezhi
+      - Pu, Jingzhi
+      - Mei, Ye
+      - Shao, Yihan
+    parent:
+      type: periodical
+      title: RSC Advances
+      volume: 13
+      issue: 7
+      publisher: Royal Society of Chemistry (RSC)
+    page-range: 4565--4577
+    doi: "10.1039/d2ra08180f"
+    issn: 2046-2069
+
+  - title: "Free Energy Profile Decomposition Analysis for QM/MM Simulations of Enzymatic Reactions"
+    author:
+      - Pan, Xiaoliang
+      - Van, Richard
+      - Pu, Jingzhi
+      - Nam, Kwangho
+      - Mao, Yuezhi
+      - Shao, Yihan
+    parent:
+      type: periodical
+      title: Journal of Chemical Theory and Computation
+      volume: 19
+      issue: 22
+      publisher: American Chemical Society (ACS)
+    page-range: 8234--8244
+    doi: "10.1021/acs.jctc.3c00973"
+    issn: 1549-9626
+
+  - title: "In vivo three-dimensional brain imaging with chemiluminescence probes in Alzheimer’s disease models"
+    author:
+      - Zhang, Jing
+      - Wickizer, Carly
+      - Ding, Weihua
+      - Van, Richard
+      - Yang, Liuyue
+      - Zhu, Biyue
+      - Yang, Jun
+      - Wang, Yanli
+      - Wang, Yongle
+      - Xu, Yulong
+      - Zhang, Can
+      - Shen, Shiqian
+      - Wang, Changning
+      - Shao, Yihan
+      - Ran, Chongzhao
+    parent:
+      type: periodical
+      title: Proceedings of the National Academy of Sciences
+      volume: 120
+      issue: 50
+      publisher: Proceedings of the National Academy of Sciences
+    doi: "10.1073/pnas.2310131120"
+    issn: 1091-6490
+
+
+- date: 2022
+  papers:
+  - title: "Epitope alteration by small molecules and applications in drug discovery"
+    author:
+      - Zhu, Biyue
+      - Yang, Jing
+      - Van, Richard
+      - Yang, Fan
+      - Yu, Yue
+      - Yu, Astra
+      - Ran, Kathleen
+      - Yin, Keyi
+      - Liang, Yingxia
+      - Shen, Xunuo
+      - Yin, Wei
+      - Choi, Se H.
+      - Lu, Ying
+      - Wang, Changning
+      - Shao, Yihan
+      - Shi, Liang
+      - Tanzi, Rudolph E.
+      - Zhang, Can
+      - Cheng, Yan
+      - Zhang, Zhirong
+      - Ran, Chongzhao
+    parent:
+      type: periodical
+      title: Chemical Science
+      volume: 13
+      issue: 27
+      publisher: Royal Society of Chemistry (RSC)
+    page-range: 8104--8116
+    doi: "10.1039/d2sc02819k"
+    issn: 2041-6539
+    
+  - title: "A novel monoacylglycerol lipase-targeted 18F-labeled probe for positron emission tomography imaging of brown adipose tissue in the energy network"
+    author:
+      - Cheng, Ran
+      - Fujinaga, Masayuki
+      - Yang, Jing
+      - Rong, Jian
+      - Haider, Ahmed
+      - Ogasawara, Daisuke
+      - Van, Richard S.
+      - Shao, Tuo
+      - Chen, Zhen
+      - Zhang, Xiaofei
+      - Calderon Leon, Erick R.
+      - Zhang, Yiding
+      - Mori, Wakana
+      - Kumata, Katsushi
+      - Yamasaki, Tomoteru
+      - Xie, Lin
+      - Sun, Shaofa
+      - Wang, Lu
+      - Ran, Chongzhao
+      - Shao, Yihan
+      - Cravatt, Benjamin
+      - Josephson, Lee
+      - Zhang, Ming-Rong
+      - Liang, Steven H.
+    parent:
+      type: periodical
+      title: Acta Pharmacologica Sinica
+      volume: 43
+      issue: 11
+      publisher: Springer Science and Business Media LLC
+    page-range: 3002--3010
+    doi: "10.1038/s41401-022-00912-8"
+    issn: 1745-7254
+    
+  - title: "Accelerating Ab Initio Quantum Mechanical and Molecular Mechanical (QM/MM) Molecular Dynamics Simulations with Multiple Time Step Integration and a Recalibrated Semiempirical QM/MM Hamiltonian"
+    author:
+      - Pan, Xiaoliang
+      - Van, Richard
+      - Epifanovsky, Evgeny
+      - Liu, Jian
+      - Pu, Jingzhi
+      - Nam, Kwangho
+      - Shao, Yihan
+    parent:
+      type: periodical
+      title: The Journal of Physical Chemistry B
+      volume: 126
+      issue: 23
+      publisher: American Chemical Society (ACS)
+    page-range: 4226--4235
+    doi: "10.1021/acs.jpcb.2c02262"
+    issn: 1520-5207
+  - title: "Assessment of cholesterol homeostasis in the living human brain"
+    author:
+      - Haider, Ahmed
+      - Zhao, Chunyu
+      - Wang, Lu
+      - Xiao, Zhiwei
+      - Rong, Jian
+      - Xia, Xiaotian
+      - Chen, Zhen
+      - Pfister, Stefanie K.
+      - Mast, Natalia
+      - Yutuc, Eylan
+      - Chen, Jiahui
+      - Li, Yinlong
+      - Shao, Tuo
+      - Warnock, Geoffrey I.
+      - Dawoud, Alyaa
+      - Connors, Theresa R.
+      - Oakley, Derek H.
+      - Wei, Huiyi
+      - Wang, Jinghao
+      - Zheng, Zhihua
+      - Xu, Hao
+      - Davenport, April T.
+      - Daunais, James B.
+      - Van, Richard S.
+      - Shao, Yihan
+      - Wang, Yuqin
+      - Zhang, Ming-Rong
+      - Gebhard, Catherine
+      - Pikuleva, Irina
+      - Levey, Allan I.
+      - Griffiths, William J.
+      - Liang, Steven H.
+    parent:
+      type: periodical
+      title: Science Translational Medicine
+      volume: 14
+      issue: 665
+      publisher: American Association for the Advancement of Science (AAAS)
+    doi: "10.1126/scitranslmed.adc9967"
+    issn: 1946-6242
+
+- date: 2021
+  papers:
+  - title: "Subtype-selective vasopressin 1A receptor imaging by positron emission tomography"
+    author:
+      - Haider, Ahmed
+      - Liang, Steven
+      - Zhiwei, Xiao
+      - Xia, Xiaotian
+      - Kuang, Shi
+      - Van, Richard
+      - Chen, Jiahui
+      - Zhao, Chunyu
+      - Rong, Jian
+    parent:
+      type: periodical
+      title: Nuclear Medicine and Biology
+      volume: 96–97
+      publisher: Elsevier BV
+    page-range: S58
+    doi: "10.1016/s0969-8051(21)00361-9"
+    issn: 0969-8051
+
+  - title: "Development of a highly-specific 18F-labeled irreversible positron emission tomography tracer for monoacylglycerol lipase mapping"
+    author:
+      - Chen, Zhen
+      - Mori, Wakana
+      - Rong, Jian
+      - Schafroth, Michael A.
+      - Shao, Tuo
+      - Van, Richard S.
+      - Ogasawara, Daisuke
+      - Yamasaki, Tomoteru
+      - Hiraishi, Atsuto
+      - Hatori, Akiko
+      - Chen, Jiahui
+      - Zhang, Yiding
+      - Hu, Kuan
+      - Fujinaga, Masayuki
+      - Sun, Jiyun
+      - Yu, Qingzhen
+      - Collier, Thomas L.
+      - Shao, Yihan
+      - Cravatt, Benjamin F.
+      - Josephson, Lee
+      - Zhang, Ming-Rong
+      - Liang, Steven H.
+    parent:
+      type: periodical
+      title: Acta Pharmaceutica Sinica B
+      volume: 11
+      issue: 6
+      publisher: Elsevier BV
+    page-range: 1686--1695
+    doi: "10.1016/j.apsb.2021.01.021"
+    issn: 2211-3835
+
+  - title: "Machine-Learning-Assisted Free Energy Simulation of Solution-Phase and Enzyme Reactions"
+    author:
+      - Pan, Xiaoliang
+      - Yang, Junjie
+      - Van, Richard
+      - Epifanovsky, Evgeny
+      - Ho, Junming
+      - Huang, Jing
+      - Pu, Jingzhi
+      - Mei, Ye
+      - Nam, Kwangho
+      - Shao, Yihan
+    parent:
+      type: periodical
+      title: Journal of Chemical Theory and Computation
+      volume: 17
+      issue: 9
+      publisher: American Chemical Society (ACS)
+    page-range: 5745--5758
+    doi: "10.1021/acs.jctc.1c00565"
+    issn: 1549-9626
+
+  - title: "Novel Reversible-Binding PET Ligands for Imaging Monoacylglycerol Lipase Based on the Piperazinyl Azetidine Scaffold"
+    author:
+      - Rong, Jian
+      - Mori, Wakana
+      - Xia, Xiaotian
+      - Schafroth, Michael A.
+      - Zhao, Chunyu
+      - Van, Richard S.
+      - Yamasaki, Tomoteru
+      - Chen, Jiahui
+      - Xiao, Zhiwei
+      - Haider, Ahmed
+      - Ogasawara, Daisuke
+      - Hiraishi, Atsuto
+      - Shao, Tuo
+      - Zhang, Yiding
+      - Chen, Zhen
+      - Pang, Fuwen
+      - Hu, Kuan
+      - Xie, Lin
+      - Fujinaga, Masayuki
+      - Kumata, Katsushi
+      - Gou, Yuancheng
+      - Fang, Yang
+      - Gu, Shuyin
+      - Wei, Huiyi
+      - Bao, Liang
+      - Xu, Hao
+      - Collier, Thomas L.
+      - Shao, Yihan
+      - Carson, Richard E.
+      - Cravatt, Benjamin F.
+      - Wang, Lu
+      - Zhang, Ming-Rong
+      - Liang, Steven H.
+    parent:
+      type: periodical
+      title: Journal of Medicinal Chemistry
+      volume: 64
+      issue: 19
+      publisher: American Chemical Society (ACS)
+    page-range: 14283--14298
+    doi: "10.1021/acs.jmedchem.1c00747"
+    issn: 1520-4804
+
+  - title: "Imaging Autotaxin In Vivo with 18F-Labeled Positron Emission Tomography Ligands"
+    author:
+      - Deng, Xiaoyun
+      - Salgado-Polo, Fernando
+      - Shao, Tuo
+      - Xiao, Zhiwei
+      - Van, Richard
+      - Chen, Jiahui
+      - Rong, Jian
+      - Haider, Ahmed
+      - Shao, Yihan
+      - Josephson, Lee
+      - Perrakis, Anastassis
+      - Liang, Steven H.
+    parent:
+      type: periodical
+      title: Journal of Medicinal Chemistry
+      volume: 64
+      issue: 20
+      publisher: American Chemical Society (ACS)
+    page-range: 15053--15068
+    doi: "10.1021/acs.jmedchem.1c00913"
+    issn: 1520-4804
+
+- date: 2020
+  papers:
+  - title: "Synthesis and preliminary evaluation of 4-hydroxy-6-(3-[11C]methoxyphenethyl)pyridazin-3(2H)-one, a 11C-labeled -amino acid oxidase (DAAO) inhibitor for PET imaging"
+    author:
+      - Deng, Xiaoyun
+      - Zhang, Yiding
+      - Chen, Zhen
+      - Kumata, Katsushi
+      - Van, Richard
+      - Rong, Jian
+      - Shao, Tuo
+      - Hatori, Akiko
+      - Mori, Wakana
+      - Yu, Qingzhen
+      - Hu, Kuan
+      - Fujinaga, Masayuki
+      - Wey, Hsiao-Ying
+      - Shao, Yihan
+      - Josephson, Lee
+      - Murtas, Giulia
+      - Pollegioni, Loredano
+      - Zhang, Ming-Rong
+      - Liang, Steven
+    parent:
+      type: periodical
+      title: Bioorganic \& Medicinal Chemistry Letters
+      volume: 30
+      issue: 16
+      publisher: Elsevier BV
+      page-range: 127326
+    doi: "10.1016/j.bmcl.2020.127326"
+    issn: 0960-894X
+
+  - title: "Turn-on chemiluminescence probes and dual-amplification of signal for detection of amyloid beta species in vivo"
+    author:
+      - Yang, Jing
+      - Yin, Wei
+      - Van, Richard
+      - Yin, Keyi
+      - Wang, Peng
+      - Zheng, Chao
+      - Zhu, Biyue
+      - Ran, Kathleen
+      - Zhang, Can
+      - Kumar, Mohanraja
+      - Shao, Yihan
+      - Ran, Chongzhao
+    parent:
+      type: periodical
+      title: Nature Communications
+      volume: 11
+      issue: 1
+      publisher: Springer Science and Business Media LLC
+    doi: "10.1038/s41467-020-17783-4"
+    issn: 2041-1723
+
+  - title: "Identification and Development of a New Positron Emission Tomography Ligand 4-(2-Fluoro-4-[11C]methoxyphenyl)-5-((1-methyl-1H-pyrazol-3-yl)methoxy)picolinamide for Imaging Metabotropic Glutamate Receptor Subtype 2 (mGlu2)"
+    author:
+      - Yamasaki, Tomoteru
+      - Zhang, Xiaofei
+      - Kumata, Katsushi
+      - Zhang, Yiding
+      - Deng, Xiaoyun
+      - Fujinaga, Masayuki
+      - Chen, Zhen
+      - Mori, Wakana
+      - Hu, Kuan
+      - Wakizaka, Hidekatsu
+      - Hatori, Akiko
+      - Xie, Lin
+      - Ogawa, Masanao
+      - Nengaki, Nobuki
+      - Van, Richard
+      - Shao, Yihan
+      - Sheffler, Douglas J.
+      - Cosford, Nicholas D. P.
+      - Liang, Steven H.
+      - Zhang, Ming-Rong
+    parent:
+      type: periodical
+      title: Journal of Medicinal Chemistry
+      volume: 63
+      issue: 20
+      publisher: American Chemical Society (ACS)
+    page-range: 11469--11483
+    doi: "10.1021/acs.jmedchem.9b01991"
+    issn: 1520-4804
+
+- date: 2019
+  papers:
+  - title: "Design, Synthesis, and Evaluation of 18F-Labeled Monoacylglycerol Lipase Inhibitors as Novel Positron Emission Tomography Probes"
+    author:
+      - Chen, Zhen
+      - Mori, Wakana
+      - Fu, Hualong
+      - Schafroth, Michael A.
+      - Hatori, Akiko
+      - Shao, Tuo
+      - Zhang, Genwei
+      - Van, Richard S.
+      - Zhang, Yiding
+      - Hu, Kuan
+      - Fujinaga, Masayuki
+      - Wang, Lu
+      - Belov, Vasily
+      - Ogasawara, Daisuke
+      - Giffenig, Pilar
+      - Deng, Xiaoyun
+      - Rong, Jian
+      - Yu, Qingzhen
+      - Zhang, Xiaofei
+      - Papisov, Mikhail I.
+      - Shao, Yihan
+      - Collier, Thomas L.
+      - Ma, Jun-An
+      - Cravatt, Benjamin F.
+      - Josephson, Lee
+      - Zhang, Ming-Rong
+      - Liang, Steven H.
+    parent:
+      type: periodical
+      title: Journal of Medicinal Chemistry
+      volume: 62
+      issue: 19
+      publisher: American Chemical Society (ACS)
+      page-range: 8866--8872
+    doi: "10.1021/acs.jmedchem.9b00936"
+    issn: 1520-4804

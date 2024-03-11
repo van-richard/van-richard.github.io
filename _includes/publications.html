@@ -1,93 +1,50 @@
-<article id="publications" style="width: 50rem;">
+<article id="publications" style="width: 65rem;">
 	<h2>Publications</h2>
+	{% for item in site.data.publications %}
 	<div class="tab">
-		<button class="tablinks" onclick="opentab(event, '2024')" id="defaultOpen">2024</button>
-		<button class="tablinks" onclick="opentab(event, '2023')">2023</button>
-		<button class="tablinks" onclick="opentab(event, '2022')">2022</button>
-		<button class="tablinks" onclick="opentab(event, '2021')">2021</button>
-		<button class="tablinks" onclick="opentab(event, '2020')">2020</button>
-		<button class="tablinks" onclick="opentab(event, '2019')">2019</button>
+		{% if item.date == 2024 %}
+		<button class="tablinks" onclick="opentab(event, '{{ item.date }}')" id="defaultOpen">{{ item.date }}</button>
+		{% else %}
+		<button class="tablinks" onclick="opentab(event, '{{ item.date }}')">{{ item.date }}</button>
+		{% endif %}
 	</div>
+	{% endfor %}
 
-	<div id="2024" class="tabcontent">
+	{% for item in site.data.publications %}
+	<div id="{{ item.date }}" class="tabcontent">
 		<ul>
-			{% for pub in site.data.pubs %}
-			{% if pub.year == 2024 %}
+			{% for paper in item.papers %}
 			<li>
-				<p>{{ pub.authors }}, {{ pub.title }}, <em>{{ pub.journal}}</em>, <b>{{ pub.year }}</b></p>
+				<p>
+					{% for name in paper.author %}
+						{{ name }},
+					{% endfor %}
+					"{{ paper.title | truncate | capitalize}}",
+					<em>{{ paper.parent.title }}</em>,
+					<b>{{ item.date }}</b>,
+					<a href="http://doi.org/{{ paper.doi }}">DOI: {{paper.doi}}</a>
+				</p></br>
 			</li>
-			{% endif %}
-			{% endfor %}
+			{%endfor%}
 		</ul>
 	</div>
-	<div id="2023" class="tabcontent">
-		<ul>
-			{% for pub in site.data.pubs %}
-			{% if pub.year == 2023 %}
-			<li>
-				<p>{{ pub.authors }}, {{ pub.title }}, <em>{{ pub.journal}}</em>, <b>{{ pub.year }}</b></p>
-			</li>
-			{% endif %}
-			{% endfor %}
-		</ul>
-	</div>	
-	<div id="2022" class="tabcontent">
-		<ul>
-			{% for pub in site.data.pubs %}
-			{% if pub.year == 2022 %}
-			<li>
-				<p>{{ pub.authors }}, {{ pub.title }}, <em>{{ pub.journal}}</em>, <b>{{ pub.year }}</b></p>
-			</li>
-			{% endif %}
-			{% endfor %}
-		</ul>
-	</div>	<div id="2021" class="tabcontent">
-		<ul>
-			{% for pub in site.data.pubs %}
-			{% if pub.year == 2021 %}
-			<li>
-				<p>{{ pub.authors }}, {{ pub.title }}, <em>{{ pub.journal}}</em>, <b>{{ pub.year }}</b></p>
-			</li>
-			{% endif %}
-			{% endfor %}
-		</ul>
-	</div>	<div id="2020" class="tabcontent">
-		<ul>
-			{% for pub in site.data.pubs %}
-			{% if pub.year == 2020 %}
-			<li>
-				<p>{{ pub.authors }}, {{ pub.title }}, <em>{{ pub.journal}}</em>, <b>{{ pub.year }}</b></p>
-			</li>
-			{% endif %}
-			{% endfor %}
-		</ul>
-	</div>	<div id="2019" class="tabcontent">
-		<ul>
-			{% for pub in site.data.pubs %}
-			{% if pub.year == 2019 %}
-			<li>
-				<p>{{ pub.authors }}, {{ pub.title }}, <em>{{ pub.journal}}</em>, <b>{{ pub.year }}</b></p>
-			</li>
-			{% endif %}
-			{% endfor %}
-		</ul>
-	</div>
+	{% endfor %}
 
 	<script>
-	function opentab(evt, tabname) {
-		var i, tabcontent, tablinks;
-		tabcontent = document.getElementsByClassName("tabcontent");
-		for (i = 0; i < tabcontent.length; i++) {
-			tabcontent[i].style.display = "none";
+		function opentab(evt, tabname) {
+			var i, tabcontent, tablinks;
+			tabcontent = document.getElementsByClassName("tabcontent");
+			for (i = 0; i < tabcontent.length; i++) {
+				tabcontent[i].style.display = "none";
+			}
+			tablinks = document.getElementsByClassName("tablinks");
+			for (i = 0; i < tablinks.length; i++) {
+				tablinks[i].className = tablinks[i].className.replace(" active", "");
+			}
+			document.getElementById(tabname).style.display = "block";
+			evt.currentTarget.className += " active";
+
 		}
-		tablinks = document.getElementsByClassName("tablinks");
-		for (i = 0; i < tablinks.length; i++) {
-			tablinks[i].className = tablinks[i].className.replace(" active", "");
-		}
-		document.getElementById(tabname).style.display = "block";
-		evt.currentTarget.className += " active";
-		
-	}
-	document.getElementById("defaultOpen").click();
+		document.getElementById("defaultOpen").click();
 	</script>
 </article>
