@@ -33,18 +33,7 @@
 					<p>{{ site.about-author }}</p>
 				</div>
 			</div>
-			<nav>
-				<ul>
-					{% for page in site.data.pages %}
-					<li>
-						<a href="#{{ page.id }}">{{ page.title }}</a>
-					</li>
-					{% endfor %}
-					<li>
-						<a href="https://van-richard.github.io/CodingNotes">Notes/Tutorials</a>
-					</li>
-				</ul>
-			</nav>
+			{% include nav.html %}
 		</header>
 
 		<div id="main">

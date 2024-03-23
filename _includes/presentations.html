@@ -1,23 +1,20 @@
 <article id="presentations" style="width: 60rem;">
-	<h1>Presentations</h1>
-		<h3>Talks</h3>
-		<ul>
-			{% for talk in site.data.talks %}
-			{% if talk.type == 'oral' %}
-			<li>
-				<p><b>{{ talk.name }}</b>, {{ talk.location }}, {{talk.month}} {{ talk.year }}</p>
-			</li>
-			{% endif %}
-			{% endfor %}
-		</ul>
-		<h3>Posters</h3>
-		<ul>
-			{% for talk in site.data.talks %}
-			{% if talk.type == 'poster' %}
-			<li>
-				<p><b>{{ talk.name }}</b>, {{ talk.location }}, {{talk.month}} {{ talk.year }}</p>
-			</li>
-			{% endif %}
-			{% endfor %}
-		</ul>
+	<h1>{{ page.id}}</h1>
+
+	{% for formats in site.data.talks %}
+		<h2>{{formats.format}}</h2>
+		{% for talk in formats.talks %}
+			<ul>
+				<li>
+					<p>
+						<b>{{ talk.name }}</b>,
+						{{ talk.location }}.
+						<!-- <br> -->
+						{{ talk.month}}, {{talk.year}}
+					</p>
+				</li>
+			</ul>
+		{% endfor %}
+		<br>
+	{% endfor %}
 </article>

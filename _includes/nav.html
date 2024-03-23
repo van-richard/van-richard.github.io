@@ -1,0 +1,12 @@
+<nav>
+    <ul>
+        {% for page in site.data.pages %}
+        <li>
+            <a href="#{{ page.id }}">{{ page.id }}</a>
+        </li>
+        {% endfor %}
+        <li>
+            <a href="https://van-richard.github.io/CodingNotes">Notes/Tutorials</a>
+        </li>
+    </ul>
+</nav>

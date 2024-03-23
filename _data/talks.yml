@@ -1,53 +1,59 @@
-- type: oral
-  name: National Heart, Lung, and Blood Institute, National Institutes of Health 
-  location: Bethesda, MD
-  month: December
-  year: 2022
+- format: oral
+  talks: 
+    - name: National Heart, Lung, and Blood Institute, National Institutes of Health 
+      location: Bethesda, MD
+      month: December
+      year: 2022
 
-- type: oral
-  name: "American Chemical Society: 65th Annual Pentasectional Meeting"
-  location: Bartlesville, OK
-  month: October
-  year: 2022
+    - name: "American Chemical Society: 65th Annual Pentasectional Meeting"
+      location: Bartlesville, OK
+      month: October
+      year: 2022
 
-- type: poster
-  name: "Chemistry Energies: Southwest ACS Regional Meeting"
-  location: Oklahoma City, OK
-  month: November
-  year: 2023
+- format: poster
+  talks:
+    - name: "ACS Many Flavors of Chemistry"
+      location: New Orleans, LA
+      month: March
+      year: 2024
 
-- type: poster
-  name: "Oklahoma COBRE: 10th Annual Symposium in Structural Biology"
-  location: Norman, OK
-  month: June
-  year: 2022
+    - name: "Chemistry Energies: Southwest ACS Regional Meeting"
+      location: Oklahoma City, OK
+      month: November
+      year: 2023
 
-- type: poster
-  name: "Pacifichem" 
-  location: Virtual
-  month: December
-  year: 2021
+    - name: "ACS Harnessing the Power of Data"
+      location: San Francisco, CA
+      month: August
+      year: 2023
+      
 
-- type: poster
-  name: "EMBO Bioexcel Summer School on Biomolecular Simulations "
-  location: Virtual (UK)
-  month: June
-  year: 2021
+    - name: "Oklahoma COBRE: 10th Annual Symposium in Structural Biology"
+      location: Norman, OK
+      month: June
+      year: 2022
 
-- type: poster
-  name: "APS/ICTP-SAIFR Forum on Biological Physics: from Molecular to Macroscopic Scale"
-  location: São Paulo, Brazil
-  month: March
-  year: 2020
+    - name: "Pacifichem" 
+      location: Virtual
+      month: December
+      year: 2021
 
-- type: poster
-  name: 7th Annual Symposium on Structural Biology 
-  location: Norman, OK
-  month: June
-  year: 2019
+    - name: "EMBO Bioexcel Summer School on Biomolecular Simulations "
+      location: Virtual (UK)
+      month: June
+      year: 2021
 
-- type: poster
-  name: "Oklahoma Section of the American Chemical Society: 64th Annual Pentasection Meeting" 
-  location: Norman, OK 
-  month: April
-  year: 2019
+    - name: "APS/ICTP-SAIFR Forum on Biological Physics: from Molecular to Macroscopic Scale"
+      location: São Paulo, Brazil
+      month: March
+      year: 2020
+
+    - name: 7th Annual Symposium on Structural Biology 
+      location: Norman, OK
+      month: June
+      year: 2019
+
+    - name: "Oklahoma Section of the American Chemical Society: 64th Annual Pentasection Meeting" 
+      location: Norman, OK 
+      month: April
+      year: 2019

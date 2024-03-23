@@ -2,6 +2,6 @@
 layout: mains
 ---
 
-{% include about.html %}
-{% include publications.html %}
-{% include presentations.html %}
+{% for page in site.data.pages %}
+    {% include {{page.id}}.html %}
+{% endfor %}
