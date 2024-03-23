@@ -1,50 +1,62 @@
 <article id="publications" style="width: 65rem;">
-	<h2>Publications</h2>
-	{% for item in site.data.publications %}
-	<div class="tab">
-		{% if item.date == 2024 %}
-		<button class="tablinks" onclick="opentab(event, '{{ item.date }}')" id="defaultOpen">{{ item.date }}</button>
-		{% else %}
-		<button class="tablinks" onclick="opentab(event, '{{ item.date }}')">{{ item.date }}</button>
-		{% endif %}
-	</div>
-	{% endfor %}
 
-	{% for item in site.data.publications %}
-	<div id="{{ item.date }}" class="tabcontent">
-		<ul>
-			{% for paper in item.papers %}
-			<li>
-				<p>
-					{% for name in paper.author %}
-						{{ name }},
-					{% endfor %}
-					"{{ paper.title | truncate | capitalize}}",
-					<em>{{ paper.parent.title }}</em>,
-					<b>{{ item.date }}</b>,
-					<a href="http://doi.org/{{ paper.doi }}">DOI: {{paper.doi}}</a>
-				</p></br>
-			</li>
-			{%endfor%}
-		</ul>
-	</div>
-	{% endfor %}
+    <h1>Publications</h1>
+    <h3>
+        <a href="{{ site.social-google }}">Google Scholar</a>
+    </h3>
 
-	<script>
-		function opentab(evt, tabname) {
-			var i, tabcontent, tablinks;
-			tabcontent = document.getElementsByClassName("tabcontent");
-			for (i = 0; i < tabcontent.length; i++) {
-				tabcontent[i].style.display = "none";
-			}
-			tablinks = document.getElementsByClassName("tablinks");
-			for (i = 0; i < tablinks.length; i++) {
-				tablinks[i].className = tablinks[i].className.replace(" active", "");
-			}
-			document.getElementById(tabname).style.display = "block";
-			evt.currentTarget.className += " active";
+    {% assign sorted_publications = site.data.publications | sort: 'date' | reverse %}
 
-		}
-		document.getElementById("defaultOpen").click();
-	</script>
+    <div class="tab">
+        {% for item in sorted_publications %}
+        <button class="tablinks" onclick="opentab(event, '{{ item.date }}')" {% if forloop.first %}id="defaultOpen" {%
+            endif %}>{{ item.date }}</button>
+        {% endfor %}
+    </div>
+
+    <!-- Calculate the total number of papers  -->
+    {% assign total_papers = 0 %}
+    {% for item in sorted_publications %}
+    {% assign total_papers = total_papers | plus: item.papers.size %}
+    {% endfor %}
+
+    {% for item in sorted_publications %}
+    <div id="{{ item.date }}" class="tabcontent">
+        <ol start="{{ total_papers }}" reversed>
+            {% assign total_papers = total_papers | minus: item.papers.size %}
+            {% for paper in item.papers reversed %}
+            <li>
+                <p>
+                    {% for name in paper.author %}
+                    {{ name }},
+                    {% endfor %}
+                    "{{ paper.title | capitalize }}",
+                    <em>{{ paper.parent.title }}</em>,
+                    <b>{{ item.date }}</b>,
+                    <a href="http://doi.org/{{ paper.doi }}">DOI: {{ paper.doi }}</a>
+                </p>
+                <br>
+            </li>
+            {% endfor %}
+        </ol>
+        <p>Total: {{ item.papers.size }}</p>
+    </div>
+    {% endfor %}
+
+    <script>
+        function opentab(evt, tabname) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(tabname).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+        document.getElementById("defaultOpen").click();
+    </script>
 </article>

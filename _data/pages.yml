@@ -1,6 +1,5 @@
-- id: research 
-  title: Research
-  image: images/pic01.jpg
+# - id: about 
+#   title: About
 
 - id: publications
   title: Publications

@@ -1,5 +1,5 @@
 - id: Google
-  url: https://scholar.google.com/citations?user=YQmlIIwAAAAJ&hl=en
+  url: {{ site.social-google }}
   icon: "icon brands fa-google"
 
 - id: Twitter

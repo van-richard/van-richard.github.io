@@ -1,49 +1,23 @@
-<article id="presentations" style="width: 50rem;">
-	<h2>Presentations</h2>
-	<div class="tab">
-		<button class="tablinks" onclick="opentab(event, 'Talks')" id="defaultOpen">Talks</button>
-		<button class="tablinks" onclick="opentab(event, 'Posters')">Posters</button>
-	</div>
-
-	<div id="Talks" class="tabcontent">
+<article id="presentations" style="width: 60rem;">
+	<h1>Presentations</h1>
+		<h3>Talks</h3>
 		<ul>
 			{% for talk in site.data.talks %}
 			{% if talk.type == 'oral' %}
 			<li>
-				<p>{{ talk.name }}, {{ talk.location }}, <b>{{talk.month}} {{ talk.year }}</b></p>
+				<p><b>{{ talk.name }}</b>, {{ talk.location }}, {{talk.month}} {{ talk.year }}</p>
 			</li>
 			{% endif %}
 			{% endfor %}
 		</ul>
-	</div>
-
-	<div id="Posters" class="tabcontent">
+		<h3>Posters</h3>
 		<ul>
 			{% for talk in site.data.talks %}
 			{% if talk.type == 'poster' %}
 			<li>
-				<p>{{ talk.name }}, {{ talk.location }}, <b>{{talk.month}} {{ talk.year }}</b></p>
+				<p><b>{{ talk.name }}</b>, {{ talk.location }}, {{talk.month}} {{ talk.year }}</p>
 			</li>
 			{% endif %}
 			{% endfor %}
 		</ul>
-	</div>
-
-	<script>
-		function opentab(evt, tabname) {
-			var i, tabcontent, tablinks;
-			tabcontent = document.getElementsByClassName("tabcontent");
-			for (i = 0; i < tabcontent.length; i++) {
-				tabcontent[i].style.display = "none";
-			}
-			tablinks = document.getElementsByClassName("tablinks");
-			for (i = 0; i < tablinks.length; i++) {
-				tablinks[i].className = tablinks[i].className.replace(" active", "");
-			}
-			document.getElementById(tabname).style.display = "block";
-			evt.currentTarget.className += " active";
-
-		}
-		document.getElementById("defaultOpen").click();
-	</script>
 </article>
