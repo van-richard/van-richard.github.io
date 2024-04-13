@@ -991,7 +991,7 @@ ul.icons {
 	cursor: default;
 	list-style: none;
 	padding-left: 0;
-	width: 250px;
+	width: 300px;
 }
 
 ul.icons li {
@@ -1309,7 +1309,7 @@ body.is-preload #bg:before {
 @media screen and (max-width: 1680px) {
 
 	#wrapper {
-		padding: 3rem 2rem;
+		padding: 2rem 1rem; /* Updated padding value */
 	}
 
 }
