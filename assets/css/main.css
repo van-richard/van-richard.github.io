@@ -991,12 +991,12 @@ ul.icons {
 	cursor: default;
 	list-style: none;
 	padding-left: 0;
-	width: 300px;
+	width: 200px;
 }
 
 ul.icons li {
 	display: inline-block;
-	padding: 1.75em 0.75em;
+	padding: 0.75em 0.75em;
 }
 
 ul.icons li:last-child {
