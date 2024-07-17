@@ -1,6 +1,6 @@
 - id: Google
-  url: {{ site.social-google }}
-  icon: "icon brands fa-google"
+  url: https://scholar.google.com/citations?user=YQmlIIwAAAAJ&hl=en
+  icon: icon brands fa-google
 
 - id: Twitter
   url: https://twitter.com/OMGITSvanADIUM
